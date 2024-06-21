@@ -1,29 +1,30 @@
 # Hurley-Piano
 
 ## What we are working on
-- spreadsheet/db of user data
-- store student users and allow hurley to update student
-- learning modules on a dashbaord
+- User Analytics
+- store student users and allow hurley to update student learning modules on a dashbaord
 
 ## Student Activity Log
 - Log of individual students login times, frequency and Dates
-- - when a student logs into their account -> log the date and time
-- - When a student completes a task -> log the date and time
-- - Create a dashboard for hurley
+  - when a student logs into their account -> log the date and time
+  - When a student completes a task -> log the date and time
+  - Create a dashboard for hurley
+  - (After Further Research, This is done with php, so learning php with wordpress)
 
 ## Student User Dashboard and allow Hurley to cusomize student learning material
--  modify the home page to add login and registration form links
-- - connect the user login/registration form that already exists to a backend
-- - User authentication
-- - create a user dashboard
-- - - display game curriculum provided by Hurley
-- - create a parent portal
-- - - student activity log
+- modify the home page to add login and registration form links
+- connect the user login/registration form that already exists to a backend
+- ~~User authentication~~
+- create a user dashboard
+  - display game curriculum provided by Hurley
+  - create a parent portal
+  - student activity log
 - contact link
 
 ## Additiional Requests
 
-- Remove the guitar and Drum features
+- Embed the games into the website somehow (Look into further)
+- Remove the Guitar and Drum features
 
 
 ## Links
