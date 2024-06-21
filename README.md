@@ -5,14 +5,18 @@ What we are working on
   store student users and allow hurley to update student learning modules on a dashbaord
 
 Spreadsheet info
-  Weekdays(with dates) from Monday-Friday (8am - 4pm)
-  student schedule
-  Logging users
+  Log of individual students login times, frequency and Dates
+    when a student logs into their account -> log the date and time
+      When a student completes a task -> log the date and time
+  Create a dashboard for hurley
+  
 
 Student User Dashboard and allow Hurley to cusomize student learning material
-  (possibly)
-  creating a sign-up page
-  Creating a log-in page
-  storing user data
-  adding a feature to Hurley's Dashboard to access student learning modules
+  modify the home page to add login and registration form links
+  connect the user login/registration form that already exists to a backend
+  User authentication
+  create a user dashboard
+    display game curriculum provided by Hurley
+  create a parent portal
+    
   
