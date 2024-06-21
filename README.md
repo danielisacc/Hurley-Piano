@@ -15,6 +15,7 @@
   </ul>
 
 ## Student User Dashboard and allow Hurley to cusomize student  ## learning material
+<ul>
  <li> modify the home page to add login and registration form links
   <li>connect the user login/registration form that already exists to a backend
   <li>User authentication
@@ -23,7 +24,12 @@
   <li>create a parent portal
     <li>student activity log
     <li>contact link
-    
+</ul>
 ## Additiional Requests
-  <br> Remove the guitar and Drum features
-  <br> https://youtu.be/09gj5gM4V98?si=rJkhWJJMPCJXzZx4
+<ul>
+  <li> Remove the guitar and Drum features
+</ul>
+
+## Links
+<li> https://youtu.be/09gj5gM4V98?si=rJkhWJJMPCJXzZx4
+<li> https://youtu.be/30NowHy3Jbo?si=Ac4nWnZMbDBoVW1n
