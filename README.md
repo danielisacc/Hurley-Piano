@@ -20,4 +20,4 @@ Student User Dashboard and allow Hurley to cusomize student learning material
   create a parent portal
     student activity log
     contact link
-  https://youtu.be/09gj5gM4V98?si=rJkhWJJMPCJXzZx4
+  <br> https://youtu.be/09gj5gM4V98?si=rJkhWJJMPCJXzZx4
