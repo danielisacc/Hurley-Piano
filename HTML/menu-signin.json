@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Home",
+    "url": "index.html"
+  },
+  {
+    "name": "Music Lessons",
+    "url": "music-lessons.html"
+  },
+  {
+    "name": "Video Lessons",
+    "url": "video-lessons.html"
+  },
+  {
+    "name": "About",
+    "url": "about.html"
+  },
+  {
+    "name": "Blog",
+    "url": "blog.html"
+  },
+  {
+    "name": "Contact",
+    "url": "contact.html"
+  },
+  {
+    "name": "Book Now",
+    "url": "https://link.msaascrm.com/widget/bookings/hurley-piano-call-booking"
+  },
+  {
+    "name": "Sign In",
+    "url": "sign-in.html"
+  }
+]
