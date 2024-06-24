@@ -1,11 +1,28 @@
+
+// Hamburger menu button (Daniel)
 document.getElementById('hamburger').addEventListener('click', function() {
-    var menu = document.getElementById('nav-menu');
-    if (menu.style.display === 'block') {
-        menu.style.display = 'none';
-    } else {
-        menu.style.display = 'block';
-    }
+  const links = document.getElementById('links');
+  const burger = document.getElementById('hamburger');
+  if (links.style.display === 'flex') {
+      links.style.display = 'none';
+      burger.style.backgroundColor = 'transparent';
+  }
+  else {
+      links.style.display = 'flex';
+      burger.style.backgroundColor = 'rgba(200,200,200,20%)';
+  }
 });
+// Dropdown Menu Json converson (Daniel)
+const listEl = document.getElementById('links')
+
+fetch('./menu-signin.json')
+    .then(res => res.json())
+    .then(data => {
+        data.forEach(link => {
+            listEl.insertAdjacentHTML('beforeend', `<a href=${link.url}>${link.name}</a>`)
+        });
+    })
+
 
 // Setting menu to be global for now
 //
@@ -13,21 +30,6 @@ document.getElementById('hamburger').addEventListener('click', function() {
 GUI = new Array();
 GUI.menu = document.getElementById('nav-menu');
 GUI.noteURL = "https://rigler.org/hurley/note/";
-
-
-fetch("menu.json").then(x => x.json() ).then(x => 
-   {
-   for( y = 0; y < x.length; y++)
-      {
-   //   console.log(x[y].name)
-	t = document.createElement("a");
-	t.className = "nav-link";
-	t.innerHTML = x[y].name;
-	t.href = x[y].url;
-	GUI.menu.append(t);
-      }
-   GUI.x = x;
-   });
 
 
 GUI.listNote = function() {  

@@ -1,13 +1,14 @@
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-image: url('../img/homepage-background.png'); 
-    background-size: cover; /* Covers the full viewable area */
-    background-position: center; /* Center the background image */
-    background-attachment: scroll; /* Fixed background during scrolling */
-    min-height: 100vh; /* Minimum height to 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../img/homepage-background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
 }
+
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.3em; /* Adjust size as needed */
@@ -42,51 +43,89 @@ p {
     font-size: 1.2em;
 }
 
+/* The header and Dropdown display */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    position: fixed;
+    width: 200px;
+    position: fixed;
+    align-items: flex-end;
+    right: 20px;
+    top: 50px;
+}
+.links {
+    display: none;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items:flex-end;
+    height: 500px;
+    border-top: #666 solid;
+    background-color: rgba(240,240,240,95%);
+    padding: 15px 30px;
+    margin-right: -15px;
+    border-bottom-left-radius: 10px;
+}
 
 .navbar {
-    background-color: white;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    border: .1px solid white /* Adds a solid black border */
+    flex-direction: column;
 }
 
-.logo, .hamburger img {
-    height: 4em; /* This sets both the logo and the hamburger icon to the same height */
-}
-.logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 6em;;
-}
-
-.hamburger {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0; /* Removes padding to ensure alignment */
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: 60px; /* Adjust this based on your actual navbar height */
-    width: 100%;
-    text-align: center;
-}
-
-.nav-link {
-    display: block;
-    color: blue;
+.links a {
     text-decoration: none;
-    padding: 10px;
+    color: #666;
+    font-size: 1.3em;
 }
 
-.nav-link:hover {
-    background-color: #f0f0f0;
+.links a:hover {
+    color: #aaa;
+    border-bottom: #aaa solid;
+}
+
+.hamburger img {
+    height: 4em;
+    border: none;
+    margin-right: -7px;
+}
+
+.hamburger img:hover {
+    background-color: #aaa;
+    border-radius: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;    
+}
+.left {
+    width: 220px;
+    height: 1px;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        position: relative;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        margin-left: 20px;
+        margin-top: -50px;
+        margin-bottom: 50px;
+    }
+    .links {
+        align-items: center;
+        width: 100%;
+        background-color: rgba(200,200,200,20%);
+    }
+    .hamburger {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
 }
 
 .homepage-content {
