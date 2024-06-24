@@ -28,6 +28,8 @@
 
 
 ## Links
+-(How to Connect HTML Form with MySQL Database using PHP) https://youtu.be/2HVKizgcfjo?feature=shared
+
 - (Wordpress Tutorial) https://youtu.be/09gj5gM4V98?si=rJkhWJJMPCJXzZx4
 - (Profile Builder Plugin) https://youtu.be/30NowHy3Jbo?si=Ac4nWnZMbDBoVW1n
 - (PHP Basics for Wordpress) https://www.youtube.com/watch?v=mgGAvq9hmyU
