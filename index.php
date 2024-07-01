@@ -10,21 +10,21 @@
     <main>
     <?php include("header.html"); ?>
     <!-- Main content goes here -->
-    <div class="homepage-content">
-            <img src="img/baby-piano-home.png" alt="Teaching Neurodiverse Kids" class="hero-photo">
-        
-            <h1>Teaching<br>Neurodiverse Kids<br>To Play An Instrument</h1>
-        
+        <!-- Hero Section  -->
+        <div class="head">
+            <div class="hero-image">
+                <div class="hero-text">
+                    <h1>Teaching<br>Neurodiverse Kids<br>To Play An Piano</h1>
+                </div>
+            </div>
             <p>From piano, guitar, and drums, we got you covered! Still hesitate? Please book our 15 mins <strong>FREE</strong> consultation.</p>
-        
             <div class="button-container">
                 <a href="https://link.msaascrm.com/widget/bookings/hurley-piano-call-booking" class="button book-consultation">Book Free Consultation</a>
                 <a class="button" href = "mailto: info@hurleypiano.com">Send Us Email</a>
             </div>
-
         </div>
-            <!-- 2 -->
-            <h2>What People Say<br>About Us</h2>
+        <!-- 2 -->
+        <h2>What People Say<br>About Us</h2>
         
 
         <!-- <div class="testimonial-box">  -->

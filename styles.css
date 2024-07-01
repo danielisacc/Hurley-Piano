@@ -44,38 +44,41 @@ p {
     font-size: 1.2em;
 }
 
-
-.homepage-content {
-    text-align: center; /* Centers all text and images */
-    max-width: 800px; /* Adjust based on design preference */
-    margin: 0 auto; /* Center the content block */
-    padding: 20px; /* Adds padding around the content */
-}
-.homepage-content p {
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 10px;
-    padding: 0 7em; /* Adds 20em padding on both sides */
-    font-size: 2em;
-    color: #333;
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-.hero-photo {
-    width: 100%; /* Makes the image responsive */
-    max-width: 200px; /* Maximum width to prevent the image from becoming too large */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Ensures the image is a block element */
-    margin: 0 auto; /* Centers the image */
-    padding-top: 2em;
+.hero-image {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.0)), url("./img/hero-image.jpg");
+  
+    /* Set a specific height */
+    height: 60vh;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+}
+  
+  /* Place text in the middle of the image */
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 25%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
-
-.homepage-content h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2em; /* Adjust size as needed */
-    margin-top: 20px; /* Space above the heading */
-    color: #333;
+.hero-text h1 {
+    font-family: 'Roboto Bold', sans-serif, 'Veranda';
 }
-
 
 .button-container {
     display: flex;

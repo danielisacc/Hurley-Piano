@@ -20,3 +20,14 @@ document.getElementById('hamburger').addEventListener('click', function() {
             listEl.insertAdjacentHTML('beforeend', `<a href=${link.url}>${link.name}</a>`)
         });
     })
+window.addEventListener('resize', function () {
+    let width = document.documentElement.clientWidth;
+    const links = document.getElementById('links');
+
+    if (width >= 800) {
+        links.style.display = 'flex';
+    }
+    else {
+        links.style.display = 'none'
+    }
+})
