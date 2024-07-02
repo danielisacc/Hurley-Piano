@@ -44,20 +44,15 @@ p {
     font-size: 1.2em;
 }
 
+/* Hero Section  */
 .head {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    justify-content: center;    
+    margin-top: 2%;
 }
-
 .hero-image {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.0)), url("./img/hero-image.jpg");
-  
-    /* Set a specific height */
-    height: 60vh;
-  
-    /* Position and center the image to scale nicely on all screens */
+    height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,8 +60,6 @@ p {
     width: 100%;
     max-width: 1000px;
 }
-  
-  /* Place text in the middle of the image */
 .hero-text {
     text-align: left;
     position: absolute;
@@ -75,46 +68,110 @@ p {
     transform: translate(-50%, -50%);
     color: white;
 }
-
 .hero-text h1 {
     font-family: 'Roboto Bold', sans-serif, 'Veranda';
 }
 
-.button-container {
+/* Button Section  */
+.hero-buttons {
     display: flex;
-    justify-content: space-around; /* Evenly spaces the two buttons */
-    margin-top: 20px; /* Space above the button container */
+    width: 100%;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 5%;
 }
-
 .button {
-    cursor: pointer; /* Indicates the images are clickable */
-    width: 48%; /* Each button takes up nearly half of the container */
-}
-
-.button {
-    display: inline-block;
+    display: flex;
     padding: 8px 16px; /* Reduced padding */
     margin: 5px; /* Keep margin to prevent elements from touching */
-    background-color: #f4f4f4; /* Light grey background */
     color: #000; /* Text color */
     text-align: center;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px; /* Slightly smaller font size */
     border-radius: 5px; /* Rounded corners */
     border: none; /* No border */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    cursor: pointer; /* Indicates the images are clickable */
+    width: 40%; /* Each button takes up nearly half of the container */
 }
-
-.button:hover {
-    background-color: #ddd; /* Darker background on hover */
-    color: #444; /* Darker text on hover */
-}
-
 .book-consultation {
     background-color: salmon; /* Green background */
     color: white; /* White text */
 }
+.email-button {
+    background-color: #ddd; /* Light grey background */
+}
+
+.book-consultation:hover {
+    background-color: #ddd; /* Darker background on hover */
+    color: #444; /* Darker text on hover */
+}
+.email-button:hover {
+    background-color: salmon;
+    color: white;
+}
+
+/* Smaller Media Sect  */
+@media (max-width: 600px) {
+    .hero-image {
+        display: flex;
+        background-image: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 40vh;
+        margin-top: 5%;
+    }
+    .hero-text {
+        color: #666;
+        position: relative;
+        text-align: center;
+        transform: none;
+        top:0;
+        left: 0;
+    }
+    .hero-text h1 {
+        text-shadow: 1px 1px 4px #999;
+    }
+    .hero-buttons {
+        width: 90%;
+    }
+
+    .stat {
+        width: 49%;
+    }
+}
+
+/* Buisness Statistics Sect  */
+.stats-block {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.stat h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: -5px;
+    padding: 0;
+    color:#0077cc;
+    text-shadow : 1px 1px 5px #666;
+}
+.stat p {
+    width: auto;
+    padding: 0;
+}
+
+
 .play-now{
     background-color: salmon; /* Green background */
     color: white; /* White text */
@@ -129,18 +186,10 @@ p {
     color: white; /* White text */
 }
 
-/* New content styling */
-.homepage-content h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8em; /* Smaller than H1 by 15% */
-    text-align: center;
-    margin-top: 90px;
-}
-
 .testimonial-box {
     background-color: #fff; /* Light background for the testimonial box */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
-    width: 100%; /* Makes the image responsive */
+    width: 90%; /* Makes the image responsive */
     max-width: 500px; /* Maximum width to prevent the image from becoming too large */
     height: auto; /* Maintains aspect ratio */
     display: block; /* Ensures the image is a block element */
@@ -184,16 +233,6 @@ p {
     padding-top:2em;;
     margin:0;
     padding-bottom: 1.2em;
-}
-
-.music-school-stats img{
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
-    width: 100%; /* Makes the image responsive */
-    max-width: 600px; /* Maximum width to prevent the image from becoming too large */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Ensures the image is a block element */
-    margin: 0 auto; /* Centers the image */
-    margin-top: 1EM;
 }
 .centered-tile {
     width: 100%; /* Makes the image responsive */

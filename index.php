@@ -14,21 +14,39 @@
         <div class="head">
             <div class="hero-image">
                 <div class="hero-text">
-                    <h1>Teaching<br>Neurodiverse Kids<br>To Play An Piano</h1>
+                    <h1>Teaching<br>Neurodiverse Kids<br>To Play Piano</h1>
+                </div>
+                <div class="hero-buttons">
+                    <a href="https://link.msaascrm.com/widget/bookings/hurley-piano-call-booking" class="button book-consultation">Book Free Consultation</a>
+                    <a class=" email-button button" href = "mailto: info@hurleypiano.com">Send Us Email</a>
                 </div>
             </div>
-            <p>From piano, guitar, and drums, we got you covered! Still hesitate? Please book our 15 mins <strong>FREE</strong> consultation.</p>
-            <div class="button-container">
-                <a href="https://link.msaascrm.com/widget/bookings/hurley-piano-call-booking" class="button book-consultation">Book Free Consultation</a>
-                <a class="button" href = "mailto: info@hurleypiano.com">Send Us Email</a>
+        </div>
+
+
+        <!-- Buissiness Statistics Section -->
+        <div class="stats-block">
+            <div class="stat">
+                <h2>15</h2>
+                <p>Years in<br>Operation</p>
+            </div>
+            <div class="stat">
+                <h2>400+</h2>
+                <p>Students</p>
+            </div>
+            <div class="stat">
+                <h2>22,000</h2>
+                <p>Classes<br>Taught</p>
+            </div>
+            <div class="stat">
+                <h2>55</h2>
+                <p>Events<br>Held</p>
             </div>
         </div>
+
+
         <!-- 2 -->
         <h2>What People Say<br>About Us</h2>
-        
-
-        <!-- <div class="testimonial-box">  -->
-
         <div class="testimonial-box">
             <p>“Richard Hurley is brilliant when it comes to teaching children and young adults 
                 on the autism spectrum. What impresses me most about Richard is his calm, even demeanor. He has a real ability in reading the child and where they are in the moment —from moment to moment at times. I highly recommend Richard Hurley and his style of piano teaching to those living with Autism and their family.”</p>
@@ -63,70 +81,6 @@
             <h3>OCCUPATIONAL THERAPIST</h3>
         </div>
 
-	<div class="testimonial-box">
-	    <center><h1>Hurley Piano Music School</h1></center>
-            <div class="center" style="height:140px">
-		<div class="box">
-                   <br>
-		   <div class="wow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;
-                          15
-		   </div>
-                   &nbsp;&nbsp;&nbsp;&nbsp;
-		YEARS SINCE <em>2009</em>
-		   <br>
-	        </div>
-                <div class="box">
-		   <br>
-                   <div class="wow">&nbsp;&nbsp;&nbsp;&nbsp;
-		   &nbsp;&nbsp;&nbsp;&nbsp;
-			400+
-		   </div>
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		   STUDENTS
-		   <br>
-                </div>
-
-                <div class="box">
-                   <br>
-                   <div class="wow">&nbsp;&nbsp;&nbsp;&nbsp;
-		   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			55</div>
-	           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		   &nbsp;&nbsp;&nbsp;
-			EVENTS
-                </div>
-
-                <div class="box">
-                   <br>
-                   <div class="wow">&nbsp;&nbsp;&nbsp;&nbsp;
-                   UNLIMITED
-                   </div>
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   LIVES CHANGED
-                </div>
-
-             </div>
-	</div>
-
-<!--
-        <div class="music-school-stats">
-            <img src="img/music-school-stats.png" 
-            altp;"15 years in operation. 400 plus students, 22000 classes taught. 55 events held">
-        </div>
--->
-
-        <h2>We Offer Multiple<br>
-            Choices of Instruments</h2>
-
-        <div class="centered-tile">
-            <img src="img/piano-tile-home.png" 
-            alt="Unlock melodies, cultivate skill, and express emotions through piano mastery.">
-            <img src="img/guitar-tile-home.png" 
-            alt="Strum, pick, chord, melody: Guitar mastery begins with disciplined practice.">
-            <img src="img/drum-tile-home.png" 
-            alt="Rhythm unleashed: Explore beats, fills, and grooves in dynamic drumming.">
-        </div>
 <!--
         <div class="centered-tile-full-width-purple">
                 <h2>Get Your <br> <u>FREE</u> Book</h2>
@@ -172,22 +126,21 @@
         
         <h2>Our Interactive Games</h2>
         <div class="centered-tile-background">
+            <h2>GOJUN'S ADVENTURE</h2>
             <img src="img/gojuns-home.png" 
             alt="gojuns adventure game">
-            <h2>GOJUN'S ADVENTURE</h2>
             <p>In This Thrilling And Strategic Board Game, You Have The Option To Play Solo Or Challenge A Friend To A Friendly Match.
                  Roll The Dice And Navigate Through The Board, Using Special Abilities Like JumpForwards And Knockback To Outsmart Your Opponent.</p>
         </div>
         <div class="centered-tile-background">
-            <img src="img/chime-candy-home.png" 
-            alt="chime candy game">
             <h2>CHIME CANDY 1</h2>
+            <img src="./img/chime-candy.jpg" 
+            alt="chime candy game">
             <p>In This Game Players Guide Musical Fish Across The Screen Into Designated Note Slots That Correspond With Piano Sheet Music.
                 Each Successful Placement Emits The Sound Of A Musical Note</p>
-        </div>
-        <div class="button-container">
             <a href="#" class="button play-now">Play Now</a>
         </div>
+
 
         <h2>About Us</h2>
         <div class="centered-tile-background-1">
@@ -233,23 +186,3 @@
     <?php include("footer.html") ?>
 </body>
 </html>
-
-<?php
-    if (isset($_POST["submit"])) {
-        // Sanitize Input
-        $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
-        $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_SPECIAL_CHARS);
-        // Validate Input
-        $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
-        
-        if (empty($email)) {
-            echo "Email is Empty";
-        }
-        elseif (empty($password)) {
-            echo "Password is Empty";
-        }
-        else {
-            echo "Success!";
-        }
-    }
-?>
