@@ -7,19 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main>
     <?php include("header.html"); ?>
+    <main>
     <!-- Main content goes here -->
         <!-- Hero Section  -->
-        <div class="head">
-            <div class="hero-image">
-                <div class="hero-text">
-                    <h1>Teaching<br>Neurodiverse Kids<br>To Play Piano</h1>
-                </div>
-                <div class="hero-buttons">
-                    <a href="https://link.msaascrm.com/widget/bookings/hurley-piano-call-booking" class="button book-consultation">Book Free Consultation</a>
-                    <a class=" email-button button" href = "mailto: info@hurleypiano.com">Send Us Email</a>
-                </div>
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>Teaching<br>Neurodiverse Kids<br>To Play Piano</h1>
+            </div>
+            <div class="hero-buttons">
+                <a href="https://link.msaascrm.com/widget/bookings/hurley-piano-call-booking" class="button book-consultation">Book Free Consultation</a>
+                <a class=" email-button button" href = "mailto: info@hurleypiano.com">Send Us Email</a>
             </div>
         </div>
 
@@ -120,9 +118,9 @@
             We have tons of video tutorials that can help the kids to learn music. Join our monthly subscription, and you will get access to many videos like this!">
         </div>
 -->
-<center>
+<!-- <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8AexYZPsq90?si=5NSvvmM9LehqY0nf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</center>
+</center> -->
         
         <h2>Our Interactive Games</h2>
         <div class="centered-tile-background">
@@ -143,7 +141,7 @@
 
 
         <h2>About Us</h2>
-        <div class="centered-tile-background-1">
+        <div class="centered-tile-background">
             <img src="img/live-lesson-home.png" 
             alt="live piano lesson with child ">
             <p>Hurley Piano is a leading piano methodology to the special needs community. Richard Hurley has developed a highly regarded Black Keys Exercises designed to introduce the world of the keyboard to the most challenging of special need students. Based in Austin Texas, a city that is a hub of special needs innovation, Hurley Piano has drawn upon the expertise of the city’s leading special needs researchers to test and challenge this methodology. Sign up for free introductory videos and blogs, follow the video based conversation around the challenges facing our special needs kiddos today.</p>
@@ -157,32 +155,30 @@
             <img src="img/special-needs-student.png" 
             alt="Specail needs students include ADHD, Asperger Syndrome, Autism, Down Syndrome, Dyscalculia, Dyselexia, Sensory Processing Disorder">
         </div>
-        <div class="centered-tile-full-width">
-            <form class="inquiry-form">
-                <label for="full-name">Full Name</label>
-                <input type="text" id="full-name" name="fullname" placeholder="Full Name">
-        
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email">
-        
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder="Phone">
-        
-                <p>Which music lessons your family is interested in?</p>
-                <div class="checkbox-group">
-                    <input type="checkbox" id="piano" name="lesson_type" value="Piano">
-                    <label for="piano">Piano Lessons</label>
-        
-                    <input type="checkbox" id="guitar" name="lesson_type" value="Guitar">
-                    <label for="guitar">Guitar Lessons</label>
-        
-                    <input type="checkbox" id="drums" name="lesson_type" value="Drums">
-                    <label for="drums">Drum Lessons</label>
-                </div>
-        
-                <button type="submit">SUBMIT</button>
-            </form>
-        </div>
+        <!-- <form class="inquiry-form">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="fullname" placeholder="Full Name">
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+    
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone">
+    
+            <p>Which music lessons your family is interested in?</p>
+            <div class="checkbox-group">
+                <input type="checkbox" id="piano" name="lesson_type" value="Piano">
+                <label for="piano">Piano Lessons</label>
+    
+                <input type="checkbox" id="guitar" name="lesson_type" value="Guitar">
+                <label for="guitar">Guitar Lessons</label>
+    
+                <input type="checkbox" id="drums" name="lesson_type" value="Drums">
+                <label for="drums">Drum Lessons</label>
+            </div>
+    
+            <button type="submit">SUBMIT</button>
+        </form> -->
     <?php include("footer.html") ?>
 </body>
 </html>

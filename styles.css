@@ -10,6 +10,12 @@ body {
     color: #666;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.3em; /* Adjust size as needed */
@@ -45,11 +51,6 @@ p {
 }
 
 /* Hero Section  */
-.head {
-    display: flex;
-    justify-content: center;    
-    margin-top: 2%;
-}
 .hero-image {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.0)), url("./img/hero-image.jpg");
     height: 70vh;
@@ -59,6 +60,7 @@ p {
     position: relative;
     width: 100%;
     max-width: 1000px;
+    margin-top: 2%;
 }
 .hero-text {
     text-align: left;
@@ -275,31 +277,7 @@ p {
     font-size: 1em;
     padding: 1.5em;
 }
-.centered-tile-background-1 {
-    background:rgba(81, 255, 0, 0.1);
-     width: 100%; /* Makes the image responsive */
-     max-width: 450px; /* Maximum width to prevent the image from becoming too large */
-     height: auto; /* Maintains aspect ratio */
-     display: block; /* Ensures the image is a block element */
-     margin: 0 auto; /* Centers the image */
-     margin-top: 1EM;
-     border-radius: 20px
-}
-.centered-tile-background-1 img{
-    width: 100%; /* Makes the image responsive */
-    max-width: 400px; /* Maximum width to prevent the image from becoming too large */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Ensures the image is a block element */
-    margin: 0 auto; /* Centers the image */
-    padding-top: 2em;
-}
-.centered-tile-background-1 p {
-    font-family: 'Montserrat', sans-serif;
-    color: #4f4d4d;
-    line-height: 1.6;
-    font-size: 1em;
-    padding: 1.5em;
-}
+
 .centered-form {
     width: 100%; /* Makes the image responsive */
     max-width: 600px; /* Maximum width to prevent the image from becoming too large */
@@ -307,13 +285,6 @@ p {
     display: block; /* Ensures the image is a block element */
     margin: 0 auto; /* Centers the image */
     margin-top: 1EM;
-}
-.centered-form img{
-    width: 100%; /* Makes the image responsive */
-    max-width: 600px; /* Maximum width to prevent the image from becoming too large */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Ensures the image is a block element */
-    margin: 0 auto; /* Centers the image */
 }
 .centered-tile-double {
     width: 100%; /* Makes the image responsive */
@@ -332,69 +303,6 @@ p {
     margin-top: 1.2EM;
 }
 
-.container-flexer {
-    background:rgba(81, 255, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    max-width: 600px; /* Adjust based on your requirement */
-    margin: 20px auto; /* Centering the container */
-    width: 100%; /* Makes the image responsive */
-    max-width: 400px; /* Maximum width to prevent the image from becoming too large */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Ensures the image is a block element */
-    margin: 0 auto; /* Centers the image */
-    padding-top: 1em;
-}
-.container-flexer p{
-    font-family: 'Montserrat', sans-serif;
-    color: #4f4d4d;
-    line-height: 1.6;
-    font-size: 1em;
-    padding: 1.5em;
-}
-
-.row {
-    display: flex; /* Enables flexbox */
-    justify-content: space-between; /* Distributes space evenly between the columns */
- /* Optional: Adds border around the row */
-}
-
-.column {
-    flex: 1; /* Each column takes equal space */
-    padding: 10px; /* Padding inside each column *//* Visual aid, can be removed or styled as needed */
-    margin: 5px; /* Optional: space between columns */
-}
-
-.centered-tile-full-width {
-    width: 100%; /* Ensures it takes the full width available */
-    max-width: 700px; /* Limits max width to 700px */
-    margin: 0 auto; /* Centers the container horizontally */
-    background-color: rgb(75, 45, 225); /* Sets a distinct background color */
-    padding-top: 7.5em; /* Adds space at the top inside the container */
-    padding-bottom: 9em; /* Adds space at the top inside the container */
-}
-
-.centered-tile-full-width img {
-    width: 100%; /* Responsive width */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Corrects block level for centering */
-    margin: 1.2em auto 0; /* Top margin only, centers horizontally */
-}
-
-.centered-tile-full-width form {
-    width: 100%; /* Responsive width */
-    max-width: 500px; /* More specific max-width for forms */
-    display: block; /* Ensures it's treated as a block level element */
-    margin: 3.2em auto 0; /* Adds significant space above the form */
-    padding-bottom: 20px; /* Adds padding at the bottom of the form */
-    background-color: #ffecdc; /* Light background for the form */
-}
-.centered-tile-full-width p {
-    width: 80%; /* Ensures the paragraph uses the full width of the form */
-    margin: 0 0 20px 0; /* Adds space below the paragraph */
-    text-align: center; /* Optionally center the text */
-    margin-left: -5em;
-}
 /* Inquiry Form for the blue background form template */
 .inquiry-form {
     background: white;
@@ -470,13 +378,53 @@ font-size: 4em;
     margin: 1.2em auto 0; /* Top margin only, centers horizontally */
 }
 
-.centered-tile-full-width-purple form {
-    width: 70%; /* Responsive width */
-    max-width: 700px; /* More specific max-width for forms */
-    display: block; /* Ensures it's treated as a block level element */
-    margin: 2.2em auto 0; /* Adds significant space above the form */
-    padding-bottom: 20px; /* Adds padding at the bottom of the form */
-    background-color: rgba(0, 0, 0, 0.01);
-    padding-bottom: 2em;
+.tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background: radial-gradient(rgba(250,128,114,0.5), rgba(124, 186, 232,0.3));
+    margin: 2%;
+    box-shadow: 5px 5px 10px rgb(124, 186, 232);
+}
 
+.signin-form {
+    padding: 60px 20px;
+    margin-bottom: 1%;
+}
+
+.signin-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signin-form input {
+    margin-top: 10px;
+    margin-bottom: 10%;
+    width: 250px;
+    border-radius: 5px;
+    padding: 12px 20px;
+    border: none;
+}
+
+.signin-form input[type="submit"] {
+    width:290px;
+    color: #666;
+}
+
+.signin-form input[type="submit"]:hover {
+    background-color: salmon;
+    color:white;
+}
+.centered-text {
+    text-align: center;
+}
+.nowrap-text {
+    text-wrap: nowrap;
+}
+p.error {
+    padding: 0;
+    color: #333;
+    font-size: .9em;
 }

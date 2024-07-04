@@ -17,9 +17,10 @@ document.getElementById('hamburger').addEventListener('click', function() {
     .then(res => res.json())
     .then(data => {
         data.forEach(link => {
-            listEl.insertAdjacentHTML('beforeend', `<a href=${link.url}>${link.name}</a>`)
+            listEl.insertAdjacentHTML('beforeend', `<a href=${link.url}>${link.name}</a>`);
         });
     })
+
 window.addEventListener('resize', function () {
     let width = document.documentElement.clientWidth;
     const links = document.getElementById('links');
@@ -28,6 +29,20 @@ window.addEventListener('resize', function () {
         links.style.display = 'flex';
     }
     else {
-        links.style.display = 'none'
+        links.style.display = 'none';
     }
 })
+
+function redirect(address) {
+    window.location.replace(address);
+}
+
+function sign_in_alert(type, message) {
+    const listEl = document.getElementById("error");
+    if (type == "caution") {
+        listEl.insertAdjacentHTML("beforeend", `⚠️ `);
+    }
+    else if (type == "warning") {
+        listEl.insertAdjacentHTML("beforeend", `😨 `);
+    }
+}
