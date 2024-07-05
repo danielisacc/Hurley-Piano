@@ -188,37 +188,28 @@ p {
     color: white; /* White text */
 }
 
-.testimonial-box {
-    background-color: #fff; /* Light background for the testimonial box */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
-    width: 90%; /* Makes the image responsive */
-    max-width: 500px; /* Maximum width to prevent the image from becoming too large */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Ensures the image is a block element */
-    margin: 0 auto; /* Centers the image */
-    padding: 1EM 1EM;
-    margin-top: 1EM;
-    border-radius: 20px
+/* Tile Generic class */
+.tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin: 2%;
+    background: var(--color);
+    box-shadow: 5px 5px 10px rgb(124, 186, 232);
+    max-width: 500px;
+    height: auto;
+    padding: 1EM;
 }
 
-.testimonial-box p {
+.tile p {
     font-family: 'Montserrat', sans-serif;
     color: #4f4d4d;
     line-height: 1.6;
     font-size: 1em;
     padding: 1em;
 }
-
-.star-rating img {
-    width: 100%; /* Makes the image responsive */
-    max-width: 200px; /* Maximum width to prevent the image from becoming too large */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Ensures the image is a block element */
-    margin: 0 auto; /* Centers the image */
-    
-}
-
-.testimonial-box h2 {
+.tile h2 {
     font-family: 'Playfair Display', serif;
     font-size: 1.6em; /* Appropriate size for author name */
     text-align: center;
@@ -227,7 +218,7 @@ p {
     margin:0;
 }
 
-.testimonial-box h3 {
+.tile h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: .7em; /* Smaller than H2 for occupation */
     color: black;
@@ -236,55 +227,17 @@ p {
     margin:0;
     padding-bottom: 1.2em;
 }
-.centered-tile {
-    width: 100%; /* Makes the image responsive */
-    max-width: 500px; /* Maximum width to prevent the image from becoming too large */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Ensures the image is a block element */
-    margin: 0 auto; /* Centers the image */
-    margin-top: 1EM;
-    border-radius: 20px
+.tile img {
+    margin: 2EM;
+    border-radius: 10px;
 }
-.centered-tile img{
-    width: 100%; /* Makes the image responsive */
-    max-width: 300px; /* Maximum width to prevent the image from becoming too large */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Ensures the image is a block element */
-    margin: 0 auto; /* Centers the image */
+.about-us {
+    margin-top: 80%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0;
 }
-.centered-tile-background {
-   background:rgba(0,0,255,0.1);
-    width: 100%; /* Makes the image responsive */
-    max-width: 450px; /* Maximum width to prevent the image from becoming too large */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Ensures the image is a block element */
-    margin: 0 auto; /* Centers the image */
-    margin-top: 1EM;
-    border-radius: 20px
-}
-.centered-tile-background img{
-    width: 100%; /* Makes the image responsive */
-    max-width: 400px; /* Maximum width to prevent the image from becoming too large */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Ensures the image is a block element */
-    margin: 0 auto; /* Centers the image */
-    padding-top: 2em;
-}
- .centered-tile-background p {
-    font-family: 'Montserrat', sans-serif;
-    color: #4f4d4d;
-    line-height: 1.6;
-    font-size: 1em;
-    padding: 1.5em;
-}
-
-.centered-form {
-    width: 100%; /* Makes the image responsive */
-    max-width: 600px; /* Maximum width to prevent the image from becoming too large */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Ensures the image is a block element */
-    margin: 0 auto; /* Centers the image */
-    margin-top: 1EM;
+.about-us p{
+    color: white;
 }
 .centered-tile-double {
     width: 100%; /* Makes the image responsive */
@@ -303,92 +256,57 @@ p {
     margin-top: 1.2EM;
 }
 
-/* Inquiry Form for the blue background form template */
-.inquiry-form {
-    background: white;
-    padding: 20px;
-    border: 2px solid #ccc;
-    width: 300px; /* Adjust width as needed */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.inquiry-form label, .inquiry-form p {
-    font-weight: bold;
-    margin-top: 15px;
-}
-
-.inquiry-form input[type="text"],
-.inquiry-form input[type="email"],
-.inquiry-form input[type="tel"] {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.checkbox-group {
+.testimonial {
+    width: 400px;
+    height: 460px;
+    justify-content: center;
+    margin: 0;
     margin-top: 10px;
+    filter: grayscale(1);
 }
-
-.checkbox-group input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-.checkbox-group label {
-    margin-right: 15px;
-    font-weight: normal;
-}
-
-.inquiry-form button {
-    background-color: #ff4d4d;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: block;
+.banner {
+    padding: 0;
     width: 100%;
+    height: 560px;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 10% 90%,
+        transparent
+    );
+    margin-bottom: -20px;
 }
-
-.inquiry-form button:hover {
-    background-color: #ff6666;
-}
-
-/* Purple form  */
-.centered-tile-full-width-purple {
-    width: 100%; /* Ensures it takes the full width available */
-    max-width: max-content; /* Limits max width to 700px */
-    margin: 0 auto; /* Centers the container horizontally */
-    
-    padding-top: 1.5em; /* Adds space at the top inside the container */
-    background-image: url(../img/free-book-form-back-home.png) ;
-    padding-bottom: 3em;;
-}
-.centered-tile-full-width-purple h2{
-font-size: 4em;
-}
-
-.centered-tile-full-width-purple img {
-    width: 100%; /* Responsive width */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Corrects block level for centering */
-    margin: 1.2em auto 0; /* Top margin only, centers horizontally */
-}
-
-.tile {
+.banner .list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-    background: radial-gradient(rgba(250,128,114,0.5), rgba(124, 186, 232,0.3));
-    margin: 2%;
-    box-shadow: 5px 5px 10px rgb(124, 186, 232);
+    position: relative;
+
+}
+.banner .list .tile {
+    position: absolute;
+    left: 100%;
+    animation: autoRun var(--time-running) linear infinite;
+    animation-delay: calc((var(--time-running)/var(--quantity)) * (var(--position) - 1));
+}
+@keyframes autoRun {
+    from {
+        left: 100%;
+    } to {
+        left: calc(var(--width) * -1);
+    }
+}
+
+.banner:hover .tile {
+    animation-play-state: paused!important;
+}
+
+.banner .tile:hover {
+    background-color: white;
+    filter: grayscale(0);
 }
 
 .signin-form {
+    background: radial-gradient(rgba(250,128,114,0.5), rgba(124, 186, 232,0.3));
     padding: 60px 20px;
     margin-bottom: 1%;
 }
