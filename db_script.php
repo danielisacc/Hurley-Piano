@@ -150,8 +150,6 @@ function forgot_pass_token_creation($connection) {
         try {
             mysqli_stmt_bind_param($stmt, "sss", $token_hash, $expiry, $email);
             mysqli_stmt_execute($stmt);
-            
-            if (mysqli_stmt_num_rows($stmt) > 0) {
 
                     ////////////////////////////
                     // ENTER THE WEBSITE URL BELOW
@@ -160,9 +158,9 @@ function forgot_pass_token_creation($connection) {
 
                     $message = "Click <a href='$link'>Here</a> to reset your password.";
                     $subject = "Hurley Piano: Password Reset";
-                    $response = sendMail($email, $subject, $message);
+                    $response = sendMail($email, $subject, $message, 0);
                     echo"$response";
-            }
+            
         }
         catch (mysqli_sql_exception) {
 

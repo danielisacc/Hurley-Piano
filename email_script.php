@@ -17,14 +17,17 @@
      * @param [string] $email,      [Where the email goes]
      * @param [string] $subject,    [The email's subject]
      * @param [string] $message,    [The message of the email]
+     * @param [boolean] $debug.     [Set debug as true]
      * @return [string]             [Error message, or success]
      */
-    function sendMail($email, $subject, $message) {
+    function sendMail($email, $subject, $message, $debug) {
         // Creating a new PHPMailer object
         $mail = new PHPMailer(true);
 
         // Using th SMTP protocol to send the email
         $mail->isSMTP();
+
+        $mail->SMTPDebug = $debug;
 
         /*
         Setting the SMTPAuth property to true, so we can use our Gmail login
@@ -68,12 +71,13 @@
 
         $mail->AltBody = $message;
 
+
         try {
             $mail->send();
-            return "success";
+            echo"success";
         }
         catch (Exception $e) {
-            return "Message could not be sent. Mailer error: {$mail->ErrorInfo}";
+            echo"Message could not be sent. Mailer error: {$mail->ErrorInfo}";
         }
     }
 ?>

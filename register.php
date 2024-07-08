@@ -63,13 +63,13 @@
         <p class="centered-text nowrap-text">Already have an account?<br><a href="sign-in.php">Sign In</a></p>
     </main>
     <?php include("footer.html"); ?>
-    <script src="test.js"></script> 
+    <script src="register_script.js"></script> 
 </body>
 </html>
 
 <?php
 include_once 'database.php';
-include_once 'test.php';
+include_once 'db_script.php';
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     add_user($conn);

@@ -30,7 +30,7 @@
 <?php
 
 include_once 'database.php';
-include_once 'test.php';
+include_once 'db_script.php';
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     user_signin_validation($conn);
 }
