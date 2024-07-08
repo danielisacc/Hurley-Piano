@@ -32,17 +32,3 @@ window.addEventListener('resize', function () {
         links.style.display = 'none';
     }
 })
-
-function redirect(address) {
-    window.location.replace(address);
-}
-
-function sign_in_alert(type, message) {
-    const listEl = document.getElementById("error");
-    if (type == "caution") {
-        listEl.insertAdjacentHTML("beforeend", `⚠️ `);
-    }
-    else if (type == "warning") {
-        listEl.insertAdjacentHTML("beforeend", `😨 `);
-    }
-}

@@ -264,9 +264,17 @@ p {
     margin-top: 10px;
     filter: grayscale(1);
 }
+
+.testimonial img {
+    margin: -30px 0;
+}
+
+.testimonial h3 {
+    color: #9999cc;
+}
 .banner {
     padding: 0;
-    width: 100%;
+    width: 130%;
     height: 560px;
     overflow: hidden;
     mask-image: linear-gradient(
@@ -335,6 +343,23 @@ p {
     background-color: salmon;
     color:white;
 }
+
+.form-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1%;
+    width: 90%;
+}
+.form-inner label {
+    height: fit-content;
+    width:max-content;
+    margin-right: 10px;
+}
+.form-inner input {
+    margin:0;
+}
+
 .centered-text {
     text-align: center;
 }
@@ -345,4 +370,25 @@ p.error {
     padding: 0;
     color: #333;
     font-size: .9em;
+}
+
+.pass-req {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 150px;
+    height: 200px;
+    background: white;
+    padding: 30px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(124, 186, 232);
+    margin: 15px;
+    margin-right: -20%;
+}
+.pass-req p {
+    width: 100%;
+    padding: 0;
+    font-size: 1em;
+    text-align: center;
+
 }
