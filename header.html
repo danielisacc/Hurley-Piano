@@ -1,0 +1,120 @@
+<!-- Navigation Section -->
+<header>
+    <style>
+        /* The header and Dropdown display */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-evenly;
+            width: 450px; 
+            padding-top: 30px;
+            height: 30px;
+        }
+        .links a {
+            text-decoration: none;
+            color: #666;
+            font-weight: bold;
+        }
+
+        .links a:hover {
+            color: #aaa;
+            border-bottom: #aaa solid;
+        }
+
+        .logo img {
+            width: 60%;
+        }
+        .hamburger img {
+            display: none;
+            width: 2.5em;
+            border: none;
+        }
+        
+        @media (max-width: 800px) {
+            .hamburger img {
+                display: flex;
+                /* margin-right: -7px; */     
+            }
+            .hamburger img:hover {
+                background-color: #aaa;
+                border-radius: 10px;
+            }
+            .menu {
+                display: flex;
+                flex-direction: column;
+                align-items:flex-end;
+                position: fixed;
+                width: 200px;
+                height: 50%;
+                align-items: flex-end;
+                right: 20px;
+                top: 33px;
+
+            }
+            .links {
+                display: none;
+                justify-content: space-evenly;
+                flex-direction: column;
+                align-items:flex-end;
+                width: 60%;
+                height: 100%;
+                max-height: 300px;
+                min-height: 200px;
+                border-top: #666 solid;
+                background-color: rgba(240,240,240,95%);
+                padding: 15px 30px;
+                margin-right: -15px;
+                border-bottom-left-radius: 10px;
+            }
+        }
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .menu {
+                flex-direction: column-reverse;
+                align-items: center;
+                position: relative;
+                width: 100%;
+                right: 0;
+                top: 0;
+            }
+
+            .links {
+                align-items: center;
+                width: 90%;
+                margin-right: 0;
+                height: 300px;
+            }
+
+            .logo {
+                display: flex;
+                justify-content: center;
+
+            }
+            .logo img {
+                width: 90%;
+            }
+        }
+    </style>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.php">
+                <img src="./img/logo.png" alt="Hurley Piano logo">
+            </a>
+        </div>
+            <div class="menu">
+                <div class="hamburger" id="hamburger">
+                        <img src="./img/hamburger.png" alt="open/collapse menu">
+                </div>
+                <div class="links" id="links"></div>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</header>

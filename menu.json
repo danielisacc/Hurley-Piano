@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Home",
+    "url": "index.php"
+  },
+  {
+    "name": "Lessons",
+    "url": "lessons.php"
+  },
+  {
+    "name": "About",
+    "url": "about.php"
+  },
+  {
+    "name": "Blog",
+    "url": "blog.php"
+  },
+  {
+    "name": "Contact",
+    "url": "contact.php"
+  },
+  {
+    "name": "Sign In",
+    "url": "sign-in.php"
+  }
+]
