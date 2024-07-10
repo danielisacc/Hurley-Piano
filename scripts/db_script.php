@@ -1,7 +1,13 @@
 <?php
 require "email_script.php";
 
+// Filepath Variables
+$home = "index.php";
+
 function user_signin_validation($connection) {
+    // Using Filepath Variables
+    global $home;
+
     // Create Sanitized Variables
     $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
     $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_SPECIAL_CHARS);
@@ -37,7 +43,7 @@ function user_signin_validation($connection) {
                 $hash = $row["password"];
                 if (password_verify($password, $hash)) {
                     ob_clean();
-                    echo"<script>window.location.replace('index.php')</script>";
+                    echo"<script>window.location.replace('$home')</script>";
                 }
                 else {
                     echo"<script>
@@ -56,6 +62,7 @@ function user_signin_validation($connection) {
 }
 
 function add_user($connection) {
+    global $home;
     // Create Variables
     $first_name = filter_input(INPUT_POST, "first-name", FILTER_SANITIZE_SPECIAL_CHARS);
     $last_name = filter_input(INPUT_POST, "last-name", FILTER_SANITIZE_SPECIAL_CHARS);
@@ -120,7 +127,7 @@ function add_user($connection) {
                 mysqli_stmt_bind_param($stmt, "ssssss", $first_name, $last_name, $email, $hash, $country, $birth);
                 mysqli_stmt_execute($stmt);
                 ob_clean();
-                echo"<script>window.location.replace('index.php')</script>";
+                echo"<script>window.location.replace('$home')</script>";
                 }
                 catch(mysqli_sql_exception) {
                     echo"<script>
@@ -159,7 +166,6 @@ function forgot_pass_token_creation($connection) {
                     $message = "Click <a href='$link'>Here</a> to reset your password.";
                     $subject = "Hurley Piano: Password Reset";
                     $response = sendMail($email, $subject, $message, 0);
-                    echo"$response";
             
         }
         catch (mysqli_sql_exception) {

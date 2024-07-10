@@ -1,13 +1,30 @@
+/* Variable Declarations */
+:root {
+    /* Images */
+    --background_img: url('../img/homepage-background.png');
+    --hero_img: url("../img/hero-image.jpg");
+
+    /* Fonts */
+    --header_font: 'Playfair Display', serif;
+    --body_font: 'Montserrat', sans-serif;
+
+    /* Colors  */
+    --body_color: #666;
+    --p_color: #333;
+    --button1_color: salmon;
+    --button2_color: #ddd;
+}
+
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--body_font);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url('./img/homepage-background.png');
+    background-image: var(--background_img);
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
-    color: #666;
+    color: var(--body_color);
 }
 
 main {
@@ -17,24 +34,24 @@ main {
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--header_font);
     font-size: 2.3em; /* Adjust size as needed */
     margin-top:0px; /* Space above the heading */
 }
 h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--header_font);
     font-size: 2.8em; /* Smaller than H1 by 15% */
     text-align: center;
     margin-top: 90px;
 }
 h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--header_font);
     font-size: 1.5em; /* Smaller than H1 by 15% */
     text-align: center;
     margin-top: 90px;
 }
 h5 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--header_font);
     font-size: 1.3em; /* Smaller than H1 by 15% */
     margin-top: 90px;
     background-color: yellow;
@@ -43,8 +60,8 @@ h5 {
     margin: auto;
 }
 p {
-    font-family: 'Montserrat', sans-serif;
-    color: #333;
+    font-family: var(--body_font);
+    color: var(--p_color);
     margin-top: 10px;
     padding: 0 7em; /* Adds 20em padding on both sides */
     font-size: 1.2em;
@@ -52,7 +69,7 @@ p {
 
 /* Hero Section  */
 .hero-image {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.0)), url("./img/hero-image.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.0)), var(--hero_img);
     height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,12 +103,12 @@ p {
     display: flex;
     padding: 8px 16px; /* Reduced padding */
     margin: 5px; /* Keep margin to prevent elements from touching */
-    color: #000; /* Text color */
+    color: black; /* Text color */
     text-align: center;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--body_font);
     font-size: 14px; /* Slightly smaller font size */
     border-radius: 5px; /* Rounded corners */
     border: none; /* No border */
@@ -100,19 +117,19 @@ p {
     width: 40%; /* Each button takes up nearly half of the container */
 }
 .book-consultation {
-    background-color: salmon; /* Green background */
+    background-color: var(--button1_color); /* Green background */
     color: white; /* White text */
 }
 .email-button {
-    background-color: #ddd; /* Light grey background */
+    background-color: var(--button2_color); /* Light grey background */
 }
 
 .book-consultation:hover {
-    background-color: #ddd; /* Darker background on hover */
-    color: #444; /* Darker text on hover */
+    background-color: var(--button2_color); /* Darker background on hover */
+    color: var(--p_color); /* Darker text on hover */
 }
 .email-button:hover {
-    background-color: salmon;
+    background-color: var(--button1_color);
     color: white;
 }
 
@@ -128,7 +145,7 @@ p {
         margin-top: 5%;
     }
     .hero-text {
-        color: #666;
+        color: var(--body_color);
         position: relative;
         text-align: center;
         transform: none;
@@ -162,11 +179,11 @@ p {
 }
 
 .stat h2 {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto Bold', sans-serif, 'Veranda';
     margin-bottom: -5px;
     padding: 0;
     color:#0077cc;
-    text-shadow : 1px 1px 5px #666;
+    text-shadow : 1px 1px 5px var(--body_color);
 }
 .stat p {
     width: auto;
@@ -203,14 +220,14 @@ p {
 }
 
 .tile p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--body_font);
     color: #4f4d4d;
     line-height: 1.6;
     font-size: 1em;
     padding: 1em;
 }
 .tile h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--header_font);
     font-size: 1.6em; /* Appropriate size for author name */
     text-align: center;
     line-height: 0px;
@@ -219,7 +236,7 @@ p {
 }
 
 .tile h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--body_font);
     font-size: .7em; /* Smaller than H2 for occupation */
     color: black;
     text-align: center;
@@ -340,7 +357,7 @@ p {
 }
 
 .signin-form input[type="submit"]:hover {
-    background-color: salmon;
+    background-color: var(--button1_color);
     color:white;
 }
 
@@ -368,7 +385,7 @@ p {
 }
 p.error {
     padding: 0;
-    color: #333;
+    color: var(--p_color);
     font-size: .9em;
 }
 

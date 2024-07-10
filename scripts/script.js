@@ -13,7 +13,7 @@ document.getElementById('hamburger').addEventListener('click', function() {
 
     const listEl = document.getElementById('links')
 
-    fetch('./menu.json')
+    fetch('./json/menu.json')
     .then(res => res.json())
     .then(data => {
         data.forEach(link => {
@@ -32,3 +32,5 @@ window.addEventListener('resize', function () {
         links.style.display = 'none';
     }
 })
+
+

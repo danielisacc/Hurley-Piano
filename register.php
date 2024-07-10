@@ -1,13 +1,23 @@
+<?php
+// Filepath variables
+$header = "header.html";
+$footer = "footer.html";
+$styles = "./styles/styles.css";
+$scripts = "./scripts/register_script.js";
+$signin = "sign-in.php";
+
+$php_script = "./scripts/";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hurley Piano Sign-In</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Hurley Piano Register</title>
+    <link rel="stylesheet" href="<?= $styles ?>">
 </head>
 <body>
-    <?php include("header.html"); ?>
+    <?php include($header); ?>
     <main>
         <div class="tile signin-form signup">
             <h1>Parent Registration</h1>
@@ -55,21 +65,19 @@
                             <div id="countries"></div>
                         </select>
                     </div>
-                <a href="../html/members.html" style="text-decoration: none;">
                     <input type="submit" value="Sign Up">
-                </a>
             </form>
         </div>
-        <p class="centered-text nowrap-text">Already have an account?<br><a href="sign-in.php">Sign In</a></p>
+        <p class="centered-text nowrap-text">Already have an account?<br><a href=<? $signin ?>>Sign In</a></p>
     </main>
-    <?php include("footer.html"); ?>
-    <script src="register_script.js"></script> 
+    <?php include($footer); ?>
+    <script src="<?= $scripts ?>"></script> 
 </body>
 </html>
 
 <?php
-include_once 'database.php';
-include_once 'db_script.php';
+include $php_script . 'database.php';
+include $php_script . 'db_script.php';
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     add_user($conn);
