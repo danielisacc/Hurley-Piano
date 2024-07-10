@@ -53,10 +53,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
                 throw new Exception("Execution error: " . mysqli_stmt_error($stmt));
             }
 
-            echo "Record saved.";
-
             mysqli_stmt_close($stmt);
             mysqli_close($conn);
+
+            // Redirect back to the form with a success flag
+            header("Location: contact.php?success=1");
+            exit;
 
         } catch (Exception $e) {
             echo "Error: " . $e->getMessage();

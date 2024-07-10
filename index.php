@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hurley Piano Sign-In</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -146,18 +147,7 @@
             <a href="#" class="button play-now">Play Now</a>
         </div>
 
-        <h2>About Us</h2>
-        <div class="tile" style="--color: url('img/About-Img.webp')">
-            <div class="about-us">
-                <!-- <img src="img/About-Img.webp" alt="live piano lesson with child "> -->
-                <p>Hurley Piano is a leading piano methodology to the special needs community. Richard Hurley has developed a highly regarded Black Keys Exercises designed to introduce the world of the keyboard to the most challenging of special need students. Based in Austin Texas, a city that is a hub of special needs innovation, Hurley Piano has drawn upon the expertise of the city’s leading special needs researchers to test and challenge this methodology. Sign up for free introductory videos and blogs, follow the video based conversation around the challenges facing our special needs kiddos today.</p>
-            </div>
-       </div>
-
-        <div class="centered-tile-double">
-            <img src="../img/special-needs-student.png" 
-            alt="Specail needs students include ADHD, Asperger Syndrome, Autism, Down Syndrome, Dyscalculia, Dyselexia, Sensory Processing Disorder">
-        </div>
+        
         <!-- <form class="inquiry-form">
             <label for="full-name">Full Name</label>
             <input type="text" id="full-name" name="fullname" placeholder="Full Name">

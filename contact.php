@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hurley Piano Website - Contact</title>
-    <link rel="icon" type="image/png" href="../img/favicon.png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
@@ -12,18 +12,26 @@
     <main>
         <div class="centered-tile-full-width">
             <h2>Book Your First Free Piano Lesson</h2>
+            <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>
+                <p class="success-message">Form submitted successfully!</p>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        document.getElementById('bookyourfirstlesson').reset();
+                    });
+                </script>
+            <?php endif; ?>
             <form action="process-bookyourfirstfreepianolesson.php" method="post" id="bookyourfirstlesson" novalidate class="inquiry-form">
                 <label for="first-name">First Name</label>
-                <input type="text" id="first-name" name="first-name" placeholder="Hurley">
+                <input type="text" id="first-name" name="first-name" placeholder="Hurley" required>
                 
                 <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last-name" placeholder="Piano">
+                <input type="text" id="last-name" name="last-name" placeholder="Piano" required>
                 
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="you@email.com">
+                <input type="email" id="email" name="email" placeholder="you@email.com" required>
                 
                 <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder="Phone">
+                <input type="tel" id="phone" name="phone" placeholder="Phone" required>
                 
                 <button type="submit" name="submit">Submit</button>
             </form>
