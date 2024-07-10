@@ -147,31 +147,22 @@
             <a href="#" class="button play-now">Play Now</a>
         </div>
 
-        
-        <!-- <form class="inquiry-form">
-            <label for="full-name">Full Name</label>
-            <input type="text" id="full-name" name="fullname" placeholder="Full Name">
-    
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email">
-    
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" placeholder="Phone">
-    
-            <p>Which music lessons your family is interested in?</p>
-            <div class="checkbox-group">
-                <input type="checkbox" id="piano" name="lesson_type" value="Piano">
-                <label for="piano">Piano Lessons</label>
-    
-                <input type="checkbox" id="guitar" name="lesson_type" value="Guitar">
-                <label for="guitar">Guitar Lessons</label>
-    
-                <input type="checkbox" id="drums" name="lesson_type" value="Drums">
-                <label for="drums">Drum Lessons</label>
+        <h2>About Us</h2>
+        <div class="tile" style="--color: url('img/About-Img.webp')">
+            <div class="about-us">
+
+                <!-- <img src="img/About-Img.webp" alt="live piano lesson with child "> -->
+              
+                <p>Hurley Piano is a leading piano methodology to the special needs community. Richard Hurley has developed a highly regarded Black Keys Exercises designed to introduce the world of the keyboard to the most challenging of special need students. Based in Austin Texas, a city that is a hub of special needs innovation, Hurley Piano has drawn upon the expertise of the city’s leading special needs researchers to test and challenge this methodology. Sign up for free introductory videos and blogs, follow the video based conversation around the challenges facing our special needs kiddos today.</p>
             </div>
-    
-            <button type="submit">SUBMIT</button>
-        </form> -->
+       </div>
+
+        <div class="centered-tile-double">
+            <img src="../img/special-needs-student.png" 
+            alt="Specail needs students include ADHD, Asperger Syndrome, Autism, Down Syndrome, Dyscalculia, Dyselexia, Sensory Processing Disorder">
+        </div>
+
+
     <?php include("footer.html") ?>
 
 <!--Use the below code snippet to provide real time updates to the live chat plugin without the need of copying and paste each time to your website when changes are made via PBX-->

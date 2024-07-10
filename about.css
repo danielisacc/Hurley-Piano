@@ -8,31 +8,108 @@ body {
     background-attachment: scroll; /* Fixed background during scrolling */
     min-height: 100vh; /* Minimum height to 100% of the viewport height */
 }
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.8em; /* Adjust size as needed */
-    margin-top:0px; /* Space above the heading */
-    text-align: center;
-    margin-top: 90px;
+
+.testimonial1-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center; /* Center align content */
 }
-h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.2em; /* Smaller than H1 by 15% */
-    text-align: center;
-    margin-top: 90px;
+
+.testimonial1-box img {
+    width: 25%;
+    max-width: 70%; /* Ensure image does not exceed container width */
+    height: auto;
+    display: inline-block; /* Display as inline block to center with text-align */
+    margin-bottom: 15px;
 }
-h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5em; /* Smaller than H1 by 15% */
-    text-align: center;
-    margin-top: 90px;
+
+.testimonial1-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: left; /* Reset paragraph text alignment */
 }
-h5 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.3em; /* Smaller than H1 by 15% */
-    margin-top: 90px;
-    background-color: yellow;
-    width: fit-content;
-    text-align: center;
-    margin: auto;
+
+
+.testimonial-box {
+    background-color:rgba(255, 255, 255, 0.7); /* Light background for the testimonial box */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    width: 100%; /* Makes the image responsive */
+    max-width: 700px; /* Maximum width to prevent the image from becoming too large */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Ensures the image is a block element */
+    margin: 0 auto; /* Centers the image */
+    padding-top: 1em;
+    padding-bottom: 0;
+    margin-top: 1.6EM;
+    border-radius: 20px
+    
 }
+
+.testimonial-box p {
+    font-family: 'Montserrat', sans-serif;
+    color: #4f4d4d;
+    line-height: 1.6;
+    font-size: 1.2em;
+    padding: 1em;
+    padding-bottom: 0.2em;
+    margin-bottom:0;
+    max-width: 86%;
+    margin: 0 auto;
+}
+.testimonial-box img {
+    width: 100%; /* Makes the image responsive */
+    max-width: 85%; /* Maximum width to prevent the image from becoming too large */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Ensures the image is a block element */
+    margin: 0 auto; /* Centers the image */
+    border-radius: 5px;
+    margin-top:0;
+    padding-top:0;
+}
+
+
+.testimonial-box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em; /* Smaller than H2 for occupation */
+    color: black;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0.3em;
+    margin-bottom:0;
+    padding-bottom: 0;
+}
+
+.star-child {
+    max-width: max-content; /* Limits max width to 700px */
+    margin: 0 auto; /* Centers the container horizontally */
+    background-image: url(../img/about/yellow-background.png) ;
+    background-size: cover; /* Covers the entire area of the div, stretching as needed */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents rep*/
+    padding: 0;  /* Top and bottom padding */
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 100%; /* Or any other max-width as necessary */
+    margin: 0 auto; /* Centers the content */
+    
+}
+.star-child h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 3em; /* Smaller than H2 for occupation */
+    color: black;
+    text-align: center;
+    padding:0;
+    background-image: url(../img/about/star-background.png) ;
+    background-size:auto;
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents rep*/
+    max-width: 600px;
+    margin: 0 auto;
+
+
+}
+
