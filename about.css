@@ -1,12 +1,17 @@
-body {
+/* Reset default margin and padding */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url('img/homepage-background.png'); /* Sets the background image */
-    background-size: cover; /* Covers the full viewable area */
-    background-position: center; /* Center the background image */
-    background-attachment: scroll; /* Fixed background during scrolling */
-    min-height: 100vh; /* Minimum height to 100% of the viewport height */
+    background-image: url('img/homepage-background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    min-height: 100vh;
 }
 
 .testimonial1-box {
@@ -34,81 +39,69 @@ body {
 }
 
 
+
+/* Common styles for testimonial boxes */
 .testimonial-box {
-    background-color:rgba(255, 255, 255, 0.7); /* Light background for the testimonial box */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
-    width: 100%; /* Makes the image responsive */
-    max-width: 700px; /* Maximum width to prevent the image from becoming too large */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Ensures the image is a block element */
-    margin: 0 auto; /* Centers the image */
-    padding-top: 1em;
-    padding-bottom: 0;
-    margin-top: 1.6EM;
-    border-radius: 20px
-    
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 40px); /* 50% width with margin accounted for */
+    max-width: 700px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.testimonial-box img {
+    width: 100%;
+    max-width: 85%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 5px;
+}
+
+.testimonial-box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: black;
+    text-align: center;
+    margin-top: 0.3em;
 }
 
 .testimonial-box p {
-    font-family: 'Montserrat', sans-serif;
     color: #4f4d4d;
     line-height: 1.6;
     font-size: 1.2em;
     padding: 1em;
-    padding-bottom: 0.2em;
-    margin-bottom:0;
-    max-width: 86%;
-    margin: 0 auto;
-}
-.testimonial-box img {
-    width: 100%; /* Makes the image responsive */
-    max-width: 85%; /* Maximum width to prevent the image from becoming too large */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Ensures the image is a block element */
-    margin: 0 auto; /* Centers the image */
-    border-radius: 5px;
-    margin-top:0;
-    padding-top:0;
-}
-
-
-.testimonial-box h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3em; /* Smaller than H2 for occupation */
-    color: black;
-    text-align: center;
-    padding-top: 0;
-    margin-top: 0.3em;
-    margin-bottom:0;
-    padding-bottom: 0;
-}
-
-.star-child {
-    max-width: max-content; /* Limits max width to 700px */
-    margin: 0 auto; /* Centers the container horizontally */
-    background-image: url(../img/about/yellow-background.png) ;
-    background-size: cover; /* Covers the entire area of the div, stretching as needed */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents rep*/
-    padding: 0;  /* Top and bottom padding */
-    margin-top: 0;
     margin-bottom: 0;
-    max-width: 100%; /* Or any other max-width as necessary */
-    margin: 0 auto; /* Centers the content */
-    
 }
-.star-child h2{
+
+/* Specific styling for .star-child */
+.star-child {
+    background-image: url('img/about/yellow-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.star-child h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 3em; /* Smaller than H2 for occupation */
+    font-size: 3em;
     color: black;
     text-align: center;
-    padding:0;
-    background-image: url(../img/about/star-background.png) ;
-    background-size:auto;
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents rep*/
+    margin: 0;
+    background-image: url('img/about/star-background.png');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
     max-width: 600px;
     margin: 0 auto;
-
-
-
+}
