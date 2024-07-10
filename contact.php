@@ -1,39 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hurley Piano Website - Contact</title>
-    <link rel="icon" type="img/png" href="../img/favicon.png">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <?php include("header.html"); ?>
     <main>
-
-    <div class="centered-tile-full-width">
-    <h2>Book Your First Free Piano Lesson</h2>
-    <form action="process-bookyourfirstlesson.php" method="post" id="bookyourfirstlesson" novalidate class="inquiry-form">
-        <label for="first-name">First Name</label>
-        <input type="text" id="first-name" name="first-name" placeholder="Hurley">
-        
-        <label for="last-name">Last Name</label>
-        <input type="text" id="last-name" name="last-name" placeholder="Piano">
-        
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="you@email.com">
-        
-        <label for="phone">Phone</label>
-        <input type="tel" id="phone" name="phone" placeholder="Phone">
-        
-        <button type="submit">Submit</button>
-    </form>
-    </div>
-
-
-
-    
+        <div class="centered-tile-full-width">
+            <h2>Book Your First Free Piano Lesson</h2>
+            <form action="process-bookyourfirstfreepianolesson.php" method="post" id="bookyourfirstlesson" novalidate class="inquiry-form">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Hurley">
+                
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Piano">
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@email.com">
+                
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone">
+                
+                <button type="submit" name="submit">Submit</button>
+            </form>
+        </div>
     </main>
     
 
@@ -74,5 +68,9 @@ enable-direct-call="true"
 enable-ga="false" 
 ></call-us>--> 
 <script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
+
+<!-- UserWay widget script 
+<script src="https://cdn.userway.org/widget.js" data-account="g3JuQiTzQN"></script>
+-->
 </body>
 </html>
