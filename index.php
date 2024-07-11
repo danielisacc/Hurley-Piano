@@ -17,7 +17,7 @@
                 <h1>Teaching<br>Neurodiverse Kids<br>To Play Piano</h1>
             </div>
             <div class="hero-buttons">
-                <a href="https://link.msaascrm.com/widget/bookings/hurley-piano-call-booking" class="button book-consultation">Book Free Consultation</a>
+                <a href="https://cal.com/thienkim-le" class="button book-consultation">Book Free Consultation</a>
                 <a class=" email-button button" href = "mailto: info@hurleypiano.com">Send Us Email</a>
             </div>
         </div>
