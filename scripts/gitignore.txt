@@ -1,0 +1,9 @@
+./PHPMailer
+#unignore what we want to track
+!*.html
+!*.css
+!*.js
+!*.php
+
+!.gitignore
+!README.md

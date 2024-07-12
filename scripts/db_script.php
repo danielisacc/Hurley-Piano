@@ -141,7 +141,7 @@ function forgot_pass_token_creation($connection) {
 
     ////////////////////////////
     // ENTER THE WEBSITE URL BELOW
-    $link = "https://localhost/Test-Hurley/reset-password.php?token=" . $token;
+    $link = "https://localhost/Test-Website/reset-password.php?token=" . $token;
     /////////////////////////
 
     $message = "Click <a href='$link'>Here</a> to reset your password.";
