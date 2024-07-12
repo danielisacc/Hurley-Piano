@@ -44,8 +44,9 @@ body {
 .testimonial-box {
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: calc(50% - 40px); /* 50% width with margin accounted for */
+    width: 40%; /* 50% width with margin accounted for */
     max-width: 700px;
+    min-width: 400px;
     margin: 20px;
     padding: 20px;
     text-align: center;
@@ -106,3 +107,8 @@ body {
     margin: 0 auto;
 }
 
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

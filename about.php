@@ -6,39 +6,43 @@
     <title>Hurley Piano Website - About</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <?php include("header.html"); ?>
     <main>
+    <div class="testimonial1-box element">
+               <div class="star-child">
+                   <h2>"We Believe Your Child is a STAR"</h2>
+                   <p>
+                   Hurley Piano specializes in creating educational methodologies that simplify music learning for parents teaching their children, including neuro-typical kids and those with special needs like ADHD, Asperger Syndrome, Autism, Down Syndrome, Dyscalculia, Dyslexia, and Sensory Processing Disorder. Richard Hurley has developed the acclaimed Black Keys Exercises to introduce keyboard skills to even the most challenging special needs students. Based in Austin, Texas, a hub of special needs innovation, Hurley Piano collaborates with leading researchers to refine their approach and offers free introductory videos and blogs, fostering a video-based community discussion to address the challenges faced by special needs children, all guided by their vision of inclusive music education.
+               </p>
+               </div>
+           </div>
       
     <!-- Testimonial Box 8 -->
-    <div class="testimonial1-box">
-            <div class="star-child">
-                <h2>"We Believe Your Child is a STAR"</h2>
-                <p>
-                Hurley Piano specializes in creating educational methodologies that simplify music learning for parents teaching their children, including neuro-typical kids and those with special needs like ADHD, Asperger Syndrome, Autism, Down Syndrome, Dyscalculia, Dyslexia, and Sensory Processing Disorder. Richard Hurley has developed the acclaimed Black Keys Exercises to introduce keyboard skills to even the most challenging special needs students. Based in Austin, Texas, a hub of special needs innovation, Hurley Piano collaborates with leading researchers to refine their approach and offers free introductory videos and blogs, fostering a video-based community discussion to address the challenges faced by special needs children, all guided by their vision of inclusive music education.
-            </p>
-            </div>
-            
-        </div>>
- 
+    <div class="container">
+    
 
-    <!-- Testimonial Box 4 -->
-    <div class="testimonial-box">
-            <h2>My Mission</h2><br>
-            <img src="img/about/sheet-music.png" alt="fingers on sheet music">
-            <p>The Piano serves as a powerful educational tool for neurodiverse children...</p><br><br>
-        </div>
+        <!-- Testimonial Box 4 -->
+        <div class="testimonial-box element">
+               <h2>My Mission</h2><br>
+               <img src="img/about/sheet-music.png" alt="fingers on sheet music">
+               <p>The Piano serves as a powerful educational tool for neurodiverse children...</p><br><br>
+           </div>
 
-        <!-- Testimonial Box 2 -->
-    <div class="testimonial-box">
+        <div class="testimonial-box">
             <h2>My Vision</h2>
             <img src="img/music-lessons/piano.png" alt="baby play piano">
             <p>
             Hurley Piano empowers every child, including those with special needs, through accessible and enriching music education...
             </p>
         </div>
+    </div>
+    
+
+        <!-- Testimonial Box 2 -->
+    
 
        <!-- Testimonial Box 3 -->
         <div class="testimonial-box">
