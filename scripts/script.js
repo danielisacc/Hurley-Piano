@@ -13,7 +13,7 @@ document.getElementById('hamburger').addEventListener('click', function() {
 
     const listEl = document.getElementById('links')
 
-    fetch('./json/menu.json')
+    fetch('./scripts/json/menu.json')
     .then(res => res.json())
     .then(data => {
         data.forEach(link => {

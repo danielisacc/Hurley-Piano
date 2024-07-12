@@ -1,12 +1,16 @@
 <?php
 require "email_script.php";
 
+require "./scripts/database.php";
+
+$mysqli = $conn;
+
 // Filepath Variables
 $home = "index.php";
 
-function user_signin_validation($connection) {
+function user_signin_validation() {
     // Using Filepath Variables
-    global $home;
+    global $home, $mysqli;
 
     // Create Sanitized Variables
     $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
@@ -27,42 +31,34 @@ function user_signin_validation($connection) {
     // If all fields filled out begin query
     else {
         $sql = "SELECT password FROM parent_users WHERE email = ?;";
-        $stmt = mysqli_stmt_init($connection);
-        if (!mysqli_stmt_prepare($stmt, $sql)) {
-            echo"<script>
-                        document.getElementById('error').insertAdjacentHTML('beforeend', `😨 User Not Found!`);
-                    </script>";
-        }
-        else {
-            mysqli_stmt_bind_param($stmt, "s", $email);
-            mysqli_stmt_execute($stmt);
-            $result = mysqli_stmt_get_result($stmt);
+        $stmt = $mysqli->prepare($sql);
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $user = $result->fetch_assoc();
 
-            if(mysqli_num_rows($result) > 0) {
-                $row = mysqli_fetch_assoc($result);
-                $hash = $row["password"];
-                if (password_verify($password, $hash)) {
-                    ob_clean();
-                    echo"<script>window.location.replace('$home')</script>";
-                }
-                else {
-                    echo"<script>
-                        document.getElementById('error').insertAdjacentHTML('beforeend', `😨 Incorrect Email or Password!`);
-                    </script>";
-                }
+        if($mysqli->affected_rows) {
+            $hash = $user["password"];
+            if (password_verify($password, $hash)) {
+                ob_clean();
+                echo"<script>window.location.replace('$home')</script>";
             }
             else {
                 echo"<script>
                         document.getElementById('error').insertAdjacentHTML('beforeend', `😨 Incorrect Email or Password!`);
                     </script>";
             }
-
+        }
+        else {
+            echo"<script>
+                    document.getElementById('error').insertAdjacentHTML('beforeend', `😨 Incorrect Email or Password!`);
+                </script>";
         }    
     } 
 }
 
-function add_user($connection) {
-    global $home;
+function add_user() {
+    global $home, $mysqli;
     // Create Variables
     $first_name = filter_input(INPUT_POST, "first-name", FILTER_SANITIZE_SPECIAL_CHARS);
     $last_name = filter_input(INPUT_POST, "last-name", FILTER_SANITIZE_SPECIAL_CHARS);
@@ -116,30 +112,17 @@ function add_user($connection) {
                             VALUES (NULL, ?, ?, ?, ?, ?, ?, current_timestamp(), NULL, NULL);";
 
             $hash = password_hash($password, PASSWORD_DEFAULT);
-            $stmt = mysqli_stmt_init($connection);
-            if (!mysqli_stmt_prepare($stmt, $sql)) {
-                echo"<script>
-                            document.getElementById('error').insertAdjacentHTML('beforeend', '😨 Unable to Create User!');
-                        </script>";
-            }
-            else {
-                try {
-                mysqli_stmt_bind_param($stmt, "ssssss", $first_name, $last_name, $email, $hash, $country, $birth);
-                mysqli_stmt_execute($stmt);
-                ob_clean();
-                echo"<script>window.location.replace('$home')</script>";
-                }
-                catch(mysqli_sql_exception) {
-                    echo"<script>
-                            document.getElementById('error').insertAdjacentHTML('beforeend', '😨 Email Already In Use!');
-                        </script>";
-                }
-            }
+            $stmt = $mysqli->prepare($sql);
+            $stmt->bind_param("ssssss",  $first_name, $last_name, $email, $hash, $country, $birth);
+            $stmt->execute();
+            ob_clean();
+            echo"<script>window.location.replace('$home')</script>";
         }
     }
 }
 
 function forgot_pass_token_creation($connection) {
+    global $mysqli;
     // Email variable creation
     $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
     // Token creation
@@ -152,27 +135,18 @@ function forgot_pass_token_creation($connection) {
             SET reset_token_hash = ?, 
                 reset_token_expires_at = ?
             WHERE email = ?";
-    $stmt = mysqli_stmt_init($connection);
-    if (mysqli_stmt_prepare($stmt, $sql)) {
-        try {
-            mysqli_stmt_bind_param($stmt, "sss", $token_hash, $expiry, $email);
-            mysqli_stmt_execute($stmt);
+    $stmt = $mysqli->prepare($sql);
+    $stmt->bind_param("sss", $token_hash, $expiry, $email);
+    $stmt->execute();
 
-                    ////////////////////////////
-                    // ENTER THE WEBSITE URL BELOW
-                    $link = "https://localhost/Test-Website/reset-password.php?token=$token";
-                    ////////////////////////////
+    ////////////////////////////
+    // ENTER THE WEBSITE URL BELOW
+    $link = "https://localhost/Test-Hurley/reset-password.php?token=" . $token;
+    /////////////////////////
 
-                    $message = "Click <a href='$link'>Here</a> to reset your password.";
-                    $subject = "Hurley Piano: Password Reset";
-                    $response = sendMail($email, $subject, $message, 0);
-            
-        }
-        catch (mysqli_sql_exception) {
-
-        }
-    
-    }
+    $message = "Click <a href='$link'>Here</a> to reset your password.";
+    $subject = "Hurley Piano: Password Reset";
+    $response = sendMail($email, $subject, $message, 0);
     echo"<script>
              document.getElementById('error').insertAdjacentHTML('beforeend', `Password reset link sent
                                                                   <br>to email if email exists.

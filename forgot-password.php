@@ -31,11 +31,8 @@ $php_script = "./scripts/";
 </html>
 
 <?php
-
-    include $php_script . "database.php";
-    include $php_script . "db_script.php";
+    require $php_script . "db_script.php";
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
         forgot_pass_token_creation($conn);
     }
-    mysqli_close($conn);
 ?>

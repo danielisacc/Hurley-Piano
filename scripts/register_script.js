@@ -69,7 +69,7 @@ passwordConf.addEventListener("focusout", function() {
 })
 
 
-fetch('./json/countries.json')
+fetch('./scripts/json/countries.json')
 .then(res => res.json())
 .then(data => {
     data.forEach(list => {

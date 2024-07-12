@@ -76,12 +76,9 @@ $php_script = "./scripts/";
 </html>
 
 <?php
-include $php_script . 'database.php';
 include $php_script . 'db_script.php';
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     add_user($conn);
 }
-
-mysqli_close($conn);
 ?>

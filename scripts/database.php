@@ -3,7 +3,7 @@
     $db_server = "localhost";
     $db_user = "root";
     $db_pass = "";
-    $db_name = "Hurley-DB";
+    $db_name = "rigler_hurley";
     $conn = "";
 
     try {
@@ -15,6 +15,5 @@
     catch (mysqli_sql_exception) {
         echo"Could not Connect!";
     }
-
-    // add_user($conn, 'April', 'Winkler', 'april2@gmail.com', 'Love2802!', 'United States', '2001-04-28');
+    
 ?>
