@@ -2,75 +2,88 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-image: url('img/homepage-background.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-    min-height: 100vh;
+    background-image: url('img/homepage-background.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: scroll; 
+    min-height: 100vh; 
 }
-
-h1, h2, h3, h5 {
-    font-family: 'Playfair Display', serif;
-}
-
 h1 {
-    font-size: 2.8em;
-    margin-top: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8em; 
+    margin-top:0px; 
 }
-
 h2 {
-    font-size: 2.2em;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em; 
     text-align: center;
     margin-top: 90px;
 }
-
 h3 {
-    font-size: 1.5em;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em; 
     text-align: center;
     margin-top: 90px;
 }
-
 h5 {
-    font-size: 1.3em;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3em; 
     margin-top: 90px;
     background-color: yellow;
     width: fit-content;
     text-align: center;
     margin: auto;
 }
-
 p {
+    font-family: 'Montserrat', sans-serif;
     color: #333;
     margin-top: 10px;
-    padding: 0 1em;
+    padding: 0 7em; 
     font-size: 1.2em;
 }
 
 .hero-photo {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    width: 100%; 
+    max-width: 800px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
     padding-top: 2em;
 }
 
+/* Hero Content  */
 .centered-tile-full-width-hero {
-    max-width: 100%;
+    max-width: max-content;
     margin: 0 auto;
     background-image: url(img/music-lessons/hero-background.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 2em 0;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.centered-tile-full-width-hero h1 {
+    font-size: 3em;
+    text-align: center;
+}
+.centered-tile-full-width-hero h2 {
+    font-size: 2em;
+}
+
+.centered-tile-full-width-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 0;
 }
 
 .centered-tile-full-width-hero h1 {
-    font-size: 2.5em;
     text-align: center;
-    padding: 0 1em;
+    padding: 1em;
 }
 
+/* Responsive Testimonial Boxes */
 .testimonial-box {
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -167,4 +180,93 @@ p {
 
 .centered-tile-full-width p {
     width: 80%;
-   
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonial-box h4 {
+        font-size: 1.5em;
+    }
+    
+    .testimonial-box h5 {
+        font-size: 1.1em;
+    }
+
+    .testimonial-box p {
+        font-size: 1em;
+        padding: 0 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    h5 {
+        font-size: 1.1em;
+    }
+
+    .centered-tile-full-width h2 {
+        font-size: 1.8em;
+    }
+
+    .centered-tile-full-width-hero h1 {
+        font-size: 2em;
+    }
+    
+    p {
+        padding: 0 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-box h4 {
+        font-size: 1.3em;
+    }
+    
+    .testimonial-box h5 {
+        font-size: 1em;
+    }
+
+    .testimonial-box p {
+        font-size: 0.9em;
+        padding: 0 0.5em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+
+    .centered-tile-full-width h2 {
+        font-size: 1.5em;
+    }
+
+    .centered-tile-full-width-hero h1 {
+        font-size: 1.5em;
+    }
+    
+    p {
+        padding: 0 1em;
+    }
+}
