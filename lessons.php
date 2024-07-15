@@ -32,32 +32,15 @@
             <h4>Teaching <i>Piano</i> to <i>Neurodiverse</i> kids</h4>
             <p>The Piano serves as a powerful educational tool for neurodiverse children. Its structured yet creative nature aids in cognitive development, improving focus, memory, and problem-solving skills. For neurodiverse kids, it offers a multisensory experience, enhancing sensory processing and coordination. Moreover, music fosters emotional expression and regulation, crucial for those with neurodivergent conditions like autism or ADHD. Through music education, these children find avenues for self-expression, confidence- building, and social interaction, promoting holistic development and inclusivity.”</p>
             <h5>Benefits</h5>
-            <ul>
-                <li>Enhanced Cognitive Development</li>
-                <li>Emotional Regulation</li>
-                <li>Improved Fine Motor Skills</li>
-                <li>Boosted Self-Esteem and Confidence</li>
-                <li>Enhanced Social Skills</li>
-            </ul>
+                <p>Enhanced Cognitive Development<br>
+                   Emotional Regulation<br>
+                   Improved Fine Motor Skills<br>
+                   Boosted Self-Esteem and Confidence<br>
+                   Enhanced Social Skills
+                </p>           
   
         </div>
-<!--
-        <div class="testimonial-box">
-            <img src="img/music-lessons/guitar.png" alt="Teaching guitar to a child">
-            <h4>Teaching <i>Guitar</i> to <i>Neurodiverse</i> kids</h4>
-            <p>The guitar provides manifold benefits in educating neurodiverse kids. It enhances sensory processing, fosters cognitive skills like memory and problem-solving, facilitates emotional expression, promotes social interaction, boosts confidence, and aids in relaxation. The guitar serves as a versatile tool, empowering neurodiverse learners to thrive academically and emotionally.
-            </p>
-            <h5>Benefits</h5>
-            <ul>
-                <li>Sensory Stimulation</li>
-                <li>Cognitive Development</li>
-                <li>Emotional Expression</li>
-                <li>Social Connection</li>
-                <li>Confidence Building</li>
-                <li>Relaxation and Stress Reduction</li>
-            </ul>
-        </div>
--->
+
         <div class="testimonial-box">
             <img src="img/music-lessons/drums.png" alt="child playing drums happily">
             <h4>Teaching <i>Drums</i> to <i>Neurodiverse</i> kids</h4>
@@ -65,14 +48,15 @@
 
             </p>
             <h5>Benefits</h5>
-            <ul>
-                <li>Sensory Stimulation</li>
-                <li>Rhythmic Cognition</li>
-                <li>Emotional Expression</li>
-                <li>Social Interaction</li>
-                <li>Confidence Building</li>
-                <li>Therapeutic Outlet</li>
-            </ul>
+            
+                <p>Sensory Stimulation<br>
+                   Rhythmic Cognition<br>
+                   Emotional Expression<br>
+                   Social Interaction<br>
+                   Confidence Building<br>
+                   Therapeutic Outlet
+                </p>
+         
         </div>
     </div>
         
@@ -100,9 +84,6 @@
                  
                     <label for="email">Email</label><br>
                     <input type="text" id="email" name="email" placeholder="you@email.com"><br>
-
-                    <label for="message">Message</label><br>
-                    <input type="text" id="message" name="message" placeholder="message"><br>
                                                  
                     <button type="submit">SUBMIT</button>
                 </form>
