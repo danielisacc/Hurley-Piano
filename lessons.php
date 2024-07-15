@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hurley Piano Website - Lessons</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
     <link rel="stylesheet" href="lessons.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <?php include("header.html"); ?>
@@ -17,18 +17,16 @@
             <img src="img/music-lessons/hero-img.png" alt="Teaching musical instruments to Neurodiverse Kids" class="hero-photo">
         
             <h1>Teaching Musical<br> Intruments to <br> <i>Neurodiverse</i> Kids</h1>
-
-            <h2><u>Drums</u>&emsp;<u>Guitar</u>&emsp;<u>Piano</u></h2>
-
+<!--
             <div class="button-container">
                 <a href="#" class="button book-consultation"><u>Book Free Consultation</u></a>
                 <a href="#" class="button send-email"><u>Send Us Email</u></a>
                 <a class="button" href = "mailto: info@hurleypiano.com">Send Us Email</a>
             </div>
+-->
         </div>
 
-  
-        </div>
+    <div class="container">
         <div class="testimonial-box">
             <img src="img/music-lessons/piano.png" alt="Teaching piano to a child">
             <h4>Teaching <i>Piano</i> to <i>Neurodiverse</i> kids</h4>
@@ -43,6 +41,7 @@
             </ul>
   
         </div>
+<!--
         <div class="testimonial-box">
             <img src="img/music-lessons/guitar.png" alt="Teaching guitar to a child">
             <h4>Teaching <i>Guitar</i> to <i>Neurodiverse</i> kids</h4>
@@ -58,7 +57,7 @@
                 <li>Relaxation and Stress Reduction</li>
             </ul>
         </div>
-
+-->
         <div class="testimonial-box">
             <img src="img/music-lessons/drums.png" alt="child playing drums happily">
             <h4>Teaching <i>Drums</i> to <i>Neurodiverse</i> kids</h4>
@@ -75,7 +74,9 @@
                 <li>Therapeutic Outlet</li>
             </ul>
         </div>
-
+    </div>
+        
+        <div class="container">
         <div class="centered-tile-full-width-purple">
                 <h2>Get Your <br> <u>FREE</u> Book</h2>
                 <p>Teach your toddler music even though you never learned music yourself. <br> <br>
@@ -92,10 +93,9 @@
                     <button type="submit">SUBMIT</button>
                 </form>
         </div>
+        </div>
 
        
-        
-        
     </main>
     <?php include("footer.html"); ?>
 

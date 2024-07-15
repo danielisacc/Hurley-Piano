@@ -50,65 +50,8 @@ p {
 }
 
 
-.navbar {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    border: .1px solid white /* Adds a solid black border */
-}
 
-.logo, .hamburger img {
-    height: 4em; /* This sets both the logo and the hamburger icon to the same height */
-}
-.logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 6em;;
-}
 
-.hamburger {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0; /* Removes padding to ensure alignment */
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: 60px; /* Adjust this based on your actual navbar height */
-    width: 100%;
-    text-align: center;
-}
-
-.nav-link {
-    display: block;
-    color: blue;
-    text-decoration: none;
-    padding: 10px;
-}
-
-.nav-link:hover {
-    background-color: #f0f0f0;
-}
-
-.homepage-content {
-    text-align: center; /* Centers all text and images */
-    max-width: 800px; /* Adjust based on design preference */
-    margin: 0 auto; /* Center the content block */
-    padding: 20px; /* Adds padding around the content */
-}
-.homepage-content p {
-    font-family: 'Montserrat', sans-serif;
-    color: #333;
-    margin-top: 10px;
-    padding: 0 7em; /* Adds 20em padding on both sides */
-    font-size: 2em;
-}
 
 .hero-photo {
     width: 100%; /* Makes the image responsive */
@@ -309,6 +252,8 @@ font-size: 2em;
 .testimonial-box ul li{
     line-height: 1.5em;
     color: #4f4d4d;
+    margin: 5px 0;
+    font-size: 16px;
 }
 
 .music-school-stats img{
@@ -553,43 +498,5 @@ font-size: 2em;
     background-color: #ff6666;
 }
 
-/* Purple form  */
-.centered-tile-full-width-purple {
-    padding-top:4em;
-    margin: 0 auto; /* Centers the container horizontally */
-    background-image: url(../img/free-book-form-back-home.png) ;
-    background-size: cover; /* Covers the entire area of the div, stretching as needed */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents rep
-    padding: 2em 0;  /* Top and bottom padding */
-    max-width: 100%; /* Or any other max-width as necessary */
-    margin: 0 auto; /* Centers the content */
-    padding-bottom:7em;
-}
 
-
-.centered-tile-full-width-purple h2{
-font-size: 4em;
-}
-.centered-tile-full-width-purple p{
-   text-align: center;
- }
-
-.centered-tile-full-width-purple img {
-    width: 100%; /* Responsive width */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Corrects block level for centering */
-    margin: 1.2em auto 0; /* Top margin only, centers horizontally */
-}
-
-.centered-tile-full-width-purple form {
-    width: 70%; /* Responsive width */
-    max-width: 700px; /* More specific max-width for forms */
-    display: block; /* Ensures it's treated as a block level element */
-    margin: 2.2em auto 0; /* Adds significant space above the form */
-    padding-bottom: 20px; /* Adds padding at the bottom of the form */
-    background-color: rgba(0, 0, 0, 0.01);
-    padding-bottom: 2em;
-
-}
 
