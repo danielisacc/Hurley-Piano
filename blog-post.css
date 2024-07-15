@@ -1,32 +1,50 @@
 
-
+/****************************************
+Author: Fred Butoma
+Hurley Piano New Concept Website
+File: about.css
+Purpose: About Page Styling
+*****************************************/
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-image: url('img/homepage-background.png'); /* Sets the background image */
+    background-image: url('../img/homepage-background.png'); /* Sets the background image */
     background-size: cover; /* Covers the full viewable area */
     background-position: center; /* Center the background image */
     background-attachment: scroll; /* Fixed background during scrolling */
     min-height: 100vh; /* Minimum height to 100% of the viewport height */
 }
 h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.8em; /* Adjust size as needed */
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.8em; /* Adjust size as needed */
+    font-weight: 100;
     margin-top:0px; /* Space above the heading */
+    text-align: center;
+    padding:2em;
 }
 h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.2em; /* Smaller than H1 by 15% */
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.8em; /* Adjust size as needed */
+    font-weight: 100;
+    margin-top:0px; /* Space above the heading */
     text-align: center;
-    margin-top: 90px;
+    padding:2em;
 }
 h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.5em; /* Smaller than H1 by 15% */
     text-align: center;
     margin-top: 90px;
+}
+h4{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.2em; /* Adjust size as needed */
+    font-weight: 70;
+    margin-top:0px; /* Space above the heading */
+    text-align: center;
+    padding:.7em;
 }
 h5 {
     font-family: 'Playfair Display', serif;
@@ -48,6 +66,21 @@ p {
 
 
 
+
+.homepage-content {
+    text-align: center; /* Centers all text and images */
+    max-width: 800px; /* Adjust based on design preference */
+    margin: 0 auto; /* Center the content block */
+    padding: 20px; /* Adds padding around the content */
+}
+.homepage-content p {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin-top: 10px;
+    padding: 0 7em; /* Adds 20em padding on both sides */
+    font-size: 2em;
+}
+
 .hero-photo {
     width: 100%; /* Makes the image responsive */
     max-width: 800px; /* Maximum width to prevent the image from becoming too large */
@@ -62,28 +95,71 @@ p {
 
     max-width: max-content; /* Limits max width to 700px */
     margin: 0 auto; /* Centers the container horizontally */
-    background-image: url(img/music-lessons/hero-background.png) ;
+    background-image: url(../img/about/hero-background.png) ;
     background-size: cover; /* Covers the entire area of the div, stretching as needed */
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents rep
     padding: 2em 0;  /* Top and bottom padding */
     max-width: 100%; /* Or any other max-width as necessary */
     margin: 0 auto; /* Centers the content */
+    padding-top: 1em;
 }
-.centered-tile-full-width-hero h1{
-    font-size: 3em;
+.centered-tile-full-width-hero h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 3em; /* Adjust size as needed */
+    font-weight: 100;
+    margin-top:0px; /* Space above the heading */
     text-align: center;
-    }
-.centered-tile-full-width-hero h2{
-font-size: 2em;
+    padding:1em 2em;
+    padding-bottom: 0em;
 }
+.centered-tile-full-width-hero h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 3em; /* Adjust size as needed */
+    font-weight: 70;
+    margin-top:0px; /* Space above the heading */
+    text-align: center;
+    padding:1em 2.5em;
+    padding-bottom: 0em;
+}
+.centered-tile-full-width-hero h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 3em; /* Adjust size as needed */
+    font-weight: 30;
+    margin-top:0px; /* Space above the heading */
+    text-align: center;
+    padding:1em 2em;
 
+}
+.centered-tile-full-width-hero h4{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.4em; /* Adjust size as needed */
+    font-weight: 40;
+    margin-top:0px; /* Space above the heading */
+    text-align: center;
+    padding:0 2em;
+    color:#4f4d4d;
+
+}
+.centered-tile-full-width-hero p{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: auto;
+    line-height: 1.5em;
+    padding-top: 1.1em;
+    padding-bottom: 9em;
+    
+}
 .centered-tile-full-width-hero img {
     width: 100%; /* Responsive width */
+    max-width: 600px;
     height: auto; /* Maintains aspect ratio */
     display: block; /* Corrects block level for centering */
     margin: 0 auto 0; /* Top margin only, centers horizontally */
+    margin-top: 0;
+    padding-top: 0;
 }
+
 
 .centered-tile-full-width-hero form {
     width: 70%; /* Responsive width */
@@ -93,6 +169,15 @@ font-size: 2em;
     padding-bottom: 20px; /* Adds padding at the bottom of the form */
     background-color: rgba(0, 0, 0, 0.01);
     padding-bottom: 2em;
+
+}
+
+.wide-image img{
+    width: 80%; /* Increase the width as needed */
+   height: auto; /* Maintains aspect ratio */
+   display: block; /* Ensures the image is a block element, which is necessary for margin: auto to work */
+   margin: 1.1em auto 0; /* Shorthand for margin-top: 1.1em, margin-right: auto, margin-bottom: 0, margin-left: auto */
+   padding-top: 0; /* Ensures no padding is adding unnecessary space at the top */
 
 }
 .homepage-content h1 {
@@ -154,6 +239,14 @@ font-size: 2em;
     background-color: salmon; /* Green background */
     color: white; /* White text */
 }
+.become-member {
+    background-color: salmon; /* Green background */
+    color: white; /* White text */
+    margin: 0 auto;
+    display: block;
+    padding: .8em;
+    font-family: 'Roboto', serif;
+}
 .play-now{
     background-color: salmon; /* Green background */
     color: white; /* White text */
@@ -180,13 +273,13 @@ font-size: 2em;
     background-color:rgba(255, 255, 255, 0.7); /* Light background for the testimonial box */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
     width: 100%; /* Makes the image responsive */
-    max-width: 600px; /* Maximum width to prevent the image from becoming too large */
+    max-width: 700px; /* Maximum width to prevent the image from becoming too large */
     height: auto; /* Maintains aspect ratio */
     display: block; /* Ensures the image is a block element */
     margin: 0 auto; /* Centers the image */
-    padding: 1EM 1EM;
+    padding-top: 1em;
+    padding-bottom: 0;
     margin-top: 1.6EM;
-    margin-bottom: 1.6EM;
     border-radius: 20px
     
 }
@@ -195,17 +288,22 @@ font-size: 2em;
     font-family: 'Montserrat', sans-serif;
     color: #4f4d4d;
     line-height: 1.6;
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 1em;
+    padding-bottom: 0.2em;
+    margin-bottom:0;
+    max-width: 86%;
+    margin: 0 auto;
 }
 .testimonial-box img {
     width: 100%; /* Makes the image responsive */
-    max-width: 90%; /* Maximum width to prevent the image from becoming too large */
+    max-width: 85%; /* Maximum width to prevent the image from becoming too large */
     height: auto; /* Maintains aspect ratio */
     display: block; /* Ensures the image is a block element */
     margin: 0 auto; /* Centers the image */
     border-radius: 5px;
-    
+    margin-top:0;
+    padding-top:0;
 }
 
 .star-rating img {
@@ -213,18 +311,18 @@ font-size: 2em;
     max-width: 200px; /* Maximum width to prevent the image from becoming too large */
     height: auto; /* Maintains aspect ratio */
     display: block; /* Ensures the image is a block element */
-    margin: 0 auto; /* Centers the image */
-    
+    margin: 0 auto; /* Centers the image */  
 }
-
 .testimonial-box h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.6em; /* Appropriate size for author name */
+    font-size: 3em; /* Smaller than H2 for occupation */
+    color: black;
     text-align: center;
-    line-height: 0px;
-
+    padding-top: 0;
+    margin-top: 0.3em;
+    margin-bottom:0;
+    padding-bottom: 0;
 }
-
 .testimonial-box h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: .7em; /* Smaller than H2 for occupation */
@@ -247,8 +345,34 @@ font-size: 2em;
 .testimonial-box ul li{
     line-height: 1.5em;
     color: #4f4d4d;
-    margin: 5px 0;
-    font-size: 16px;
+}
+
+.star-child {
+    max-width: max-content; /* Limits max width to 700px */
+    margin: 0 auto; /* Centers the container horizontally */
+    background-image: url(../img/about/yellow-background.png) ;
+    background-size: cover; /* Covers the entire area of the div, stretching as needed */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents rep*/
+    padding: 0;  /* Top and bottom padding */
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 100%; /* Or any other max-width as necessary */
+    margin: 0 auto; /* Centers the content */
+    
+}
+.star-child h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 3em; /* Smaller than H2 for occupation */
+    color: black;
+    text-align: center;
+    padding:0;
+    background-image: url(../img/about/star-background.png) ;
+    background-size:auto;
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents rep*/
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .music-school-stats img{
@@ -397,7 +521,7 @@ font-size: 2em;
     margin: 0 auto; /* Centers the container horizontally */
     background-color: rgb(75, 45, 225); /* Sets a distinct background color */
     padding-top: 7.5em; /* Adds space at the top inside the container */
-    padding-bottom:5em; /* Adds space at the top inside the container */
+    padding-bottom: 9em; /* Adds space at the top inside the container */
     max-width: max-content; /* Limits max width to 700px */
     margin: 0 auto; /* Centers the container horizontally */
     background-size: cover; /* Covers the entire area of the div, stretching as needed */
@@ -406,7 +530,6 @@ font-size: 2em;
     padding: 2em 0;  /* Top and bottom padding */
     max-width: 100%; /* Or any other max-width as necessary */
     margin: 0 auto; /* Centers the content */
-
 }
 
 .centered-tile-full-width img {
@@ -491,4 +614,84 @@ font-size: 2em;
 
 .inquiry-form button:hover {
     background-color: #ff6666;
+}
+
+/* Purple form  */
+.centered-tile-full-width-purple {
+    padding-top:5em;
+    margin: 0 auto; /* Centers the container horizontally */
+    background-image: url(../img/free-book-form-back-home.png) ;
+    background-size: cover; /* Covers the entire area of the div, stretching as needed */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents rep
+    padding: 2em 0;  /* Top and bottom padding */
+    max-width: 100%; /* Or any other max-width as necessary */
+    margin: 0 auto; /* Centers the content */
+}
+
+
+.centered-tile-full-width-purple h2{
+font-size: 4em;
+}
+.centered-tile-full-width-purple p{
+   text-align: center;
+ }
+
+.centered-tile-full-width-purple img {
+    width: 100%; /* Responsive width */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Corrects block level for centering */
+    margin: 1.2em auto 0; /* Top margin only, centers horizontally */
+}
+
+.centered-tile-full-width-purple form {
+    width: 70%; /* Responsive width */
+    max-width: 700px; /* More specific max-width for forms */
+    display: block; /* Ensures it's treated as a block level element */
+    margin: 2.2em auto 0; /* Adds significant space above the form */
+    padding-bottom: 20px; /* Adds padding at the bottom of the form */
+    background-color: rgba(0, 0, 0, 0.01);
+    padding-bottom: 2em;
+
+}
+
+/* Footer */
+
+footer.contact-footer {
+    margin-top: auto; /* Ensures the footer is at the bottom of the page */
+    background-color: #f1f1f1; /* Light grey background */
+    color: #333; /* Dark text for better readability */
+    width: 100%; /* Full width */
+    padding: 20px 0; /* Padding above and below the content */
+    text-align: center; /* Center-aligns the text */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Stacks the links vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+}
+
+.footer-link {
+    color: #0077cc; /* Gives links a distinct color */
+    text-decoration: none; /* Removes underline from links */
+    margin: 5px 0; /* Adds space between links */
+    display: flex; /* Aligns icons with text */
+    align-items: center; /* Centers items vertically */
+}
+
+.footer-link i {
+    margin-right: 8px; /* Space between the icon and the text */
+    color: red;
+}
+
+.footer-link:hover {
+    text-decoration: underline; /* Adds underline on hover for better interactivity */
+}
+.centered-tile-full-width-footer {
+    width: 100%; /* Ensures it takes the full width available */
+    max-width: 100%; /* Limits max width to 700px */
+    margin: 0 auto; /* Centers the container horizontally */
+
 }

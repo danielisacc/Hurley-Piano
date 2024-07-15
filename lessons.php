@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="lessons.css">
     <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <?php include("header.html"); ?>
