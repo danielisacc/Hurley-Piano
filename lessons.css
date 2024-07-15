@@ -391,6 +391,108 @@ font-size: 2em;
     margin: 5px; /* Optional: space between columns */
 }
 
+.centered-tile-full-width {
+    width: 100%; /* Ensures it takes the full width available */
+    max-width: 700px; /* Limits max width to 700px */
+    margin: 0 auto; /* Centers the container horizontally */
+    background-color: rgb(75, 45, 225); /* Sets a distinct background color */
+    padding-top: 7.5em; /* Adds space at the top inside the container */
+    padding-bottom:5em; /* Adds space at the top inside the container */
+    max-width: max-content; /* Limits max width to 700px */
+    margin: 0 auto; /* Centers the container horizontally */
+    background-size: cover; /* Covers the entire area of the div, stretching as needed */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents rep
+    padding: 2em 0;  /* Top and bottom padding */
+    max-width: 100%; /* Or any other max-width as necessary */
+    margin: 0 auto; /* Centers the content */
+
+}
+
+.centered-tile-full-width img {
+    width: 100%; /* Responsive width */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Corrects block level for centering */
+    margin: 1.2em auto 0; /* Top margin only, centers horizontally */
+}
+
+.centered-tile-full-width form {
+    width: 100%; /* Responsive width */
+    max-width: 500px; /* More specific max-width for forms */
+    display: block; /* Ensures it's treated as a block level element */
+    margin: 3.2em auto 0; /* Adds significant space above the form */
+    padding-bottom: 20px; /* Adds padding at the bottom of the form */
+    background-color: #ffecdc; /* Light background for the form */
+}
+.centered-tile-full-width p {
+    width: 80%; /* Ensures the paragraph uses the full width of the form */
+    margin: 0 0 20px 0; /* Adds space below the paragraph */
+    text-align: center; /* Optionally center the text */
+    margin-left: -5em;
+}
+.centered-tile-full-width h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em; /* Adjust size as needed */
+    margin-top: 20px; /* Space above the heading */
+    text-align: center;
+    color: white;
+
+}
+
+/* Inquiry Form for the blue background form template */
+.inquiry-form {
+    background: white;
+    padding: 20px;
+    border: 2px solid #ccc;
+    width: 300px; /* Adjust width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.inquiry-form label, .inquiry-form p {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.inquiry-form input[type="text"],
+.inquiry-form input[type="email"],
+.inquiry-form input[type="tel"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkbox-group {
+    margin-top: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.checkbox-group label {
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+.inquiry-form button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+.inquiry-form button:hover {
+    background-color: #ff6666;
+}
+
 
 
 
