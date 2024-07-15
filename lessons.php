@@ -77,7 +77,7 @@
     </div>
         
         <div class="container">
-        <div class="centered-tile-full-width-purple">
+        <div class="centered-tile-full-width">
                 <h2>Get Your <br> <u>FREE</u> Book</h2>
                 <p>Teach your toddler music even though you never learned music yourself. <br> <br>
                 Get your <b>FREE</b> starter book and teach your little one music most efficiently.</p>

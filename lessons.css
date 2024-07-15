@@ -391,22 +391,37 @@ font-size: 2em;
     margin: 5px; /* Optional: space between columns */
 }
 
+
+
+
+/* Pink to Baby Blue Gradient Form */
 .centered-tile-full-width {
-    width: 100%; /* Ensures it takes the full width available */
-    max-width: 700px; /* Limits max width to 700px */
+    padding-top: 5em;
     margin: 0 auto; /* Centers the container horizontally */
-    background-color: rgb(75, 45, 225); /* Sets a distinct background color */
-    padding-top: 7.5em; /* Adds space at the top inside the container */
-    padding-bottom:5em; /* Adds space at the top inside the container */
-    max-width: max-content; /* Limits max width to 700px */
-    margin: 0 auto; /* Centers the container horizontally */
+    background: linear-gradient(to bottom right, pink, #89CFF0); /* Pink to baby blue gradient background */
     background-size: cover; /* Covers the entire area of the div, stretching as needed */
     background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents rep
+    background-repeat: no-repeat; /* Prevents repetition */
     padding: 2em 0;  /* Top and bottom padding */
     max-width: 100%; /* Or any other max-width as necessary */
-    margin: 0 auto; /* Centers the content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+}
 
+.centered-tile-full-width h2 {
+    font-size: 4em;
+    text-align: center;
+    color: darkgrey; /* Changed to dark grey */
+}
+
+.centered-tile-full-width p {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 20px auto; /* Center the paragraph with space below */
+    color: white;
 }
 
 .centered-tile-full-width img {
@@ -417,78 +432,61 @@ font-size: 2em;
 }
 
 .centered-tile-full-width form {
-    width: 100%; /* Responsive width */
-    max-width: 500px; /* More specific max-width for forms */
-    display: block; /* Ensures it's treated as a block level element */
-    margin: 3.2em auto 0; /* Adds significant space above the form */
-    padding-bottom: 20px; /* Adds padding at the bottom of the form */
-    background-color: #ffecdc; /* Light background for the form */
+    width: 70%; /* Responsive width */
+    max-width: 700px; /* More specific max-width for forms */
+    display: flex;
+    flex-direction: column; /* Arrange elements in a column */
+    margin: 2.2em auto 0; /* Adds significant space above the form */
+    padding: 2em; /* Adds padding inside the form */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
+
+.centered-tile-full-width form label {
+    margin-top: 1em; /* Space above each label */
+    font-size: 1.2em; /* Slightly larger font size */
+    color: black;
+}
+
+.centered-tile-full-width form input {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em; /* Space above each input */
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.centered-tile-full-width form button {
+    margin-top: 1.5em; /* Space above the button */
+    padding: 0.8em 1.2em; /* Adjust padding to fit the word "Submit" */
+    font-size: 1em; /* Adjust font size */
+    color: white;
+    background-color: rgb(0, 123, 139);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text */
+}
+
+.centered-tile-full-width form button:hover {
+    background-color: rgb(0, 123, 139);
+}
+
 .centered-tile-full-width p {
     width: 80%; /* Ensures the paragraph uses the full width of the form */
-    margin: 0 0 20px 0; /* Adds space below the paragraph */
+    margin: 0 auto 20px auto; /* Adds space below the paragraph */
     text-align: center; /* Optionally center the text */
-    margin-left: -5em;
 }
+
 .centered-tile-full-width h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5em; /* Adjust size as needed */
     margin-top: 20px; /* Space above the heading */
     text-align: center;
-    color: white;
-
+    color: rgb(73, 71, 71); /* Changed to dark grey */
 }
 
-/* Inquiry Form for the blue background form template */
-.inquiry-form {
-    background: white;
-    padding: 20px;
-    border: 2px solid #ccc;
-    width: 300px; /* Adjust width as needed */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.inquiry-form label, .inquiry-form p {
-    font-weight: bold;
-    margin-top: 15px;
-}
-
-.inquiry-form input[type="text"],
-.inquiry-form input[type="email"],
-.inquiry-form input[type="tel"] {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.checkbox-group {
-    margin-top: 10px;
-}
-
-.checkbox-group input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-.checkbox-group label {
-    margin-right: 15px;
-    font-weight: normal;
-}
-
-.inquiry-form button {
-    background-color: #ff4d4d;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: block;
-    width: 100%;
-}
-
-.inquiry-form button:hover {
-    background-color: #ff6666;
-}
