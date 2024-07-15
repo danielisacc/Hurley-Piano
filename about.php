@@ -11,6 +11,7 @@
 <body>
     <?php include("header.html"); ?>
     <main>
+        <!-- Testimonial Box  -->
     <div class="testimonial1-box element">
                <div class="star-child">
                    <h2>"We Believe Your Child is a STAR"</h2>
@@ -20,17 +21,16 @@
                </div>
            </div>
       
-    <!-- Testimonial Box 8 -->
+    
     <div class="container">
     
-
-        <!-- Testimonial Box 4 -->
+        <!-- Testimonial Box 1 -->
         <div class="testimonial-box element">
                <h2>My Mission</h2><br>
                <img src="img/about/sheet-music.png" alt="fingers on sheet music">
                <p>The Piano serves as a powerful educational tool for neurodiverse children...</p><br><br>
            </div>
-
+        <!-- Testimonial Box 2 -->
         <div class="testimonial-box">
             <h2>My Vision</h2>
             <img src="img/music-lessons/piano.png" alt="baby play piano">
@@ -39,24 +39,24 @@
             </p>
         </div>
     </div>
-    
-
-        <!-- Testimonial Box 2 -->
-    
-
-       <!-- Testimonial Box 3 -->
+   
+    <div class="container">
+        <!-- Testimonial Box 3 -->
         <div class="testimonial-box">
             <h2>My Goal</h2>
             <img src="img/about/piano.png" alt="child and adult playing piano together">
             <p>Hurley Piano develops education methodologies for easy learning to help parents teach their kids music...</p>
         </div>
-    <!-- Testimonial Box 6 -->
-    <div class="testimonial-box">  
+        <!-- Testimonial Box 4 -->
+        <div class="testimonial-box">  
             <h2>My Ideas</h2>
             <img src="img/about/ideas.png" alt="holding up a lightbulb to the sky">
             <p>Innovation is synonymous with HurleyPiano...</p><br><br>
         </div>
+    </div>
 
+
+    <div class="container">
         <!-- Testimonial Box 5-->
         <div class="testimonial-box">
             <h2>Our Community</h2>
@@ -64,13 +64,14 @@
             <p>Hurley Piano fosters connections among those with Special Needs...</p><br><br>
         </div>
          
-         <!-- Testimonial Box 67-->
+         <!-- Testimonial Box 6-->
         <div class="testimonial-box">  
             <h2>Our Website</h2>
             <img src="img/about/our-website.png" alt="laptop on table">
             <p>Our site embraces tech, primed for gadgets’ evolution...</p><br><br>
         </div>
-    
+    </div>
+  
     </main>
 
     <?php include("footer.html"); ?>
