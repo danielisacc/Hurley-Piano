@@ -1,10 +1,4 @@
 
-<!--***************************************
-Author: Fred Butoma
-Hurley Piano New Concept Website
-File: about.html
- Purpose: About page 
-****************************************/-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,6 +9,7 @@ File: about.html
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="blog.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 
 </head>
@@ -35,42 +30,50 @@ File: about.html
         </div>
 
         <h2>Recent Blog Posts</h2>
+
+        <div class="container">
+            <a href="blog-posts/steinway-post.html"  class="testimonial-box">
+            <img src="img/blog/concert.png" alt="orchestra">
+            <h3>Special Needs Concert at Steinway</h2>
+                <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
+            </a>
+
+            <a href="#"  class="testimonial-box">
+                <img src="img/blog/concert.png" alt="orchestra">
+                <h3> Top 5 Reasons why Special Needs Music Lessons Are Helpful</h2>
+                    <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
+            </a>
+        </div>
+
+        <div class="container">
+            <a href="#"  class="testimonial-box">
+            <img src="img/blog/concert.png" alt="orchestra">
+            <h3> Visual Strategies to Help Special Children Learn the Piano</h2>
+                <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
+            </a>
+
+            <a href="#"  class="testimonial-box">
+                <img src="img/blog/concert.png" alt="orchestra">
+                <h3> Chime Candy</h2>
+                    <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
+
+            </a>
+        </div>
+
+        <div class="container">
+            <a href="#" class="testimonial-box">
+            <img src="img/blog/concert.png" alt="orchestra">
+            <h3>Lillypond: Independent Data Blockchain</h2>
+                <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
+            </a>
+
+            <a href="#" class="testimonial-box">
+                <img src="img/blog/concert.png" alt="orchestra">
+                <h3>This Year Autism and Music 2018</h2>
+                    <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
+            </a>  
+        </div>
         
-    <a href="blog-posts/steinway-post.html"  class="testimonial-box">
-        <img src="img/blog/concert.png" alt="orchestra">
-        <h3>Special Needs Concert at Steinway</h2>
-            <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
-    </a>
-
-    <a href="#"  class="testimonial-box">
-        <img src="img/blog/concert.png" alt="orchestra">
-        <h3> Top 5 Reasons why Special Needs Music Lessons Are Helpful</h2>
-            <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
-    </a>
-
-    <a href="#"  class="testimonial-box">
-        <img src="img/blog/concert.png" alt="orchestra">
-        <h3> Visual Strategies to Help Special Children Learn the Piano</h2>
-            <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
-    </a>
-
-    <a href="#"  class="testimonial-box">
-        <img src="img/blog/concert.png" alt="orchestra">
-        <h3> Chime Candy</h2>
-            <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
-
-    </a>
-    <a href="#" class="testimonial-box">
-        <img src="img/blog/concert.png" alt="orchestra">
-        <h3>Lillypond: Independent Data Blockchain</h2>
-            <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
-    </a>
-
-    <a href="#" class="testimonial-box">
-        <img src="img/blog/concert.png" alt="orchestra">
-        <h3>This Year Autism and Music 2018</h2>
-            <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
-    </a>
     <a href="#" class="testimonial-box">
         <img src="img/blog/concert.png" alt="orchestra">
         <h3>This Year Autism and Music 2018</h2>

@@ -496,11 +496,11 @@ font-size: 2em;
 
 
 
-/* Pink to Baby Blue Gradient Form */
+/* Baby Blue to Light Yellow Gradient Form */
 .centered-tile-full-width {
     padding-top: 5em;
     margin: 0 auto; /* Centers the container horizontally */
-    background: linear-gradient(to bottom right, pink, #89CFF0); /* Pink to baby blue gradient background */
+    background: linear-gradient(to bottom right, pink, #FFFFE0); /* Pink to light yellow gradient background */
     background-size: cover; /* Covers the entire area of the div, stretching as needed */
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents repetition */
