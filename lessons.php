@@ -78,18 +78,27 @@
         
         <div class="container">
         <div class="centered-tile-full-width">
-                <h2>Get Your <br> <u>FREE</u> Book</h2>
-                <p>Teach your toddler music even though you never learned music yourself. <br> <br>
+                <h2>Get Your <u>FREE</u> Book!</h2>
+                <p>Teach your toddler music even though you never learned music yourself. <br> 
                 Get your <b>FREE</b> starter book and teach your little one music most efficiently.</p>
-                <form class="inquiry-form">
-                    <label for="full-name">Full Name</label> <br>
-                    <input type="text" id="full-name" name="fullname" placeholder="Hurley Piano"><br>
-                    <br>
-            
+                <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>
+                <p class="success-message">Form submitted successfully!</p>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        document.getElementById('getyourfreebook').reset();
+                    });
+                </script>
+            <?php endif; ?>
+            <form action="process-getyourfreebook.php" method="post" id="getyourfreebook" novalidate class="inquiry-form">
+                    <label for="first-name">First Name</label> <br>
+                    <input type="text" id="first-name" name="first-name" placeholder="Hurley"><br>
+                    
+                    <label for="last-name">Last Name</label> <br>
+                    <input type="text" id="last-name" name="last-name" placeholder="Piano"><br>
+                 
                     <label for="email">Email</label><br>
                     <input type="text" id="email" name="email" placeholder="you@email.com"><br>
-                
-            
+                                                 
                     <button type="submit">SUBMIT</button>
                 </form>
         </div>

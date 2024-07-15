@@ -11,7 +11,7 @@
     <?php include("header.html"); ?>
     <main>
         <div class="centered-tile-full-width">
-            <h2>Book Your First Free Piano Lesson</h2>
+            <h2>Book Your First Free Piano Lesson!</h2>
             <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>
                 <p class="success-message">Form submitted successfully!</p>
                 <script>
@@ -42,7 +42,6 @@
         
     </main>
     
-
 <<?php include("footer.html") ?>
 
 <!--Use the below code snippet to provide real time updates to the live chat plugin without the need of copying and paste each time to your website when changes are made via PBX-->
