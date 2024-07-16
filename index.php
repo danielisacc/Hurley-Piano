@@ -1,8 +1,5 @@
 <?php
-// Filepath varables
-$styles = "./styles/styles.css";
-$imgs = "./img/";
-$scripts = "./scripts/"
+include "./scripts/config.php";
 ?>
 
 <!DOCTYPE html>
@@ -11,10 +8,10 @@ $scripts = "./scripts/"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hurley Piano Sign-In</title>
-    <link rel="stylesheet" href="<?= $styles ?>">
+    <link rel="stylesheet" href="<?= $styles ?>styles.css">
 </head>
 <body>
-    <?php include("header.html"); ?>
+    <?php include($html . "header.html"); ?>
     <main>
     <!-- Main content goes here -->
         <!-- Hero Section  -->
@@ -189,6 +186,6 @@ $scripts = "./scripts/"
     
             <button type="submit">SUBMIT</button>
         </form> -->
-    <?php include("footer.html") ?>
+    <?php include($html . "footer.html") ?>
 </body>
 </html>

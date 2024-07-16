@@ -1,11 +1,7 @@
 <?php
-require "./scripts/database.php";
+include "./scripts/config.php";
 
-// Filepath variables
-$header = "header.html";
-$footer = "footer.html";
-$styles = "./styles/styles.css";
-$script = "./scripts/register_script.js";
+require $scripts . "database.php";
 
 $token = $_GET["token"];
 $token_hash = hash("sha256", $token);
@@ -37,7 +33,7 @@ if (strtotime($user["reset_token_expires_at"]) <= time()) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Reset</title>
-    <link rel="stylesheet" href="<?= $styles ?>">
+    <link rel="stylesheet" href="<?= $styles ?>styles.css">
 </head>
 <body>
     <main>
@@ -67,7 +63,7 @@ if (strtotime($user["reset_token_expires_at"]) <= time()) {
 
                     <input type="submit" value="Reset Password">
             </form>
-            <script src="<?= $script ?>"></script>
+            <script src="<?= $script ?>register_script.js"></script>
         </div>
     </main>
 </body>

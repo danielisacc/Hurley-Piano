@@ -1,0 +1,72 @@
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Ikonate</title>
+    <style>
+      :root {
+        --grey--light: #fafaff;
+        --white: #ffffff;
+      }
+
+      body {
+        background: var(--grey--light);
+      }
+
+      .main {
+        width: 1152px;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .main__item {
+        background: var(--white);
+        border-radius: 4px;
+        padding: 20px;
+        display: inline-block;
+        margin: 10px;
+      }
+
+      .main__item svg {
+          width: 48px;
+          height: 48px;
+          stroke: #2329D6;
+          stroke-width: 1;
+          stroke-linecap: square;
+          stroke-linejoin: miter;
+          fill: none;
+          color: #2329D6;
+  }</style>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="main__item"><svg>
+          <title id="contactBookIconTitle">Contact Book</title>
+          <use xlink:href="./ikonate.svg#contact-book"></use>
+        </svg></div>
+      <div class="main__item"><svg>
+          <title id="settingsIconTitle">Settings</title>
+          <use xlink:href="./ikonate.svg#settings"></use>
+        </svg></div>
+      <div class="main__item"><svg>
+          <title id="userIconTitle">User</title>
+          <use xlink:href="./ikonate.svg#user"></use>
+        </svg></div>
+      <div class="main__item"><svg>
+          <title id="calendarIconTitle">Calendar</title>
+          <use xlink:href="./ikonate.svg#calendar"></use>
+        </svg></div>
+      <div class="main__item"><svg>
+          <title id="phoneIconTitle">Phone</title>
+          <use xlink:href="./ikonate.svg#phone"></use>
+        </svg></div>
+      <div class="main__item"><svg>
+          <title id="fileIconTitle">File</title>
+          <use xlink:href="./ikonate.svg#file"></use>
+        </svg></div>
+    </div>
+
+  </body>
+
+</html>

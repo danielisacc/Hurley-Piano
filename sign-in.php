@@ -1,12 +1,5 @@
 <?php
-// Filepath variables
-$header = "header.html";
-$footer = "footer.html";
-$styles = "./styles/styles.css";
-$scripts = "./scripts/script.js";
-$signin = "sign-in.php";
-
-$php_script = "./scripts/";
+include "./scripts/config.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,10 +7,10 @@ $php_script = "./scripts/";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hurley Piano Sign-In</title>
-    <link rel="stylesheet" href="<?= $styles ?>">
+    <link rel="stylesheet" href="<?= $styles ?>styles.css">
 </head>
 <body>
-    <?php include($header); ?>
+    <?php include($html . "header.html"); ?>
     <main>
         <div class="tile signin-form">
             <h1>Sign In</h1>
@@ -33,13 +26,13 @@ $php_script = "./scripts/";
         </div>
         <p class="centered-text nowrap-text">Don't have an account?<br><a href="register.php">Sign Up</a></p> 
     </main>
-    <?php include($footer); ?>
-    <script src="<?= $scripts ?>"></script> 
+    <?php include($html . "footer.html"); ?>
+    <script src="<?= $scripts ?>script.js"></script> 
 </body>
 </html>
 <?php
 
-include $php_script . 'db_script.php';
+include $scripts . 'db_script.php';
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     user_signin_validation($conn);

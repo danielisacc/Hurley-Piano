@@ -1,24 +1,37 @@
 <?php
+// Filepaths
+$html = "./html/";
+$styles = "./styles/";
+$scripts = "./scripts/";
+$imgs = "./img/";
 
-// Define the Gmail's smtp server
-define('MAILHOST', "smtp.gmail.com");
+// DB connection
+$db_server = "localhost";
+$db_user = "root";
+$db_pass = "";
+$db_name = "rigler_hurley";
+$conn = "";
 
-// Define as a username the email that yoy yse in your gmail account
-define('USERNAME', "daniel.delavega.dev@gmail.com");
+// Email Configs
+$mailHost = "smtp.gmail.com";
+$mailUsername = "daniel.delavega.dev@gmail.com";
+$mailPass = 'tgbx hrlq hxid vifp';
+$mailSendFrom = "daniel.delavega.dev@gmail.com";
+$mailSendFromName = "Hurley-Piano";
+$mailReplyTo = "daniel.delavega.dev@gmail.com";
+$mailReplyToName = "Richard Hurley";
 
-// Define your 16 digit Gmail app password.
-define('PASSWORD', 'tgbx hrlq hxid vifp');
+// SESSION Security
+$use_cookies_only = 1;
+$use_sctrict_mode = 1;
+$cookie_params = [
+    'lifetime' => 1800,
+    'domain' => 'localhost',
+    'path' => '/',
+    'secure' => true,
+    'httponly' => true
+];
+$session_expirey = 60 * 30;
 
-// Define the email address from which the email is sent
-define('SEND_FROM', "daniel.delavega.dev@gmail.com");
-
-// Define the name of the website from which the email is sent
-define('SEND_FROM_NAME', "Hurley-Piano");
-
-// Define the reply to address
-define('REPLY_TO', "daniel.delavega.dev@gmail.com");
-
-// Define the reply to name
-define('REPLY_TO_NAME', "Richard Hurley");
-
-?>
+ini_set('session.use_only_cookies', $use_cookies_only);
+ini_set('session.use_strict_mode', $use_sctrict_mode);

@@ -1,10 +1,5 @@
 <?php
-
-    $db_server = "localhost";
-    $db_user = "root";
-    $db_pass = "";
-    $db_name = "rigler_hurley";
-    $conn = "";
+    require "config.php";
 
     try {
         $conn = mysqli_connect($db_server, 

@@ -12,6 +12,27 @@
     // Require the config file
     require 'config.php';
 
+    // Define the Gmail's smtp server
+    define('MAILHOST', $mailHost);
+
+    // Define as a username the email that yoy yse in your gmail account
+    define('USERNAME', $mailUsername);
+
+    // Define your 16 digit Gmail app password.
+    define('PASSWORD', $mailPass);
+
+    // Define the email address from which the email is sent
+    define('SEND_FROM', $mailSendFrom);
+
+    // Define the name of the website from which the email is sent
+    define('SEND_FROM_NAME', $mailSendFromName);
+
+    // Define the reply to address
+    define('REPLY_TO', $mailReplyTo);
+
+    // Define the reply to name
+    define('REPLY_TO_NAME', $mailReplyToName);
+
     /**
      * [The function uses the PHPMailer object to send an email to the address we specify]
      * @param [string] $email,      [Where the email goes]

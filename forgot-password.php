@@ -1,10 +1,5 @@
 <?php
-// Filepath variables
-$header = "header.html";
-$footer = "footer.html";
-$styles = "./styles/styles.css";
-$signin = "";
-$php_script = "./scripts/";
+include "./scripts/config.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,10 +7,10 @@ $php_script = "./scripts/";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forgot Password</title>
-    <link rel="stylesheet" href="<?= $styles ?>">
+    <link rel="stylesheet" href="<?= $styles ?>styles.css">
 </head>
 <body>
-    <?php include($header) ?>
+    <?php include $html . "header.html" ?>
     <main>
     <h2 style="margin-top: 0px;">Forgot Password</h2>
         <div class="tile signin-form">
@@ -31,7 +26,7 @@ $php_script = "./scripts/";
 </html>
 
 <?php
-    require $php_script . "db_script.php";
+    require $scripts . "db_script.php";
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
         forgot_pass_token_creation($conn);
     }
