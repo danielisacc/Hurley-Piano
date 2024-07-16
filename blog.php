@@ -23,7 +23,7 @@
             <h2>
                 Introduction Steps for Teaching Piano to Special Needs Kids <br><br>
             </h2>
-            <a href="img/blog/steps-to-piano.png" </a>
+            <a href="img/blog/steps-to-piano.png"></a> 
             <div class="button-container">
                 <a href="https://finearts.tcu.edu/music/wp-content/uploads/sites/5/2021/03/2021_03_31_Hetherington-Lecture-Recital-Handout.pdf" class="button book-consultation">Read Article</a> 
             </div>
@@ -124,9 +124,9 @@ enable-ga="false"
 ></call-us>--> 
 <script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
 
-<!-- UserWay widget script 
+<!-- UserWay widget script -->
 <script src="https://cdn.userway.org/widget.js" data-account="g3JuQiTzQN"></script>
--->
+
 </body>
 </html>
 

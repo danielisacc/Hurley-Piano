@@ -162,7 +162,7 @@
             alt="Specail needs students include ADHD, Asperger Syndrome, Autism, Down Syndrome, Dyscalculia, Dyselexia, Sensory Processing Disorder">
         </div>
 
-
+    </main>
     <?php include("footer.html") ?>
 
 <!--Use the below code snippet to provide real time updates to the live chat plugin without the need of copying and paste each time to your website when changes are made via PBX-->
@@ -200,5 +200,8 @@ enable-direct-call="true"
 enable-ga="false" 
 ></call-us>--> 
 <script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
+<!-- UserWay widget script  -->
+<script src="https://cdn.userway.org/widget.js" data-account="g3JuQiTzQN"></script>
+
 </body>
 </html>
