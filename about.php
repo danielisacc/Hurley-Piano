@@ -7,16 +7,17 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <?php include("header.html"); ?>
     <main>
+    
     <!-- Testimonial Box 1 -->
     <div class="testimonial1-box element">
                <div class="star-child">
                    <h2>"We Believe Your Child is a STAR"</h2>
-                   <p>
-                   Hurley Piano specializes in creating educational methodologies that simplify music learning for parents teaching their children, including neuro-typical kids and those with special needs like ADHD, Asperger Syndrome, Autism, Down Syndrome, Dyscalculia, Dyslexia, and Sensory Processing Disorder. Richard Hurley has developed the acclaimed Black Keys Exercises to introduce keyboard skills to even the most challenging special needs students. Based in Austin, Texas, a hub of special needs innovation, Hurley Piano collaborates with leading researchers to refine their approach and offers free introductory videos and blogs, fostering a video-based community discussion to address the challenges faced by special needs children, all guided by their vision of inclusive music education.
+                   <p>The Piano serves as a powerful educational tool for neurodiverse children...Hurley Piano specializes in creating educational methodologies that simplify music learning for parents teaching their children, including neuro-typical kids and those with special needs like ADHD, Asperger Syndrome, Autism, Down Syndrome, Dyscalculia, Dyslexia, and Sensory Processing Disorder. Richard Hurley has developed the acclaimed Black Keys Exercises to introduce keyboard skills to even the most challenging special needs students. Based in Austin, Texas, a hub of special needs innovation, Hurley Piano collaborates with leading researchers to refine their approach and offers free introductory videos and blogs, fostering a video-based community discussion to address the challenges faced by special needs children, all guided by their vision of inclusive music education.
                </p>
                </div>
            </div>

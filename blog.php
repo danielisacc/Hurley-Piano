@@ -17,15 +17,18 @@
 <?php include("header.html"); ?>
     <main>
         <!-- Main content goes here -->
-        <h1>Hurley's Blog</h1>
+        
         <div class="star-child">
             <br><br><br>
             <h2>
-                10 Steps to starting<br>special needs piano <br><br>
+                Introduction Steps for Teaching Piano to Special Needs Kids <br><br>
             </h2>
+            <a href="img/blog/steps-to-piano.png" </a>
+            <div class="button-container">
+                <a href="https://finearts.tcu.edu/music/wp-content/uploads/sites/5/2021/03/2021_03_31_Hetherington-Lecture-Recital-Handout.pdf" class="button book-consultation">Read Article</a> 
+            </div>
             
-            <a href="../img/blog/steps-to-piano.png" class="button read-article">Read Article</a>
-            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br>
 
         </div>
 

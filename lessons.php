@@ -15,6 +15,9 @@
         <div class="centered-tile-full-width-hero">
             <img src="img/music-lessons/hero-img.png" alt="Teaching musical instruments to Neurodiverse Kids" class="hero-photo">
             <h1>Teaching Musical<br> Intruments to <br> <i>Neurodiverse</i> Kids</h1>
+            <div class="button-container">
+                <a href="https://cal.com/thienkim-le" class="button book-consultation">Book Free Consultation</a> 
+            </div>
         </div>
 
         <div class="container">
@@ -34,7 +37,11 @@
             <div class="testimonial-box">
                 <img src="img/music-lessons/drums.png" alt="child playing drums happily">
                 <h4>Teaching <i>Drums</i> to <i>Neurodiverse</i> kids</h4>
-                <p>Drum lessons offer many diverse benefits in neurodiverse kids education. Drumming enhances sensory integration, promotes rhythmic cognition, fosters emotional expression, encourages social interaction, builds confidence, and provides a therapeutic outlet. Its rhythmic nature engages neurodiverse children effectively, aiding in their holistic development and overall well-being.</p>
+                <p>Drum lessons provide numerous benefits for neurodiverse children. They enhance sensory integration, promote rhythmic cognition, foster emotional expression, and encourage social interaction. 
+                    Additionally, drumming builds confidence and serves as a therapeutic outlet. The rhythmic nature of drumming effectively engages neurodiverse children, aiding in their holistic development and overall well-being. 
+                    These lessons not only support their educational growth but also contribute significantly to their emotional and social skills, making drumming an invaluable tool in neurodiverse education.
+                </p>
+
                 <h5>Benefits</h5>
                 <p>Sensory Stimulation<br>
                    Rhythmic Cognition<br>
