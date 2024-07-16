@@ -270,3 +270,99 @@ p {
         padding: 0 1em;
     }
 }
+
+/* Baby Blue to Light Yellow Gradient Form */
+.centered-tile-full-width {
+    padding-top: 5em;
+    margin: 0 auto; /* Centers the container horizontally */
+    background: linear-gradient(to bottom right, pink, #FFFFE0); /* Pink to light yellow gradient background */
+    background-size: cover; /* Covers the entire area of the div, stretching as needed */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repetition */
+    padding: 2em 0;  /* Top and bottom padding */
+    max-width: 100%; /* Or any other max-width as necessary */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150vh; /* Full viewport height */
+}
+
+.centered-tile-full-width h2 {
+    font-size: 4em;
+    text-align: center;
+    color: darkgrey; /* Changed to dark grey */
+}
+
+.centered-tile-full-width p {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 20px auto; /* Center the paragraph with space below */
+    color: white;
+}
+
+.centered-tile-full-width img {
+    width: 100%; /* Responsive width */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Corrects block level for centering */
+    margin: 1.2em auto 0; /* Top margin only, centers horizontally */
+}
+
+.centered-tile-full-width form {
+    width: 70%; /* Responsive width */
+    max-width: 700px; /* More specific max-width for forms */
+    display: flex;
+    flex-direction: column; /* Arrange elements in a column */
+    margin: 2.2em auto 0; /* Adds significant space above the form */
+    padding: 2em; /* Adds padding inside the form */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.centered-tile-full-width form label {
+    margin-top: 1em; /* Space above each label */
+    font-size: 1.2em; /* Slightly larger font size */
+    color: black;
+}
+
+.centered-tile-full-width form input {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em; /* Space above each input */
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.centered-tile-full-width form button {
+    margin-top: 1.5em; /* Space above the button */
+    padding: 0.8em 1.2em; /* Adjust padding to fit the word "Submit" */
+    font-size: 1em; /* Adjust font size */
+    color: white;
+    background-color: rgb(0, 123, 139);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text */
+}
+
+.centered-tile-full-width form button:hover {
+    background-color: rgb(0, 123, 139);
+}
+
+.centered-tile-full-width p {
+    width: 80%; /* Ensures the paragraph uses the full width of the form */
+    margin: 0 auto 20px auto; /* Adds space below the paragraph */
+    text-align: center; /* Optionally center the text */
+}
+
+.centered-tile-full-width h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em; /* Adjust size as needed */
+    margin-top: 20px; /* Space above the heading */
+    text-align: center;
+    color: rgb(73, 71, 71); /* Changed to dark grey */
+}
