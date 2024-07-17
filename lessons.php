@@ -67,14 +67,18 @@
                 </script>
             <?php endif; ?>
                            
-            <form action="https://api.web3forms.com/submit" method="post" id="getyourfreebook" novalidate class="inquiry-form">
-            <input type="hidden" name="access_key" value="49674ab5-11eb-4012-bf3e-19b0883c1beb"> 
-                    <label for="first-name">First Name</label> <br>
-                    <input type="text" id="first-name" name="first-name" placeholder="Hurley"><br>
+            <!-- <form action="https://api.web3forms.com/submit" method="post" id="getyourfreebook" novalidate class="inquiry-form">
+            <input type="hidden" name="access_key" value="49674ab5-11eb-4012-bf3e-19b0883c1beb">  -->
+                <form action="getyourfreebook.php" method="post" id="getyourfreebook" novalidate class="inquiry-form">
+                    <label for="first_name">First Name</label> <br>
+                    <input type="text" id="first_name" name="first_name" placeholder="Hurley"><br>
                     
-                    <label for="last-name">Last Name</label> <br>
-                    <input type="text" id="last-name" name="last-name" placeholder="Piano"><br>
+                    <label for="last_name">Last Name</label> <br>
+                    <input type="text" id="last_name" name="last_name" placeholder="Piano"><br>
                  
+                    <label for="phone">Phone</label> <br>
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number"><br>
+                    
                     <label for="email">Email</label><br>
                     <input type="text" id="email" name="email" placeholder="you@email.com"><br>
                                                  
