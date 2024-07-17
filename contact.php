@@ -20,12 +20,12 @@
                     });
                 </script>
             <?php endif; ?>
-            <form action="process-bookyourfirstfreepianolesson.php" method="post" id="bookyourfirstlesson" novalidate class="inquiry-form">
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name" name="first-name" placeholder="Hurley" required>
+            <form action="freelesson.php" method="post" id="bookyourfirstlesson" novalidate class="inquiry-form">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Hurley" required>
                 
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last-name" placeholder="Piano" required>
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Piano" required>
                 
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="you@email.com" required>
