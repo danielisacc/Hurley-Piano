@@ -74,10 +74,10 @@
 
         try {
             $mail->send();
-            echo"success";
+            echo"Success!";
         }
         catch (Exception $e) {
-            echo"Message could not be sent. Mailer error: {$mail->ErrorInfo}";
+            echo"Message could not be sent. Mailer error: {$mail->ErrorInfo}!";
         }
     }
 ?>
