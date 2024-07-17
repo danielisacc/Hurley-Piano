@@ -76,12 +76,12 @@
                     <label for="last_name">Last Name</label> <br>
                     <input type="text" id="last_name" name="last_name" placeholder="Piano"><br>
                  
-                    <label for="phone">Phone</label> <br>
-                    <input type="text" id="phone" name="phone" placeholder="Phone Number"><br>
-                    
                     <label for="email">Email</label><br>
                     <input type="text" id="email" name="email" placeholder="you@email.com"><br>
-                                                 
+                    
+                    <label for="phone">Phone</label> <br>
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number"><br>
+                                                                    
                     <button type="submit">SUBMIT</button>
                 </form>
             </div>
