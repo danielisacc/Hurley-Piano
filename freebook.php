@@ -14,11 +14,35 @@ $message = "Hello " . $first_name . ",<br>Here is your free <a href=''>Ebook</a>
 sendMail($email, $subject, $message, 0);
 
 // Prepare and execute the SQL statement
-$mysqli = $conn;
+try {
+    $mysqli = $conn;
 
-$sql = "INSERT INTO contacts (first_name, last_name, email, phone) VALUES (?, ?, ?, ?)";
-$stmt = $mysqli->prepare($sql);
-$stmt->bind_param("ssss", $first_name, $last_name, $email, $phone);
-$stmt->execute();
+    $sql = "INSERT INTO contacts (first_name, last_name, email, phone) VALUES (?, ?, ?, ?)";
+    $stmt = $mysqli->prepare($sql);
+    if ($stmt === false) {
+        throw new Exception('Prepare failed: ' . htmlspecialchars($mysqli->error));
+    }
 
-$stmt->close();
+    $stmt->bind_param("ssss", $first_name, $last_name, $email, $phone);
+    $stmt->execute();
+
+    $stmt->close();
+
+    // Redirect back to the form with a success flag
+    header("Location: contact.php?success=1");
+    exit;
+
+} catch (Exception $e) {
+    echo "Error: " . $e->getMessage();
+}
+
+// Assuming you have some validation errors or other checks that would set $errors
+$errors = [];
+if (!empty($errors)) {
+    foreach ($errors as $error) {
+        echo $error . "<br>";
+    }
+} else {
+    echo "Invalid form submission.";
+}
+?>
