@@ -18,7 +18,7 @@
                 
         <div class="contact-us">
             <h2>Contact Us</h2>
-            <h4>We love to hear from you!</h4>
+            <h4>Reach Out to Us for Any Inquiries or Assistance</h4>
             <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>
                 <p class="success-message">Thank you! Our staff will be in touch with you soon.</p>
                 <script>

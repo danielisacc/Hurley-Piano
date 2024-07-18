@@ -62,6 +62,7 @@ p {
     padding: 2em 0;
     max-width: 100%;
     margin: 0 auto;
+    
 }
 .centered-tile-full-width-hero h1 {
     font-size: 3em;
@@ -254,6 +255,7 @@ p {
     gap: 2em;
     flex: 1;
 }
+
 
 /* Pink to Baby Blue Gradient Form */
 .Free-Piano-Lesson {
