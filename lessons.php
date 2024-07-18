@@ -58,7 +58,14 @@
                 <h2>Get Your <u>FREE</u> Book!</h2>
                 <h4>Teach your toddler music even though you never learned music yourself. <br> 
                 Get your <b>FREE</b> starter book and teach your little one music most efficiently.</h4>
-                                           
+                <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>
+                    <p class="success-message">Form submitted successfully!</p>
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            document.getElementById('getyourfreebook').reset();
+                        });
+                    </script>
+                <?php endif; ?>                          
                 <form action="freebook.php" method="post" id="getyourfreebook" novalidate class="inquiry-form">
                     <label for="first_name">First Name</label> <br>
                     <input type="text" id="first_name" name="first_name" placeholder="Hurley"><br>
@@ -74,6 +81,7 @@
                                                                     
                     <button type="submit">SUBMIT</button>
                 </form>
+                
             </div>
         </div>
     </main>

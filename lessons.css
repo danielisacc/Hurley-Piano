@@ -298,7 +298,7 @@ p {
     text-align: center;
     width: 80%;
     margin: 0 auto 20px auto; /* Center the paragraph with space below */
-    color: white;
+    color: #21b39a; /* Adjusted color */
 }
 
 .centered-tile-full-width img {
@@ -357,6 +357,7 @@ p {
     width: 80%; /* Ensures the paragraph uses the full width of the form */
     margin: 0 auto 20px auto; /* Adds space below the paragraph */
     text-align: center; /* Optionally center the text */
+    
 }
 
 .centered-tile-full-width h2 {

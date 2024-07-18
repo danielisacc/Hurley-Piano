@@ -2,13 +2,12 @@
 // require "email_script.php";
 require "database.php";
 
-// Retrieve POST data
-$first_name = $_POST['first_name'];
-$last_name = $_POST['last_name'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
-$comment = $_POST['comment'];
-
+    // Retrieve POST data
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $comment = $_POST['comment'];
 
 // Prepare and execute the SQL statement
 try {
