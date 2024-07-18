@@ -54,6 +54,36 @@
         </div>
     
         <div class="container">
+            <div class="Free-Piano-Lesson">
+                <h2>Book Your First Free Piano Lesson!</h2>
+                <h4>Unlock Your Musical Potential Today with Expert Guidance!</h4>
+                <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>
+                    <p class="success-message">Thank you! Our staff will be in touch with you soon.</p>
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            document.getElementById('freelesson').reset();
+                        });
+                    </script>
+                <?php endif; ?>
+                <form action="freelesson.php" method="post" id="freelesson" novalidate class="inquiry-form">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="Hurley" required>
+                    
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Piano" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@email.com" required>
+                    
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+                    
+                    <button type="submit" name="submit">Submit</button>
+
+                
+                </form>
+            </div>
+
             <div class="centered-tile-full-width">
                 <h2>Get Your <u>FREE</u> Book!</h2>
                 <h4>Teach your toddler music even though you never learned music yourself. <br> 
@@ -65,8 +95,8 @@
                             document.getElementById('getyourfreebook').reset();
                         });
                     </script>
-                <?php endif; ?>                          
-                <form action="freebook.php" method="post" id="getyourfreebook" novalidate class="inquiry-form">
+                <?php endif; ?>  
+                <form action="freelesson.php" method="post" id="getyourfreebook" novalidate class="inquiry-form">
                     <label for="first_name">First Name</label> <br>
                     <input type="text" id="first_name" name="first_name" placeholder="Hurley"><br>
                     
