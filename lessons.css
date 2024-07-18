@@ -11,7 +11,7 @@ body {
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.8em; 
-    margin-top:0px; 
+    margin-top: 0px; 
 }
 h2 {
     font-family: 'Playfair Display', serif;
@@ -51,7 +51,7 @@ p {
     padding-top: 2em;
 }
 
-/* Hero Content  */
+/* Hero Content */
 .centered-tile-full-width-hero {
     max-width: max-content;
     margin: 0 auto;
@@ -70,14 +70,12 @@ p {
 .centered-tile-full-width-hero h2 {
     font-size: 2em;
 }
-
 .centered-tile-full-width-hero img {
     width: 100%;
     height: auto;
     display: block;
     margin: 0 auto 0;
 }
-
 .centered-tile-full-width-hero h1 {
     text-align: center;
     padding: 1em;
@@ -95,7 +93,6 @@ p {
     padding: 1em;
     border-radius: 20px;
 }
-
 .testimonial-box img {
     width: 100%;
     max-width: 90%;
@@ -104,11 +101,9 @@ p {
     margin: 0 auto;
     border-radius: 5px;
 }
-
 .testimonial-box h4, .testimonial-box h5 {
     text-align: center;
 }
-
 .testimonial-box p {
     line-height: 1.6;
     font-size: 1em;
@@ -122,7 +117,6 @@ p {
     flex-direction: column;
     align-items: center;
 }
-
 .button {
     cursor: pointer;
     width: 80%;
@@ -139,17 +133,14 @@ p {
     border: none;
     transition: background-color 0.3s, color 0.3s;
 }
-
 .button:hover {
     background-color: #ddd;
     color: #444;
 }
-
 .book-consultation, .play-now, .about-me {
     background-color: salmon;
     color: white;
 }
-
 .send-email {
     background-color: #008CBA;
     color: white;
@@ -163,7 +154,6 @@ p {
     padding-top: 7.5em;
     padding-bottom: 5em;
 }
-
 .centered-tile-full-width form {
     width: 100%;
     max-width: 500px;
@@ -171,13 +161,11 @@ p {
     padding-bottom: 20px;
     background-color: #ffecdc;
 }
-
 .centered-tile-full-width h2 {
     font-size: 2em;
     text-align: center;
     padding: 0 1em;
 }
-
 .centered-tile-full-width p {
     width: 80%;
     margin: 0 auto;
@@ -189,40 +177,31 @@ p {
     .testimonial-box h4 {
         font-size: 1.5em;
     }
-    
     .testimonial-box h5 {
         font-size: 1.1em;
     }
-
     .testimonial-box p {
         font-size: 1em;
         padding: 0 1em;
     }
-
     h1 {
         font-size: 2em;
     }
-
     h2 {
         font-size: 1.8em;
     }
-
     h3 {
         font-size: 1.3em;
     }
-
     h5 {
         font-size: 1.1em;
     }
-
     .centered-tile-full-width h2 {
         font-size: 1.8em;
     }
-
     .centered-tile-full-width-hero h1 {
         font-size: 2em;
     }
-    
     p {
         padding: 0 2em;
     }
@@ -232,40 +211,31 @@ p {
     .testimonial-box h4 {
         font-size: 1.3em;
     }
-    
     .testimonial-box h5 {
         font-size: 1em;
     }
-
     .testimonial-box p {
         font-size: 0.9em;
         padding: 0 0.5em;
     }
-
     h1 {
         font-size: 1.5em;
     }
-
     h2 {
         font-size: 1.5em;
     }
-
     h3 {
         font-size: 1.1em;
     }
-
     h5 {
         font-size: 1em;
     }
-
     .centered-tile-full-width h2 {
         font-size: 1.5em;
     }
-
     .centered-tile-full-width-hero h1 {
         font-size: 1.5em;
     }
-    
     p {
         padding: 0 1em;
     }
@@ -297,7 +267,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 80h; /* Full viewport height */
     width: 100%; /* Adjust width */
 }
 
@@ -326,8 +296,6 @@ p {
 .Free-Piano-Lesson form {
     width: 100%;
     max-width: 600px; /* Adjusted max-width */
-    display: flex;
-    flex-direction: column;
     margin: 2em auto 0;
     padding: 2em;
     background-color: rgba(255, 255, 255, 0.9);
@@ -353,25 +321,23 @@ p {
 }
 
 .Free-Piano-Lesson form button {
-    margin-top: 1.5em;
-    padding: 0.5em 1em; /* Adjusted padding */
-    font-size: 1em;
-    color: #fff; /* Adjusted color */
+    margin-top: 1.5em; /* Space above the button */
+    padding: 0.8em 1.2em; /* Adjust padding to fit the word "Submit" */
+    font-size: 1em; /* Adjust font size */
+    color: white;
     background-color: rgb(0, 123, 139);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    align-self: flex-start; /* Aligns button to the left */
+    text-align: center; /* Center the text */
 }
-
 
 .Free-Piano-Lesson form button:hover {
     background-color: rgb(0, 143, 159); /* Adjusted hover color */
 }
 
-/* Baby Blue to Light Yellow Gradient Form */
+/* Pink to light yellow gradient background */
 .centered-tile-full-width {
     padding-top: 5em;
     margin: 0 auto; /* Centers the container horizontally */
@@ -385,7 +351,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 120vh; /* Full viewport height */
+    height:80vh; /* Full viewport height */
 }
 
 .centered-tile-full-width h2 {
@@ -409,27 +375,26 @@ p {
 }
 
 .centered-tile-full-width form {
-    width: 70%; /* Responsive width */
-    max-width: 700px; /* More specific max-width for forms */
-    display: flex;
-    flex-direction: column; /* Arrange elements in a column */
-    margin: 2.2em auto 0; /* Adds significant space above the form */
-    padding: 2em; /* Adds padding inside the form */
-    background-color: rgba(255, 255, 255, 0.9); /* Light background for the form */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    width: 100%; /* Full width */
+    max-width: 600px; /* Adjusted max-width */
+    margin: 2em auto 0;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .centered-tile-full-width form label {
-    margin-top: 1em; /* Space above each label */
-    font-size: 1.2em; /* Slightly larger font size */
+    margin-top: 1em;
+    font-size: 1.2em;
     color: black;
 }
 
-.centered-tile-full-width form input {
+.centered-tile-full-width form input,
+.centered-tile-full-width form textarea {
     width: 100%;
     padding: 0.5em;
-    margin-top: 0.5em; /* Space above each input */
+    margin-top: 0.5em;
     font-size: 1em;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -450,14 +415,14 @@ p {
 }
 
 .centered-tile-full-width form button:hover {
-    background-color: rgb(0, 123, 139);
+    background-color: rgb(0, 123, 139); /* Adjusted hover color */
 }
 
+/* Common Styles */
 .centered-tile-full-width p {
     width: 80%; /* Ensures the paragraph uses the full width of the form */
     margin: 0 auto 20px auto; /* Adds space below the paragraph */
     text-align: center; /* Optionally center the text */
-    
 }
 
 .centered-tile-full-width h2 {
@@ -466,4 +431,20 @@ p {
     margin-top: 20px; /* Space above the heading */
     text-align: center;
     color: rgb(73, 71, 71); /* Changed to dark grey */
+}
+
+/* Add Flex Container */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2em;
+    padding: 2em;
+}
+
+/* Adjust Free-Piano-Lesson and centered-tile-full-width */
+.Free-Piano-Lesson,
+.centered-tile-full-width {
+    flex: 1;
+    min-width: 45%; /* Adjust minimum width as needed */
 }

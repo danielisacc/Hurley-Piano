@@ -10,8 +10,6 @@ body {
     color: #666;
 }
 
-
-
 /* Baby Blue To Light Yellow Gradient Form */
 .contact-us {
     padding: 2em;
@@ -79,24 +77,24 @@ body {
     box-sizing: border-box;
 }
 
+/* Increase the size of the comment box */
+.contact-us form textarea {
+    height: 150px; /* Adjust this value to make the comment box bigger */
+}
+
 .contact-us form button {
-    margin-top: 1.5em;
-    padding: 0.5em 1em; /* Adjusted padding */
-    font-size: 1em;
-    color: #fff; /* Adjusted color */
+    margin-top: 1.5em; /* Space above the button */
+    padding: 0.8em 1.2em; /* Adjust padding to fit the word "Submit" */
+    font-size: 1em; /* Adjust font size */
+    color: white;
     background-color: rgb(0, 123, 139);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    align-self: flex-start; /* Aligns button to the left */
+    text-align: center; /* Center the text */
 }
 
 .contact-us form button:hover {
     background-color: rgb(0, 143, 159); /* Adjusted hover color */
 }
-
-
-
-
