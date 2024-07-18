@@ -59,7 +59,7 @@
                 <h4>Teach your toddler music even though you never learned music yourself. <br> 
                 Get your <b>FREE</b> starter book and teach your little one music most efficiently.</h4>
                 <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>
-                    <p class="success-message">Form submitted successfully!</p>
+                    <p class="success-message">Thank you. We have just emailed you the ebook.</p>
                     <script>
                         document.addEventListener("DOMContentLoaded", function() {
                             document.getElementById('getyourfreebook').reset();

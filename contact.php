@@ -19,14 +19,14 @@
             <h2>Book Your First Free Piano Lesson!</h2>
             <h4>Unlock Your Musical Potential Today with Expert Guidance!</h4>
             <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>
-                <p class="success-message">Form submitted successfully!</p>
+                <p class="success-message">Thank you! Our staff will be in touch with you soon.</p>
                 <script>
                     document.addEventListener("DOMContentLoaded", function() {
-                        document.getElementById('bookyourfirstlesson').reset();
+                        document.getElementById('freelesson').reset();
                     });
                 </script>
             <?php endif; ?>
-            <form action="freelesson.php" method="post" id="bookyourfirstlesson" novalidate class="inquiry-form">
+            <form action="freelesson.php" method="post" id="freelesson" novalidate class="inquiry-form">
                 <label for="first_name">First Name</label>
                 <input type="text" id="first_name" name="first_name" placeholder="Hurley" required>
                 
@@ -49,14 +49,14 @@
             <h2>Contact Us</h2>
             <h4>We love to hear from you!</h4>
             <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>
-                <p class="success-message">Our staff will contact you soon!</p>
+                <p class="success-message">Thank you! Our staff will be in touch with you soon.</p>
                 <script>
                     document.addEventListener("DOMContentLoaded", function() {
-                        document.getElementById('bookyourfirstlesson').reset();
+                        document.getElementById('contactus').reset();
                     });
                 </script>
             <?php endif; ?>
-            <form action="freelesson.php" method="post" id="bookyourfirstlesson" novalidate class="inquiry-form">
+            <form action="contactus.php" method="post" id="contactus" novalidate class="inquiry-form">
                 <label for="first_name">First Name</label>
                 <input type="text" id="first_name" name="first_name" placeholder="Hurley" required>
                 

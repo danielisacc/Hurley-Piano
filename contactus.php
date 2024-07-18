@@ -7,19 +7,19 @@ require "database.php";
     $last_name = $_POST['last_name'];
     $email = $_POST['email'];
     $phone = $_POST['phone'];
- 
+    $comment = $_POST['comment'];
 
 // Prepare and execute the SQL statement
 try {
     $mysqli = $conn;
 
-    $sql = "INSERT INTO contacts (first_name, last_name, email, phone) VALUES (?, ?, ?, ?)";
+    $sql = "INSERT INTO contacts (first_name, last_name, email, phone, comment) VALUES (?, ?, ?, ?, ?)";
     $stmt = $mysqli->prepare($sql);
     if ($stmt === false) {
         throw new Exception('Prepare failed: ' . htmlspecialchars($mysqli->error));
     }
 
-    $stmt->bind_param("ssss", $first_name, $last_name, $email, $phone);
+    $stmt->bind_param("sssss", $first_name, $last_name, $email, $phone, $comment);
     $stmt->execute();
 
     $stmt->close();
