@@ -285,7 +285,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 170vh; /* Full viewport height */
+    height: 120vh; /* Full viewport height */
 }
 
 .centered-tile-full-width h2 {
