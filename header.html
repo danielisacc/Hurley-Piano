@@ -26,9 +26,14 @@
             border-bottom: #aaa solid;
         }
 
-        .logo img {
-            width: 60%;
+        .logo {
+            margin-right: 20px; /* Adjust margin-right as needed */
         }
+        .logo img {
+            max-width: 100%; /* Ensure logo scales properly */
+            height: auto; /* Maintain aspect ratio */
+        }
+
         .hamburger img {
             display: none;
             width: 2.5em;
@@ -94,12 +99,13 @@
             }
 
             .logo {
+                margin-right: 0; /* Adjust margin for smaller screens */
+                margin-bottom: 10px; /* Example: add space below logo */
                 display: flex;
                 justify-content: center;
-
             }
             .logo img {
-                width: 90%;
+                max-width: 90%; /* Adjust logo size on smaller screens */
             }
         }
     </style>
