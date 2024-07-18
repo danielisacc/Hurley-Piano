@@ -1,13 +1,18 @@
 <?php
-// require "email_script.php";
+require "email_script.php";
 require "database.php";
 
-    // Retrieve POST data
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $comment = $_POST['comment'];
+// Retrieve POST data
+$first_name = $_POST['first_name'];
+$last_name = $_POST['last_name'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$comment = $_POST['comment'];
+
+// Send email
+$subject = "Message from customer";
+$message = "Hello,<br>This is a comment from: <br> $first_name $last_name<br>$email<br> $phone<br>Regards: <br>$comment";
+sendMail('thienkim.le@g.austincc.edu', $subject, $message, 0);
 
 // Prepare and execute the SQL statement
 try {
