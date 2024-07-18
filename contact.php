@@ -6,11 +6,15 @@
     <title>Hurley Piano Website - Contact Us</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="contact.css">
+   
 </head>
 <body>
     <?php include("header.html"); ?>
     <main>
-        <div class="centered-tile-full-width">
+
+
+    <div class="container">
+        <div class="centered-tile-full-width 1">
             <h2>Book Your First Free Piano Lesson!</h2>
             <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>
                 <p class="success-message">Form submitted successfully!</p>
@@ -39,6 +43,41 @@
             </form>
         </div>
         
+        <div class="contact-us">
+            <h2>Contact Us</h2>
+            <h4>We love to hear from you!</h4>
+            <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>
+                <p class="success-message">Form submitted successfully!</p>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        document.getElementById('bookyourfirstlesson').reset();
+                    });
+                </script>
+            <?php endif; ?>
+            <form action="freelesson.php" method="post" id="bookyourfirstlesson" novalidate class="inquiry-form">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Hurley" required>
+                
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Piano" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@email.com" required>
+                
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+
+                <label for="comment">Comment</label>
+                <input type="text" id="comment" name="comment" placeholder="Enter your text here" required>
+
+                <button type="submit" name="submit">Submit</button>
+
+            
+            </form>
+        </div>
+        </div>
+
+
     </main>
     
 <<?php include("footer.html") ?>
