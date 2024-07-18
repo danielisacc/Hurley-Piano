@@ -13,6 +13,7 @@
         <div class="container">
             <div class="centered-tile-full-width">
                 <h2>Book Your First Free Piano Lesson!</h2>
+                <h4>Unlock Your Musical Potential Today with Expert Guidance!</h4>
                 <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>
                     <p class="success-message">Form submitted successfully!</p>
                     <script>

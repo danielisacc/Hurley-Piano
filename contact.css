@@ -36,7 +36,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     width: 100%; /* Adjust width */
 }
 
@@ -45,14 +45,14 @@ body {
     font-size: 2.5em;
     margin-top: 20px;
     text-align: center;
-    color: darkgrey;
+    color: #333; /* Adjusted color */
 }
 
 .centered-tile-full-width p {
     text-align: center;
     width: 80%;
     margin: 0 auto 20px auto;
-    color: white;
+    color: #fff; /* Adjusted color */
 }
 
 .centered-tile-full-width img {
@@ -64,10 +64,10 @@ body {
 
 .centered-tile-full-width form {
     width: 100%;
-    max-width: 700px;
+    max-width: 600px; /* Adjusted max-width */
     display: flex;
     flex-direction: column;
-    margin: 2.2em auto 0;
+    margin: 2em auto 0;
     padding: 2em;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
@@ -77,10 +77,11 @@ body {
 .centered-tile-full-width form label {
     margin-top: 1em;
     font-size: 1.2em;
-    color: black;
+    color: #333; /* Adjusted color */
 }
 
-.centered-tile-full-width form input {
+.centered-tile-full-width form input,
+.centered-tile-full-width form textarea {
     width: 100%;
     padding: 0.5em;
     margin-top: 0.5em;
@@ -94,7 +95,7 @@ body {
     margin-top: 1.5em;
     padding: 0.8em 1.2em;
     font-size: 1em;
-    color: white;
+    color: #fff; /* Adjusted color */
     background-color: rgb(0, 123, 139);
     border: none;
     border-radius: 5px;
@@ -104,13 +105,7 @@ body {
 }
 
 .centered-tile-full-width form button:hover {
-    background-color: rgb(0, 123, 139);
-}
-
-.centered-tile-full-width p {
-    width: 80%;
-    margin: 0 auto 20px auto;
-    text-align: center;
+    background-color: rgb(0, 143, 159); /* Adjusted hover color */
 }
 
 /* Baby Blue To Light Yellow Gradient Form */
@@ -125,7 +120,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     width: 100%; /* Adjust width */
 }
 
@@ -134,14 +129,14 @@ body {
     font-size: 2.5em;
     margin-top: 20px;
     text-align: center;
-    color: rgb(73, 71, 71);
+    color: #333; /* Adjusted color */
 }
 
 .contact-us p {
     text-align: center;
     width: 80%;
     margin: 0 auto 20px auto;
-    color: white;
+    color: #fff; /* Adjusted color */
 }
 
 .contact-us img {
@@ -153,10 +148,10 @@ body {
 
 .contact-us form {
     width: 100%;
-    max-width: 700px;
+    max-width: 600px; /* Adjusted max-width */
     display: flex;
     flex-direction: column;
-    margin: 2.2em auto 0;
+    margin: 2em auto 0;
     padding: 2em;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
@@ -166,10 +161,11 @@ body {
 .contact-us form label {
     margin-top: 1em;
     font-size: 1.2em;
-    color: black;
+    color: #333; /* Adjusted color */
 }
 
-.contact-us form input {
+.contact-us form input,
+.contact-us form textarea {
     width: 100%;
     padding: 0.5em;
     margin-top: 0.5em;
@@ -183,7 +179,7 @@ body {
     margin-top: 1.5em;
     padding: 0.8em 1.2em;
     font-size: 1em;
-    color: white;
+    color: #fff; /* Adjusted color */
     background-color: rgb(0, 123, 139);
     border: none;
     border-radius: 5px;
@@ -193,11 +189,5 @@ body {
 }
 
 .contact-us form button:hover {
-    background-color: rgb(0, 123, 139);
-}
-
-.contact-us p {
-    width: 80%;
-    margin: 0 auto 20px auto;
-    text-align: center;
+    background-color: rgb(0, 143, 159); /* Adjusted hover color */
 }
