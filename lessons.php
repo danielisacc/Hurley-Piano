@@ -56,7 +56,7 @@
         <div class="container">
             <div class="Free-Piano-Lesson">
                 <h2>Book Your First <u>FREE</u> Piano Lesson!</h2>
-                <div class="centered-initial">Unlock Your Musical Potential Today with Expert Guidance!</div>
+                <h4>Unlock Your Musical Potential Today with Expert Guidance!</h4>
                 <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>
                     <p class="success-message">Thank you! Our staff will be in touch with you soon.</p>
                     <script>
@@ -86,7 +86,7 @@
 
             <div class="centered-tile-full-width">
                 <h2>Get Your <u>FREE</u> eBook!</h2>
-                <div class="centered-initial">Teach kids music with our starter book-no experience needed.</div>
+                <h4>Teach your toddler music with our <b>FREE</b> starter book, no prior experience needed.</h4>
                 <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>
                     <p class="success-message">Thank you. We have just emailed you the ebook.</p>
                     <script>
