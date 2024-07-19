@@ -55,10 +55,10 @@
     
         <div class="container">
             <div class="Free-Piano-Lesson">
-                <h2>Book Your First <u>FREE</u> Piano Lesson!</h2>
-                <h4>Unlock Your Musical Potential Today with Expert Guidance!</h4>
+                <h2>Book Your <u>FREE</u> Lesson!</h2>
+                <h4>Unlock Your Musical Potential with Expert Guidance!</h4>
                 <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>
-                    <p class="success-message">Thank you! Our staff will be in touch with you soon.</p>
+                    <p class="success-message"><br>Thank you! Our staff will be in touch with you soon.</p>
                     <script>
                         document.addEventListener("DOMContentLoaded", function() {
                             document.getElementById('freelesson').reset();
@@ -86,9 +86,9 @@
 
             <div class="centered-tile-full-width">
                 <h2>Get Your <u>FREE</u> eBook!</h2>
-                <h4>Teach your toddler music with our <b>FREE</b> starter book, no prior experience needed.</h4>
+                <h4>Teach your kiddios piano with no experience needed.</h4>
                 <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>
-                    <p class="success-message">Thank you. We have just emailed you the ebook.</p>
+                    <p class="success-message"><br>Thank you! We have just emailed you the ebook.</p>
                     <script>
                         document.addEventListener("DOMContentLoaded", function() {
                             document.getElementById('getyourfreebook').reset();

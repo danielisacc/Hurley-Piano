@@ -250,25 +250,27 @@ p {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     height: 80h; /* Full viewport height */
     width: 100%; /* Adjust width */
 }
 
 .Free-Piano-Lesson h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5em;
-    margin-top: 20px;
+    font-size: 2.3em; /* Adjust size as needed */
+    margin-top: 10px; /* Space above the heading */
     text-align: center;
-    color: #333; /* Adjusted color */
-}
+    width: 100%;
+    color: rgb(73, 71, 71); /* Changed to dark grey */
+   }
 
 .Free-Piano-Lesson p {
-    text-align: center;
-    width: 80%;
+    text-align: left;
+    width: 120%;
     margin: 0 auto 20px auto;
-    color: #21b39a; /* Adjusted color */
+    color: #2b7513; /* Adjusted color */
+    padding: 0;
 }
 
 .Free-Piano-Lesson img {
@@ -291,7 +293,7 @@ p {
 .Free-Piano-Lesson form label {
     margin-top: 1em;
     font-size: 1.2em;
-    color: #333; /* Adjusted color */
+    color: #353834; /* Adjusted color */
 }
 
 .Free-Piano-Lesson form input,
@@ -332,8 +334,8 @@ p {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     height: 80h; /* Full viewport height */
     width: 100%; /* Adjust width */
 
@@ -345,11 +347,13 @@ p {
     color: darkgrey; /* Changed to dark grey */
 }
 
+    
 .centered-tile-full-width p {
-    text-align: center;
-    width: 80%;
+    text-align: left;
+    width: 120%;
     margin: 0 auto 20px auto; /* Center the paragraph with space below */
-    color: #21b39a; /* Adjusted color */
+    color:#2b7513; /* Adjusted color */
+    padding: 0;
 }
 
 .centered-tile-full-width img {
@@ -372,7 +376,7 @@ p {
 .centered-tile-full-width form label {
     margin-top: 1em;
     font-size: 1.2em;
-    color: black;
+    color: #35383;
 }
 
 .centered-tile-full-width form input,
@@ -405,15 +409,15 @@ p {
 
 /* Common Styles */
 .centered-tile-full-width p {
-    width: 80%; /* Ensures the paragraph uses the full width of the form */
+    width: 120%; /* Ensures the paragraph uses the full width of the form */
     margin: 0 auto 20px auto; /* Adds space below the paragraph */
-    text-align: center; /* Optionally center the text */
+    text-align: left; /* Optionally center the text */
 }
 
 .centered-tile-full-width h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5em; /* Adjust size as needed */
-    margin-top: 20px; /* Space above the heading */
+    margin-top: 10px; /* Space above the heading */
     text-align: center;
     color: rgb(73, 71, 71); /* Changed to dark grey */
 }
