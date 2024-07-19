@@ -58,7 +58,7 @@
                 <h2>Book Your <u>FREE</u> Lesson!</h2>
                 <h4>Unlock Your Musical Potential with Expert Guidance!</h4>
                 <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>
-                    <p class="success-message"><br>Thank you! Our staff will be in touch with you soon.</p>
+                    <p class="success-message"><br><b><i></i>Thank you! Our staff will be in touch with you soon.</i></b></p>
                     <script>
                         document.addEventListener("DOMContentLoaded", function() {
                             document.getElementById('freelesson').reset();
@@ -88,7 +88,7 @@
                 <h2>Get Your <u>FREE</u> eBook!</h2>
                 <h4>Teach your kiddios piano with no experience needed.</h4>
                 <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>
-                    <p class="success-message"><br>Thank you! We have just emailed you the ebook.</p>
+                    <p class="success-message"><br><b><i>Thank you! We have just emailed you the ebook.</i></b></p>
                     <script>
                         document.addEventListener("DOMContentLoaded", function() {
                             document.getElementById('getyourfreebook').reset();

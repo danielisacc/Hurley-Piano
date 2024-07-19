@@ -18,9 +18,9 @@
                 
         <div class="contact-us">
             <h2>Contact Us</h2>
-            <h4>Reach Out to Us for Any Inquiries or Assistance</h4>
+            <h3>Reach Out to Us for Any Inquiries or Assistance</h3>
             <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>
-                <p class="success-message">Thank you! Our staff will be in touch with you soon.</p>
+                <p class="success-message"><b><i>Thank you! Our staff will be in touch with you soon.</i></b></p>
                 <script>
                     document.addEventListener("DOMContentLoaded", function() {
                         document.getElementById('contactus').reset();
