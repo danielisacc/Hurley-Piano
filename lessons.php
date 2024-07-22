@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="about.css">
 </head>
 <body>
-    <?php include("header.html"); ?>
+    <?php include("./html/header.html"); ?>
     <main>
         <!-- Main content goes here -->
         <div class="centered-tile-full-width-hero">
@@ -115,7 +115,7 @@
         </div>
     
     </main>
-    <?php include("footer.html"); ?>
+    <?php include("./html/footer.html"); ?>
 
     <call-us-selector phonesystem-url="https://1861.3cx.cloud" party="thienkimle"></call-us-selector>
     <script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>

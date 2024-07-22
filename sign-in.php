@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <?php include("header.html"); ?>
+    <?php include("./html/header.html"); ?>
     <main>
         <div class="tile signin-form">
             <h1>Sign In</h1>
@@ -25,7 +25,7 @@
                 
         <p class="centered-text nowrap-text">Don't have an account?<br><a href="register.php">Sign Up</a></p> 
     </main>
-    <?php include("footer.html"); ?>
+    <?php include("./html/footer.html"); ?>
     <script src="script.js"></script> 
     
 <!--Use the below code snippet to provide real time updates to the live chat plugin without the need of copying and paste each time to your website when changes are made via PBX-->

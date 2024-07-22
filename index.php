@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <?php include("header.html"); ?>
+    <?php include("./html/header.html"); ?>
     <main>
     <!-- Main content goes here -->
         <!-- Hero Section  -->
@@ -56,7 +56,7 @@
                     <p>“Richard Hurley is brilliant when it comes to teaching children and young adults 
                         on the autism spectrum. What impresses me most about Richard is his calm, even demeanor. He has a real ability in reading the child and where they are in the moment —from moment to moment at times. I highly recommend Richard Hurley and his style of piano teaching to those living with Autism and their family.”</p>
                         <div class="star-rating">
-                            <img src="img/purple-star.png" alt="Star">
+                            <img src="./img/purple-star.png" alt="Star">
                         </div>
                     <h2>ANGELA R BALMER</h2>
                     <h3>OCCUPATIONAL THERAPIST</h3>
@@ -64,7 +64,7 @@
                 <div class="tile testimonial" style="--position: 2">
                     <p>“Richard Hurley&rsquo;s approach to music instruction emphasize the collaboration with parents and other professionals to deliver a program of instruction that is consistent and highly individualized to meet the needs of each learner”</p>
                     <div class="star-rating">
-                        <img src="img/purple-star.png" alt="Star">
+                        <img src="./img/purple-star.png" alt="Star">
                     </div>
                     <h2>LAURA B MOON</h2>
                     <h3>KTL BEHAVIORAL THERAPY AND CONSULTATION</h3>
@@ -72,7 +72,7 @@
                 <div class="tile testimonial" style="--position: 3">
                     <p>“Richard&rsquo;s ability to adapt and grow with a student has helped to nurture and bring out incredible talent"</p>
                     <div class="star-rating">
-                        <img src="img/purple-star.png" alt="Star">
+                        <img src="./img/purple-star.png" alt="Star">
                     </div>
                     <h2>LAUREN DOOLEY</h2> 
                     <h3>BOARD CERTIFIED BEHAVIOR ANALYST</h3>
@@ -80,7 +80,7 @@
                 <div class="tile testimonial"  style="--position: 4">
                     <p>“Hurley Piano&rsquo;s approach incorporates a variety of strategies including the use of current technology. Hurley Piano is open to work collaboratively with other professionals with kids with ASD.”</p>
                     <div class="star-rating">
-                        <img src="img/purple-star.png" alt="Star">
+                        <img src="./img/purple-star.png" alt="Star">
                     </div>
                     <h2>CHRISTINE GAHARAN</h2>
                     <h3>OCCUPATIONAL THERAPIST</h3>
@@ -110,12 +110,12 @@
         <h5> We offer unique music lessons</h5>
 
         <div class="centered-tile-double">
-            <img src="img/why-hurley-1.png" 
+            <img src="./img/why-hurley-1.png" 
             alt="free book. Teach your toddler music even though you never learned music yourself. Get your FREE starter book and teach your
             little one music most efficiently. innovative ideas. Innovation is synonymous with Hurley Piano because what others have failed to think of, We have already made standard.">
-            <img src="img/why-hurley-2.png" 
+            <img src="./img/why-hurley-2.png" 
             alt="video lessons. We’re on a mission to bring music into more homes and communities around the world. Everyone should have access to music education.innovative ideas. Innovation is synonymous with Hurley Piano because what others have failed to think of, We have already made standard.">
-            <img src="img/why-hurley-3.png" 
+            <img src="./img/why-hurley-3.png" 
             alt="interactive games. Enhance music theory skills through our engaging online games, improving rhythm, note recognition, sight reading, and more. practice tools. Practice sessions provide step-by-step instructions between video lessons, with recorded audio tracks for a real band experience.">
         </div>
 <!--
@@ -133,7 +133,7 @@
         <h2>Our Interactive Games</h2>
         <div class="tile" style="--color: radial-gradient(rgba(124, 186, 232,0.7), rgba(250,128,114,0.2))">
             <h2>GOJUN'S ADVENTURE</h2>
-            <img src="img/gojuns-home.png" 
+            <img src="./img/gojuns-home.png" 
             alt="gojuns adventure game">
             <p>In This Thrilling And Strategic Board Game, You Have The Option To Play Solo Or Challenge A Friend To A Friendly Match.
                  Roll The Dice And Navigate Through The Board, Using Special Abilities Like JumpForwards And Knockback To Outsmart Your Opponent.</p>
@@ -158,12 +158,12 @@
        </div>
 
         <div class="centered-tile-double">
-            <img src="../img/special-needs-student.png" 
+            <img src="./img/special-needs-student.png" 
             alt="Specail needs students include ADHD, Asperger Syndrome, Autism, Down Syndrome, Dyscalculia, Dyselexia, Sensory Processing Disorder">
         </div>
 
     </main>
-    <?php include("footer.html") ?>
+    <?php include("./html/footer.html") ?>
 
 <!--Use the below code snippet to provide real time updates to the live chat plugin without the need of copying and paste each time to your website when changes are made via PBX-->
 <call-us-selector phonesystem-url="https://1861.3cx.cloud" party="thienkimle"></call-us-selector>

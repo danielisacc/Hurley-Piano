@@ -14,7 +14,7 @@
 
 </head>
 <body>
-<?php include("header.html"); ?>
+<?php include("./html/header.html"); ?>
     <main>
         <!-- Main content goes here -->
         
@@ -86,7 +86,7 @@
         
     </main>
     
-    <?php include("footer.html"); ?>
+    <?php include("./htm/footer.html"); ?>
 
 <!--Use the below code snippet to provide real time updates to the live chat plugin without the need of copying and paste each time to your website when changes are made via PBX-->
 <call-us-selector phonesystem-url="https://1861.3cx.cloud" party="thienkimle"></call-us-selector>

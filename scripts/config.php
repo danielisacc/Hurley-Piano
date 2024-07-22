@@ -1,3 +1,5 @@
+
+
 <?php
 // Filepaths
 $html = "./html/";
@@ -35,3 +37,4 @@ $session_expirey = 60 * 30;
 
 ini_set('session.use_only_cookies', $use_cookies_only);
 ini_set('session.use_strict_mode', $use_sctrict_mode);
+
