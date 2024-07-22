@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hurley Piano Website - About</title>
-    <link rel="icon" type="image/png" href="img/PianoLogo7.png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="styles.css">
     
 </head>
 <body>
-    <?php include("./html/header.html"); ?>
+    <?php include("header.html"); ?>
     <main>
     
     <!-- Testimonial Box 1 -->
@@ -71,7 +71,7 @@
     
     </main>
 
-    <?php include("./html/footer.html") ?>
+    <?php include("footer.html"); ?>
 
 <!--Use the below code snippet to provide real time updates to the live chat plugin without the need of copying and paste each time to your website when changes are made via PBX-->
 <call-us-selector phonesystem-url="https://1861.3cx.cloud" party="thienkimle"></call-us-selector>

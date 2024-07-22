@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hurley Piano Sign-In</title>
-    <link rel="icon" type="image/png" href="img/PianoLogo7.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <?php include("./html/header.html"); ?>
+    <?php include("header.html"); ?>
     <main>
         <div class="tile signin-form">
             <h1>Sign In</h1>
@@ -25,7 +24,7 @@
                 
         <p class="centered-text nowrap-text">Don't have an account?<br><a href="register.php">Sign Up</a></p> 
     </main>
-    <?php include("./html/footer.html"); ?>
+    <?php include("footer.html"); ?>
     <script src="script.js"></script> 
     
 <!--Use the below code snippet to provide real time updates to the live chat plugin without the need of copying and paste each time to your website when changes are made via PBX-->
