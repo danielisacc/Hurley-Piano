@@ -2,47 +2,60 @@
 require "email_script.php";
 require "database.php";
 
-// Retrieve POST data
-$first_name = $_POST['first_name'];
-$last_name = $_POST['last_name'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
+$errors = [];
 
-// Send email
-$subject = "Hurley Piano: Free Ebook!";
-$message = "Hello " . $first_name . ",<br>Here is your free <a href=''>Ebook</a>";
-sendMail($email, $subject, $message, 0);
+// Retrieve and sanitize POST data
+$first_name = filter_input(INPUT_POST, 'first_name', FILTER_SANITIZE_STRING);
+$last_name = filter_input(INPUT_POST, 'last_name', FILTER_SANITIZE_STRING);
+$email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+$phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
 
-// Prepare and execute the SQL statement
-try {
-    $mysqli = $conn;
-
-    $sql = "INSERT INTO contacts (first_name, last_name, email, phone) VALUES (?, ?, ?, ?)";
-    $stmt = $mysqli->prepare($sql);
-    if ($stmt === false) {
-        throw new Exception('Prepare failed: ' . htmlspecialchars($mysqli->error));
-    }
-
-    $stmt->bind_param("ssss", $first_name, $last_name, $email, $phone);
-    $stmt->execute();
-
-    $stmt->close();
-
-    // Redirect back to the form with a success flag
-    header("Location: lessons.php?success=1");
-    exit;
-
-} catch (Exception $e) {
-    echo "Error: " . $e->getMessage();
+// Validate input
+if (empty($first_name)) {
+    $errors[] = "First name is required.";
+}
+if (empty($last_name)) {
+    $errors[] = "Last name is required.";
+}
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $errors[] = "Invalid email format.";
+}
+if (empty($phone)) {
+    $errors[] = "Phone number is required.";
 }
 
-// Assuming you have some validation errors or other checks that would set $errors
-$errors = [];
-if (!empty($errors)) {
+if (empty($errors)) {
+    // Send email
+    $subject = "Hurley Piano: Free Ebook!";
+    $message = "Hello " . $first_name . ",<br>Here is your free <a href=''>Ebook</a>";
+    sendMail($email, $subject, $message, 0);
+
+    // Prepare and execute the SQL statement
+    try {
+        $mysqli = $conn;
+
+        $sql = "INSERT INTO contacts (first_name, last_name, email, phone) VALUES (?, ?, ?, ?)";
+        $stmt = $mysqli->prepare($sql);
+        if ($stmt === false) {
+            throw new Exception('Prepare failed: ' . htmlspecialchars($mysqli->error));
+        }
+
+        $stmt->bind_param("ssss", $first_name, $last_name, $email, $phone);
+        $stmt->execute();
+
+        $stmt->close();
+
+        // Redirect back to the form with a success flag
+        header("Location: lessons.php?success=1");
+        exit;
+
+    } catch (Exception $e) {
+        echo "Error: " . $e->getMessage();
+    }
+} else {
     foreach ($errors as $error) {
         echo $error . "<br>";
     }
-} else {
     echo "Invalid form submission.";
 }
 ?>
