@@ -5,10 +5,10 @@ require "database.php";
 $errors = [];
 
 // Retrieve and sanitize POST data
-$first_name = filter_input(INPUT_POST, 'first_name', FILTER_SANITIZE_STRING);
-$last_name = filter_input(INPUT_POST, 'last_name', FILTER_SANITIZE_STRING);
+$first_name = filter_input(INPUT_POST, 'first_name', FILTER_SANITIZE_SPECIAL_CHARS);
+$last_name = filter_input(INPUT_POST, 'last_name', FILTER_SANITIZE_SPECIAL_CHARS);
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-$phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
+$phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_SPECIAL_CHARS);
 
 // Validate input
 if (empty($first_name)) {
