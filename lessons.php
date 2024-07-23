@@ -91,11 +91,11 @@
                     <p class="success-message"><br><b><i>Thank you! We have just emailed you the ebook.</i></b></p>
                     <script>
                         document.addEventListener("DOMContentLoaded", function() {
-                            document.getElementById('getyourfreebook').reset();
+                            document.getElementById('freebook').reset();
                         });
                     </script>
                 <?php endif; ?>  
-                <form action="freelesson.php" method="post" id="getyourfreebook" novalidate class="inquiry-form">
+                <form action="freelesson.php" method="post" id="freebook" novalidate class="inquiry-form">
                     <label for="first_name">First Name</label> <br>
                     <input type="text" id="first_name" name="first_name" placeholder="Hurley"><br>
                     

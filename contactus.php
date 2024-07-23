@@ -2,14 +2,15 @@
 require "email_script.php";
 require "database.php";
 
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])){
 $errors = [];
 
 // Retrieve and sanitize POST data
-$first_name = filter_input(INPUT_POST, 'first_name', FILTER_SANITIZE_SPECIAL_CHARS);
-$last_name = filter_input(INPUT_POST, 'last_name', FILTER_SANITIZE_SPECIAL_CHARS);
+$first_name = filter_input(INPUT_POST, 'first_name', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+$last_name = filter_input(INPUT_POST, 'last_name', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-$phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_SPECIAL_CHARS);
-$comment = filter_input(INPUT_POST, 'comment', FILTER_SANITIZE_SPECIAL_CHARS);
+$phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+$comment = filter_input(INPUT_POST, 'comment', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
 // Validate input
 if (empty($first_name)) {
@@ -50,7 +51,7 @@ if (empty($errors)) {
         $stmt->close();
 
         // Redirect back to the form with a success flag
-        header("Location: contactus.php?success=1");
+        header("Location: contact.php?success=1");
         exit;
 
     } catch (Exception $e) {
@@ -61,5 +62,6 @@ if (empty($errors)) {
         echo $error . "<br>";
     }
     echo "Invalid form submission.";
+}
 }
 ?>

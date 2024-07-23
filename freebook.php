@@ -2,6 +2,8 @@
 require "email_script.php";
 require "database.php";
 
+
+ 
 $errors = [];
 
 // Retrieve and sanitize POST data
@@ -58,4 +60,5 @@ if (empty($errors)) {
     }
     echo "Invalid form submission.";
 }
+
 ?>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,8 +39,8 @@
                 <label for="phone">Phone</label>
                 <input type="tel" id="phone" name="phone" placeholder="Phone" required>
               
-                    <label for="comment">Comment</label>
-                    <input type="text" id="comment" name="comment" placeholder="Enter your text here" required>
+                <label for="comment">Comment</label>
+                <input type="text" id="comment" name="comment" placeholder="Enter your text here" required>
                 
                 <button type="submit" name="submit">Submit</button>
 

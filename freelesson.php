@@ -2,7 +2,8 @@
 require "email_script.php";
 require "database.php";
 
-$errors = [];
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])){
+   $errors = [];
 
 // Retrieve and sanitize POST data
 $first_name = filter_input(INPUT_POST, 'first_name', FILTER_SANITIZE_SPECIAL_CHARS);
@@ -46,7 +47,7 @@ if (empty($errors)) {
         $stmt->close();
 
         // Redirect back to the form with a success flag
-        header("Location: lessons.php?success=1#Free-Piano-Lesson");
+        header("Location: lessons.php?success=1");
         exit;
 
     } catch (Exception $e) {
@@ -57,5 +58,6 @@ if (empty($errors)) {
         echo $error . "<br>";
     }
     echo "Invalid form submission.";
+}
 }
 ?>
