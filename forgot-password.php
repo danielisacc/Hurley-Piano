@@ -14,7 +14,7 @@ include "./scripts/config.php";
     <main>
     <h2 style="margin-top: 0px;">Forgot Password</h2>
         <div class="tile signin-form">
-            <form action="forgot-password.php" method="post">
+            <form action="./scripts/forgot_password_token.php" method="post">
                 <h2 style="margin-bottom: 50px;">Recovery Email</h2>
                 <p id="error"></p>
                 <input type="email" name="email" id="email" placeholder="Your Recovery Email...">
@@ -24,10 +24,3 @@ include "./scripts/config.php";
     </main>
 </body>
 </html>
-
-<?php
-    require $scripts . "db_script.php";
-    if ($_SERVER['REQUEST_METHOD'] == "POST") {
-        forgot_pass_token_creation($conn);
-    }
-?>

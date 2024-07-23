@@ -423,7 +423,7 @@ p.error {
 }
 
 .icon_container {
-    margin: 4vh;
+    margin: 2vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -443,4 +443,20 @@ p.error {
     padding: 1%;
     width: 10%;
     height: 15vh;
+}
+.update-settings {
+    align-items: space-between;
+}
+.update-settings label {
+    margin: 20px;
+}
+.update-settings input{
+    display: none;
+}
+.update-settings input[type="submit"] {
+    display: block;
+}
+.update-settings a{
+    color: #0077cc;
+    cursor: pointer;
 }

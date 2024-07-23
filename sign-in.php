@@ -1,5 +1,12 @@
 <?php
 include "./scripts/config.php";
+
+$error_messages = array(
+    "empty_email" => "⚠️ Please Enter an Email",
+    "empty_password" => "⚠️ Please Enter a Password",
+    "incorrect_combination" => "😨 Incorrect Email or Password!",
+    "password_reset" => "Password Reset Link Sent to Email"
+);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,8 +21,8 @@ include "./scripts/config.php";
     <main>
         <div class="tile signin-form">
             <h1>Sign In</h1>
-            <p class="error" id="error"></p>
-            <form action="<?php htmlspecialchars($_SERVER['PHP_SELF'])?>" method="POST">
+            <p class="error" id="error"><?php if(isset($_GET["error"]))echo $error_messages[$_GET["error"]] ?></p>
+            <form action="./scripts/user_validation.php" method="POST">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email">
                 <label for="password">Password</label>
@@ -30,12 +37,3 @@ include "./scripts/config.php";
     <script src="<?= $scripts ?>script.js"></script> 
 </body>
 </html>
-<?php
-
-include $scripts . 'db_script.php';
-
-if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    user_signin_validation($conn);
-}
-
-?>

@@ -1,5 +1,18 @@
 <?php
 include "./scripts/config.php";
+
+$empty_messages = array('first-name' => '😨 First Name Not Entered',
+                            'last-name' => '😨 Last Name Not Entered',
+                            'email' => '😨 Email Not Entered',
+                            'password' => '😨 Password Not Entered',
+                            'password-conf' => '😨 Confirm Password Not Entered',
+                            'country' => '😨 Country Not Entered',
+                            'birth' => '😨 Birthday Not Entered');
+
+$error_messages = array('passwords_not_matching' => '😨 Password & Confimation Not Matching',
+                            'min_reqs_unmet' => '😨 Minimum Password Requirements Unmet',
+                            'empty_field' => "");
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,8 +27,21 @@ include "./scripts/config.php";
     <main>
         <div class="tile signin-form signup">
             <h1>Parent Registration</h1>
-            <p class="error" id="error"></p>
-            <form action="<?php htmlspecialchars($_SERVER['PHP_SELF'])?>" method="POST">
+            <p class="error" id="error">
+                <?php
+
+                if (isset($_GET["error"])) {
+                    if ($_GET["error"] === "empty_field") {
+                        echo $empty_messages[$_GET["empty"]];
+                    }
+                    else {
+                        echo $error_messages[$_GET["error"]];
+                    }
+                }
+
+                ?>
+            </p>
+            <form action="./scripts/add_user.php" method="POST">
                     <div class="form-inner">
                         <label for="first-name">First Name</label>
                         <input type="text" id="first-name" name="first-name">
@@ -67,11 +93,3 @@ include "./scripts/config.php";
     <script src="<?= $scripts ?>register_script.js"></script> 
 </body>
 </html>
-
-<?php
-include $scripts . 'db_script.php';
-
-if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    add_user($conn);
-}
-?>

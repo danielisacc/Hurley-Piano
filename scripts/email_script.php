@@ -95,10 +95,8 @@
 
         try {
             $mail->send();
-            echo"success";
         }
         catch (Exception $e) {
-            echo"Message could not be sent. Mailer error: {$mail->ErrorInfo}";
         }
     }
 ?>
