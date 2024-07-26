@@ -20,7 +20,7 @@ include "./scripts/config.php";
                 <h1>Teaching<br>Neurodiverse Kids<br>To Play Piano</h1>
             </div>
             <div class="hero-buttons">
-                <a href="https://link.msaascrm.com/widget/bookings/hurley-piano-call-booking" class="button book-consultation">Book Free Consultation</a>
+                <a href="https://cal.com/thienkim-le" class="button book-consultation">Book Free Consultation</a>
                 <a class=" email-button button" href = "mailto: info@hurleypiano.com">Send Us Email</a>
             </div>
         </div>
@@ -90,24 +90,6 @@ include "./scripts/config.php";
                 </div>
             </div>
         </div>
-<!--
-        <div class="centered-tile-full-width-purple">
-                <h2>Get Your <br> <u>FREE</u> Book</h2>
-                <p>Teach your toddler music even though you never learned music yourself. <br> <br>
-                Get your <b>FREE</b> starter book and teach your little one music most efficiently.</p>
-                <form class="inquiry-form">
-                    <label for="full-name">Full Name</label> <br>
-                    <input type="text" id="full-name" name="fullname" placeholder="Hurley Piano"><br>
-                    <br>
-            
-                    <label for="email">Email</label><br>
-                    <input type="text" id="email" name="email" placeholder="you@email.com"><br>
-                
-            
-                    <button type="submit">SUBMIT</button>
-                </form>
-        </div>
--->
 
         <h2> Why Hurley Piano?</h2>
         <h5> We offer unique music lessons</h5>
@@ -121,17 +103,6 @@ include "./scripts/config.php";
             <img src="img/why-hurley-3.png" 
             alt="interactive games. Enhance music theory skills through our engaging online games, improving rhythm, note recognition, sight reading, and more. practice tools. Practice sessions provide step-by-step instructions between video lessons, with recorded audio tracks for a real band experience.">
         </div>
-<!--
-        <h2>Learning Music can be <br> EASY & AFFORDABLE</h2>
-        <div class="centered-tile-double">
-            <img src="img/easy-affordable-music.png" 
-            alt="Who says that learning music has to be Expensive?
-            We have tons of video tutorials that can help the kids to learn music. Join our monthly subscription, and you will get access to many videos like this!">
-        </div>
--->
-<!-- <center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8AexYZPsq90?si=5NSvvmM9LehqY0nf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</center> -->
         
         <h2>Our Interactive Games</h2>
         <div class="tile" style="--color: radial-gradient(rgba(124, 186, 232,0.7), rgba(250,128,114,0.2))">
@@ -153,39 +124,55 @@ include "./scripts/config.php";
         <h2>About Us</h2>
         <div class="tile" style="background: url('img/About-Img.webp');">
             <div class="about-us">
-                <!-- <img src="img/About-Img.webp" alt="live piano lesson with child "> -->
                 <p>Hurley Piano is a leading piano methodology to the special needs community. Richard Hurley has developed a highly regarded Black Keys Exercises designed to introduce the world of the keyboard to the most challenging of special need students. Based in Austin Texas, a city that is a hub of special needs innovation, Hurley Piano has drawn upon the expertise of the city’s leading special needs researchers to test and challenge this methodology. Sign up for free introductory videos and blogs, follow the video based conversation around the challenges facing our special needs kiddos today.</p>
             </div>
        </div>
 
         <div class="centered-tile-double">
-            <img src="img/special-needs-student.png" 
+            <img src="../img/special-needs-student.png" 
             alt="Specail needs students include ADHD, Asperger Syndrome, Autism, Down Syndrome, Dyscalculia, Dyselexia, Sensory Processing Disorder">
         </div>
-        <!-- <form class="inquiry-form">
-            <label for="full-name">Full Name</label>
-            <input type="text" id="full-name" name="fullname" placeholder="Full Name">
-    
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email">
-    
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" placeholder="Phone">
-    
-            <p>Which music lessons your family is interested in?</p>
-            <div class="checkbox-group">
-                <input type="checkbox" id="piano" name="lesson_type" value="Piano">
-                <label for="piano">Piano Lessons</label>
-    
-                <input type="checkbox" id="guitar" name="lesson_type" value="Guitar">
-                <label for="guitar">Guitar Lessons</label>
-    
-                <input type="checkbox" id="drums" name="lesson_type" value="Drums">
-                <label for="drums">Drum Lessons</label>
-            </div>
-    
-            <button type="submit">SUBMIT</button>
-        </form> -->
-    <?php include($html . "footer.html") ?>
+
+    </main>
+    <?php include $html . "footer.html" ?>
+
+<!--Use the below code snippet to provide real time updates to the live chat plugin without the need of copying and paste each time to your website when changes are made via PBX-->
+<call-us-selector phonesystem-url="https://1861.3cx.cloud" party="thienkimle"></call-us-selector>
+ 
+<!--Incase you don't want real time updates to the live chat plugin when options are changed, use the below code snippet. Please note that each time you change the settings you will need to copy and paste the snippet code to your website--> 
+<!--<call-us 
+phonesystem-url="https://1861.3cx.cloud" 
+style="position:fixed;font-size:16px;line-height:17px;z-index: 99999;right: 0; bottom: 0;" 
+id="wp-live-chat-by-3CX" 
+minimized="true" 
+animation-style="noanimation" 
+party="thienkimle" 
+minimized-style="bubbleright" 
+allow-call="true" 
+allow-video="false" 
+allow-soundnotifications="true" 
+enable-mute="true" 
+enable-onmobile="true" 
+offline-enabled="true" 
+enable="true" 
+ignore-queueownership="false" 
+authentication="none" 
+show-operator-actual-name="true" 
+aknowledge-received="true" 
+gdpr-enabled="false" 
+message-userinfo-format="both" 
+message-dateformat="both" 
+lang="browser" 
+button-icon-type="default" 
+greeting-visibility="none" 
+greeting-offline-visibility="none" 
+chat-delay="2000" 
+enable-direct-call="true" 
+enable-ga="false" 
+></call-us>--> 
+<script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
+<!-- UserWay widget script  -->
+<script src="https://cdn.userway.org/widget.js" data-account="g3JuQiTzQN"></script>
+
 </body>
 </html>

@@ -1,0 +1,367 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('img/homepage-background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8em;
+    margin-top: 0;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em;
+    text-align: center;
+    margin-top: 90px;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 90px;
+}
+
+h5 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3em;
+    margin-top: 90px;
+    background-color: yellow;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin-top: 10px;
+    padding: 0 7em;
+    font-size: 1em;
+}
+
+.hero-photo {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+/* Hero Content */
+.centered-tile-full-width-hero {
+    max-width: max-content;
+    margin: 0 auto;
+    background-image: url(img/music-lessons/hero-background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2em 0;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.centered-tile-full-width-hero h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.centered-tile-full-width-hero h2 {
+    font-size: 2em;
+}
+
+.centered-tile-full-width-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.centered-tile-full-width-hero h1 {
+    text-align: center;
+    padding: 1em;
+}
+
+/* Testimonial Boxes */
+.testimonial-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding: 1em;
+    border-radius: 20px;
+    text-align: center;
+    margin: 1em;
+}
+
+.testimonial-box img {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.testimonial-box h4, .testimonial-box h5 {
+    text-align: center;
+}
+
+.testimonial-box p {
+    line-height: 1.6;
+    font-size: 1em;
+    padding: 1em;
+}
+
+/* Flex Container for Testimonials */
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 2em;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    cursor: pointer;
+    width: 80%;
+    max-width: 20em;
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    background-color: #f4f4f4;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #ddd;
+    color: #444;
+}
+
+.book-consultation, .play-now, .about-me {
+    background-color: #e75ede;
+    color: white;
+}
+
+.send-email {
+    background-color: #008CBA;
+    color: white;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonial-box h4 {
+        font-size: 1.5em;
+    }
+    .testimonial-box h5 {
+        font-size: 1.1em;
+    }
+    .testimonial-box p {
+        font-size: 1em;
+        padding: 0 1em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+    h5 {
+        font-size: 1.1em;
+    }
+    .centered-tile-full-width h2 {
+        font-size: 1.8em;
+    }
+    .centered-tile-full-width-hero h1 {
+        font-size: 2em;
+    }
+    p {
+        padding: 0 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-box h4 {
+        font-size: 1.3em;
+    }
+    .testimonial-box h5 {
+        font-size: 1em;
+    }
+    .testimonial-box p {
+        font-size: 0.9em;
+        padding: 0 0.5em;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+    h5 {
+        font-size: 1em;
+    }
+    .centered-tile-full-width h2 {
+        font-size: 1.5em;
+    }
+    .centered-tile-full-width-hero h1 {
+        font-size: 1.5em;
+    }
+    p {
+        padding: 0 1em;
+    }
+}
+
+/* Pink to Baby Blue Gradient Form */
+.Free-Piano-Lesson,
+.Free-Book {
+    padding: 2em;
+    background: linear-gradient(to bottom right, pink, #89CFF0);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    height: 80h; /* Full viewport height */
+    width: 100%; /* Adjust width */
+}
+
+.Free-Piano-Lesson h2,
+.Free-Book h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.3em; /* Adjust size as needed */
+    margin-top: 10px; /* Space above the heading */
+    text-align: center;
+    width: 100%;
+    color: rgb(73, 71, 71); /* Changed to dark grey */
+   }
+
+.Free-Piano-Lesson p,
+.Free-Book p {
+    text-align: center;
+    width: 120%;
+    margin: 0 auto 20px auto;
+    color: #e75ede; /* Adjusted color */
+    padding: 0;
+}
+
+.Free-Piano-Lesson img,
+.Free-Book img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.2em auto 0;
+}
+
+.Free-Piano-Lesson form,
+.Free-Book form {
+    width: 100%;
+    max-width: 600px; /* Adjusted max-width */
+    margin: 2em auto 0;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Free-Piano-Lesson form label,
+.Free-Book label {
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: #353834; /* Adjusted color */
+}
+
+.Free-Piano-Lesson form input,
+.Free-Piano-Lesson form textarea,
+.Free-Book form input,
+.Free-Book form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.Free-Piano-Lesson form button,
+.Free-Book form button {
+    margin-top: 1.5em; /* Space above the button */
+    padding: 0.8em 1.2em; /* Adjust padding to fit the word "Submit" */
+    font-size: 1em; /* Adjust font size */
+    color: white;
+    background-color: rgb(0, 123, 139);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text */
+}
+
+.Free-Piano-Lesson form button:hover,
+.Free-Book form button:hover {
+    background-color: rgb(0, 143, 159); /* Adjusted hover color */
+}
+
+/* Common Styles */
+.Free-Book p {
+    width: 120%; /* Ensures the paragraph uses the full width of the form */
+    margin: 0 auto 20px auto; /* Adds space below the paragraph */
+    text-align: center; /* Optionally center the text */
+    padding: 0;
+}
+
+.Free-Book h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em; /* Adjust size as needed */
+    margin-top: 10px; /* Space above the heading */
+    text-align: center;
+    color: rgb(73, 71, 71); /* Changed to dark grey */
+}
+
+/* Add Flex Container */
+.flex-container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2em;
+    padding: 2em;
+}
+
+/* Adjust Free-Piano-Lesson and Free-Book*/
+.Free-Piano-Lesson,
+.Free-Book {
+    flex: 1;
+    min-width: 45%; /* Adjust minimum width as needed */
+}
