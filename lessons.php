@@ -84,7 +84,7 @@
                 </form>
             </div>
 
-            <div class="centered-tile-full-width">
+            <div class="Free-Book">
                 <h2>Get Your <u>FREE</u> eBook!</h2>
                 <h4>Teach your kiddios piano with no experience needed.</h4>
                 <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>

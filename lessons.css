@@ -241,7 +241,8 @@ p {
 }
 
 /* Pink to Baby Blue Gradient Form */
-.Free-Piano-Lesson {
+.Free-Piano-Lesson,
+.Free-Book {
     padding: 2em;
     background: linear-gradient(to bottom right, pink, #89CFF0);
     background-size: cover;
@@ -256,7 +257,8 @@ p {
     width: 100%; /* Adjust width */
 }
 
-.Free-Piano-Lesson h2 {
+.Free-Piano-Lesson h2,
+.Free-Book h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.3em; /* Adjust size as needed */
     margin-top: 10px; /* Space above the heading */
@@ -265,22 +267,25 @@ p {
     color: rgb(73, 71, 71); /* Changed to dark grey */
    }
 
-.Free-Piano-Lesson p {
-    text-align: left;
+.Free-Piano-Lesson p,
+.Free-Book p {
+    text-align: center;
     width: 120%;
     margin: 0 auto 20px auto;
     color: #e75ede; /* Adjusted color */
     padding: 0;
 }
 
-.Free-Piano-Lesson img {
+.Free-Piano-Lesson img,
+.Free-Book img {
     width: 100%;
     height: auto;
     display: block;
     margin: 1.2em auto 0;
 }
 
-.Free-Piano-Lesson form {
+.Free-Piano-Lesson form,
+.Free-Book form {
     width: 100%;
     max-width: 600px; /* Adjusted max-width */
     margin: 2em auto 0;
@@ -290,14 +295,17 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.Free-Piano-Lesson form label {
+.Free-Piano-Lesson form label,
+.Free-Book label {
     margin-top: 1em;
     font-size: 1.2em;
     color: #353834; /* Adjusted color */
 }
 
 .Free-Piano-Lesson form input,
-.Free-Piano-Lesson form textarea {
+.Free-Piano-Lesson form textarea,
+.Free-Book form input,
+.Free-Book form textarea {
     width: 100%;
     padding: 0.5em;
     margin-top: 0.5em;
@@ -307,7 +315,8 @@ p {
     box-sizing: border-box;
 }
 
-.Free-Piano-Lesson form button {
+.Free-Piano-Lesson form button,
+.Free-Book form button {
     margin-top: 1.5em; /* Space above the button */
     padding: 0.8em 1.2em; /* Adjust padding to fit the word "Submit" */
     font-size: 1em; /* Adjust font size */
@@ -320,101 +329,20 @@ p {
     text-align: center; /* Center the text */
 }
 
-.Free-Piano-Lesson form button:hover {
+.Free-Piano-Lesson form button:hover,
+.Free-Book form button:hover {
     background-color: rgb(0, 143, 159); /* Adjusted hover color */
 }
 
-/* Pink to light yellow gradient background */
-.centered-tile-full-width {
-    padding: 2em;
-    background: linear-gradient(to bottom right, pink, #89CFF0);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    height: 80h; /* Full viewport height */
-    width: 100%; /* Adjust width */
-
-}
-
-.centered-tile-full-width h2 {
-    font-size: 4em;
-    text-align: center;
-    color: darkgrey; /* Changed to dark grey */
-}
-
-    
-.centered-tile-full-width p {
-    text-align: left;
-    width: 120%;
-    margin: 0 auto 20px auto; /* Center the paragraph with space below */
-    color:#e75ede; /* Adjusted color */
+/* Common Styles */
+.Free-Book p {
+    width: 120%; /* Ensures the paragraph uses the full width of the form */
+    margin: 0 auto 20px auto; /* Adds space below the paragraph */
+    text-align: center; /* Optionally center the text */
     padding: 0;
 }
 
-.centered-tile-full-width img {
-    width: 100%; /* Responsive width */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Corrects block level for centering */
-    margin: 1.2em auto 0; /* Top margin only, centers horizontally */
-}
-
-.centered-tile-full-width form {
-    width: 100%; /* Full width */
-    max-width: 600px; /* Adjusted max-width */
-    margin: 2em auto 0;
-    padding: 2em;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.centered-tile-full-width form label {
-    margin-top: 1em;
-    font-size: 1.2em;
-    color: #35383;
-}
-
-.centered-tile-full-width form input,
-.centered-tile-full-width form textarea {
-    width: 100%;
-    padding: 0.5em;
-    margin-top: 0.5em;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.centered-tile-full-width form button {
-    margin-top: 1.5em; /* Space above the button */
-    padding: 0.8em 1.2em; /* Adjust padding to fit the word "Submit" */
-    font-size: 1em; /* Adjust font size */
-    color: white;
-    background-color: rgb(0, 123, 139);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Center the text */
-}
-
-.centered-tile-full-width form button:hover {
-    background-color: rgb(0, 123, 139); /* Adjusted hover color */
-}
-
-/* Common Styles */
-.centered-tile-full-width p {
-    width: 120%; /* Ensures the paragraph uses the full width of the form */
-    margin: 0 auto 20px auto; /* Adds space below the paragraph */
-    text-align: left; /* Optionally center the text */
-}
-
-.centered-tile-full-width h2 {
+.Free-Book h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5em; /* Adjust size as needed */
     margin-top: 10px; /* Space above the heading */
@@ -431,9 +359,9 @@ p {
     padding: 2em;
 }
 
-/* Adjust Free-Piano-Lesson and centered-tile-full-width */
+/* Adjust Free-Piano-Lesson and Free-Book*/
 .Free-Piano-Lesson,
-.centered-tile-full-width {
+.Free-Book {
     flex: 1;
     min-width: 45%; /* Adjust minimum width as needed */
 }
