@@ -17,11 +17,11 @@
                 <h1>Teaching<br>Neurodiverse Kids<br>To Play Piano</h1>
             </div>
             <div class="hero-buttons">
-                <a href="https://cal.com/thienkim-le" class="button book-consultation">Book Free Consultation</a>
+                <a href="https://calendly.com/richardhurley-hurleypiano/30min" class="button book-consultation">Book Free Consultation</a>
                 <a class=" email-button button" href = "mailto: info@hurleypiano.com">Send Us Email</a>
             </div>
         </div>
-
+      
 
         <!-- Buissiness Statistics Section -->
         <div class="stats-block">
@@ -200,8 +200,10 @@ enable-direct-call="true"
 enable-ga="false" 
 ></call-us>--> 
 <script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
+
 <!-- UserWay widget script  -->
-<script src="https://cdn.userway.org/widget.js" data-account="g3JuQiTzQN"></script>
+<script src="https://cdn.userway.org/widget.js" data-account="rmm88qREWe"></script>
+
 
 </body>
 </html>
