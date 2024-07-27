@@ -39,9 +39,9 @@
                 <label for="phone">Phone</label>
                 <input type="tel" id="phone" name="phone" placeholder="Phone" required>
               
+              
                 <label for="comment">Comment</label>
-                <input type="text" id="comment" name="comment" placeholder="Enter your text here" required>
-                
+                <textarea type="text" id="comment" name="comment" placeholder="Write your comments here..." required></textarea>    
                 <button type="submit" name="submit">Submit</button>
 
             

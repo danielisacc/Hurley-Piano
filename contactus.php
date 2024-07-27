@@ -51,7 +51,7 @@ if (empty($errors)) {
         $stmt->close();
 
         // Redirect back to the form with a success flag
-        header("Location: contact.php?success=1");
+        header("Location: getintouch.php?success=1");
         exit;
 
     } catch (Exception $e) {

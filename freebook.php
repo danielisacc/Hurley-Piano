@@ -2,7 +2,6 @@
 require "email_script.php";
 require "database.php";
 
-
  
 $errors = [];
 
