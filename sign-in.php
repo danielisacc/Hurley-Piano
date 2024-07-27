@@ -8,6 +8,7 @@ $error_messages = array(
     "password_reset" => "Password Reset Link Sent to Email"
 );
 ?>
+    <link rel="icon" type="image/png" href="img/PianoLogo7.png">
     <link rel="stylesheet" href="<?= $styles ?>styles.css">
 </head>
 <body>
@@ -67,6 +68,6 @@ enable-ga="false"
 <script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
 
 <!-- UserWay widget script  -->
-<script src="https://cdn.userway.org/widget.js" data-account="g3JuQiTzQN"></script>
+<script src="https://cdn.userway.org/widget.js" data-account="rmm88qREWe"></script>
 </body>
 </html>
