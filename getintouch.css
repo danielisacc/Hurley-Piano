@@ -84,7 +84,7 @@ body {
 }
 
 .row50 {
-    width: 46%;
+    width: 45%;
 }
 
 .row100 {
@@ -120,6 +120,7 @@ body {
     border: none;
     cursor: pointer;
     transition: background 0.3s;
+
 }
 
 .inputBox input[type="submit"]:hover {
