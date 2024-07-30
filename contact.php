@@ -1,32 +1,35 @@
+<?php 
+include "./scripts/config.php";
+$output_messages = array(
+    "success" => "Thank you! Our staff will be in touch with you soon.",
+    "empty" => "Missing an Input, please fill all fields.",
+    "email" => "Invalid Email, please input a different email.",
+    "database" => "Database Error, please try again later."
+)
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hurley Piano Website - Contact Us</title>
-    <link rel="icon" type="image/png" href="img/PianoLogo7.png">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/png" href="<?= $imgs ?>PianoLogo7.png">
+    <link rel="stylesheet" href="<?= $styles ?>contact.css">
    
 </head>
 <body>
-    <?php include("header.html"); ?>
+    <?php include $html . "header.html"; ?>
     <main>
-
-
     <div class="container">
                 
         <div class="contact-us">
             <h2>Contact Us</h2>
             <h3>Reach Out to Us for Any Inquiries or Assistance</h3>
-            <?php if (isset($_GET['success']) && $_GET['success'] == '1') : ?>
-                <p class="success-message"><b><i>Thank you! Our staff will be in touch with you soon.</i></b></p>
-                <script>
-                    document.addEventListener("DOMContentLoaded", function() {
-                        document.getElementById('contactus').reset();
-                    });
-                </script>
-            <?php endif; ?>
-            <form action="contactus.php" method="post" id="contactus" novalidate class="inquiry-form">
+            <p class="success-message"><b><i>
+                <?php if (isset($_GET["output"])) echo $output_messages[$_GET["output"]]; ?>
+            </i></b></p>
+            <form action="./scripts/contactus.php" method="post" id="contactus" novalidate class="inquiry-form">
                 <label for="first_name">First Name</label>
                 <input type="text" id="first_name" name="first_name" placeholder="Hurley" required>
                 
@@ -52,7 +55,7 @@
 
     </main>
     
-<<?php include("footer.html") ?>
+<<?php include $html . "footer.html" ?>
 
 <!--Use the below code snippet to provide real time updates to the live chat plugin without the need of copying and paste each time to your website when changes are made via PBX-->
 <call-us-selector phonesystem-url="https://1861.3cx.cloud" party="thienkimle"></call-us-selector>

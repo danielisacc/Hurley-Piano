@@ -3,7 +3,6 @@ require "email_script.php";
 require "database.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])){
-$errors = [];
 
 // Retrieve and sanitize POST data
 $first_name = filter_input(INPUT_POST, 'first_name', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
@@ -13,20 +12,12 @@ $phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 $comment = filter_input(INPUT_POST, 'comment', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
 // Validate input
-if (empty($first_name)) {
-    $errors[] = "First name is required.";
-}
-if (empty($last_name)) {
-    $errors[] = "Last name is required.";
+$errors;
+if (empty($first_name) || empty($last_name) || empty($phone) || empty($comment)) {
+    $errors = "empty";
 }
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    $errors[] = "Invalid email format.";
-}
-if (empty($phone)) {
-    $errors[] = "Phone number is required.";
-}
-if (empty($comment)) {
-    $errors[] = "Comment is required.";
+    $errors = "email";
 }
 
 if (empty($errors)) {
@@ -51,17 +42,16 @@ if (empty($errors)) {
         $stmt->close();
 
         // Redirect back to the form with a success flag
-        header("Location: contact.php?success=1");
+        header("Location: ../contact.php?output=success");
         exit;
 
     } catch (Exception $e) {
-        echo "Error: " . $e->getMessage();
+        header("Location: ../contact.php?output=database");
+        exit;
     }
 } else {
-    foreach ($errors as $error) {
-        echo $error . "<br>";
-    }
-    echo "Invalid form submission.";
+    header("Location: ../contact.php?output=" . $errors);
+    exit;
 }
 }
 ?>
