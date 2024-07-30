@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
             // Send email
             $subject = "A first free piano lesson appointment";
             $message = "Hello,<br>A first free piano lesson was made by:<br>$first_name $last_name<br>$email<br>$phone";
-            sendMail('thienkim.le@g.austincc.edu', $subject, $message, 0);
+            sendMail('richardhurley@hurleypiano.com', $subject, $message, 0);
 
             // Insert into database
             $sql = "INSERT INTO contacts (first_name, last_name, email, phone) VALUES (?, ?, ?, ?)";

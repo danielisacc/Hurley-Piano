@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
         // Send email
         $subject = "Contact Us Form Submission";
         $message = "Hello,<br> A contact us form submission was made by:<br>$first_name $last_name<br>$email<br>$phone<br>Comment: $comment";
-        sendMail('thienkim.le@g.austincc.edu', $subject, $message, 0);
+        sendMail('richardhurley@hurleypiano.com', $subject, $message, 0);
 
         // Prepare and execute the SQL statement
         try {
