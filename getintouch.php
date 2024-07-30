@@ -40,7 +40,7 @@
                                 
                             </div>
                             <div class="row50">
-                            <div class="inputBox">
+                                <div class="inputBox">
                                     <span>Last Name</span>
                                     <input type="text" name="last_name" placeholder="Piano">
                                 </div>
