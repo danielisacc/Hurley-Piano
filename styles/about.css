@@ -1,193 +1,94 @@
-/* Global Styles */
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
+    background: url('../img/homepage-background.png') center/cover no-repeat;
     min-height: 100vh;
-    background: url('img/homepage-background.png') center/cover no-repeat;
-    color: #666;
 }
 
-/* Container for Contact Us Section */
-.ContactUs {
-    max-width: 1400px;
-    margin: 0 auto;
+.testimonial1-box, .testimonial-box, .star-child {
     padding: 20px;
-}
-
-/* Title Styling */
-.title h2 {
     text-align: center;
-    margin-bottom: 10px;
+    margin: 20px auto;
 }
 
-/* Flexbox Layout for Contact Boxes */
-.box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.testimonial1-box {
+    background-color: #f9f9f9;
+    width: 100%;
 }
 
-/* General Contact Box Styling */
-.contact {
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 5px;
-    background: #fff;
-    flex: 1;
-}
-
-/* Background Gradient Variations for Contact Boxes */
-.contact.form {
-    background: linear-gradient(to right, pink, rgb(239, 243, 187));
-}
-
-.contact.info {
-    background: linear-gradient(to right, rgb(239, 243, 187), lightblue);
-}
-
-.contact.map {
-    background: linear-gradient(to right, lightblue, pink);
-}
-
-/* Contact Box Heading */
-.contact h3 {
+.testimonial1-box img {
+    width: 25%;
+    max-width: 70%;
+    height: auto;
+    display: inline-block;
     margin-bottom: 15px;
-    color: black;
 }
 
-/* Specific Styling for Form Contact Box Paragraphs */
-.contact.form p {
-    text-align: center;
-    width: 80%;
-    margin: 0 auto 20px;
-    color: #e75ede;
-}
-
-/* Form Box Styling */
-.formBox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 93%;
-    height: calc(100% - 40px);
-}
-
-/* Width and Flex Adjustments for Contact Boxes */
-.contact.form, .contact.map {
-    flex: 2;
-    width: calc(66% - 20px);
-    height: 440px;
-}
-
-.contact.info {
-    flex: 1;
-    width: calc(33% - 20px);
-    height: 440px;
-}
-
-/* Row Styling */
-.row50 {
-    width: 45%;
-}
-
-.row100 {
-    width: 100%;
-}
-
-/* Input Box Styling */
-.inputBox {
+.testimonial1-box p {
+    font-size: 16px;
+    line-height: 1.6;
     margin-bottom: 10px;
+    text-align: left;
 }
 
-.inputBox span {
+/* Common styles for testimonial boxes */
+.testimonial-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    max-width: 700px;
+    min-width: 400px;
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.testimonial-box img {
+    width: 100%;
+    max-width: 85%;
+    height: auto;
     display: block;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.inputBox input, .inputBox textarea {
-    width: 100%;
-    border: 1px solid #ccc;
-    padding: 10px;
+    margin: 0 auto 15px;
     border-radius: 5px;
-    outline: none;
 }
 
-.inputBox textarea {
-    resize: none;
-    height: 90px;
-}
-
-/* Submit Button Styling */
-.inputBox input[type="submit"] {
-    background: #ff4081;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.inputBox input[type="submit"]:hover {
-    background: #e5006e;
-}
-
-/* Info Box Styling */
-.infoBox {
-    height: calc(100% - 40px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.infoBox div, .infoBox a {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.infoBox span {
-    display: inline-block;
-    width: 30px;
-    font-size: 20px;
-}
-
-.infoBox p, .infoBox a {
-    margin-left: 5px;
-}
-
-/* Social Icons Styling */
-.sci {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-.sci li {
-    margin-right: 10px;
-}
-
-.sci a {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #333;
-    color: #fff;
+.testimonial-box h2, .star-child h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: black;
     text-align: center;
-    line-height: 30px;
-    transition: background 0.3s;
+    margin-top: 0.3em;
 }
 
-.sci a:hover {
-    background: #ff4081;
+.testimonial-box p {
+    color: #4f4d4d;
+    line-height: 1.6;
+    font-size: 1.2em;
+    padding: 1em;
+    margin-bottom: 0;
 }
 
-/* Map Styling */
-.contact.map iframe {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    overflow: hidden;
+/* Specific styling for .star-child */
+.star-child {
+    background: url('../img/about/yellow-background.png') center/cover no-repeat;
+    border-radius: 20px;
+    max-width: 700px;
+}
+
+.star-child h2 {
+    margin: 0;
+    background: url('../img/about/star-background.png') center/auto no-repeat;
+    max-width: 600px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
