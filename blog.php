@@ -75,13 +75,15 @@
                 <h3>This Year Autism and Music 2018</h2>
                     <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
             </a>  
+
+            <a href="#" class="testimonial-box">
+                <img src="img/blog/concert.png" alt="orchestra">
+                <h3>This Year Autism and Music 2018</h2>
+                <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
+            </a>
         </div>
         
-    <a href="#" class="testimonial-box">
-        <img src="img/blog/concert.png" alt="orchestra">
-        <h3>This Year Autism and Music 2018</h2>
-            <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
-    </a>
+    
        
         
     </main>
