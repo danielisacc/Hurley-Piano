@@ -1,3 +1,4 @@
+/* General Body and Text Styling */
 body {
     margin: 0;
     padding: 0;
@@ -9,28 +10,28 @@ body {
     min-height: 100vh;
 }
 
-h1 {
+h1, h2, h3, h5 {
     font-family: 'Playfair Display', serif;
+}
+
+h1 {
     font-size: 2.8em;
     margin-top: 0;
 }
 
 h2 {
-    font-family: 'Playfair Display', serif;
     font-size: 2.2em;
     text-align: center;
     margin-top: 90px;
 }
 
 h3 {
-    font-family: 'Playfair Display', serif;
     font-size: 1.5em;
     text-align: center;
     margin-top: 90px;
 }
 
 h5 {
-    font-family: 'Playfair Display', serif;
     font-size: 1.3em;
     margin-top: 90px;
     background-color: yellow;
@@ -40,7 +41,6 @@ h5 {
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
     color: #333;
     margin-top: 10px;
     padding: 0 7em;
@@ -58,8 +58,6 @@ p {
 
 /* Hero Content */
 .centered-tile-full-width-hero {
-    max-width: max-content;
-    margin: 0 auto;
     background-image: url(img/music-lessons/hero-background.png);
     background-size: cover;
     background-position: center;
@@ -85,11 +83,6 @@ p {
     margin: 0 auto;
 }
 
-.centered-tile-full-width-hero h1 {
-    text-align: center;
-    padding: 1em;
-}
-
 /* Testimonial Boxes */
 .testimonial-box {
     background-color: rgba(255, 255, 255, 0.7);
@@ -104,7 +97,6 @@ p {
 }
 
 .testimonial-box img {
-    width: 100%;
     max-width: 90%;
     height: auto;
     border-radius: 5px;
@@ -170,19 +162,8 @@ p {
     color: white;
 }
 
-
 /* Responsive Design */
 @media (max-width: 768px) {
-    .testimonial-box h4 {
-        font-size: 1.5em;
-    }
-    .testimonial-box h5 {
-        font-size: 1.1em;
-    }
-    .testimonial-box p {
-        font-size: 1em;
-        padding: 0 1em;
-    }
     h1 {
         font-size: 2em;
     }
@@ -195,7 +176,7 @@ p {
     h5 {
         font-size: 1.1em;
     }
-    .centered-tile-full-width h2 {
+    .centered-tile-full-width-hero h2 {
         font-size: 1.8em;
     }
     .centered-tile-full-width-hero h1 {
@@ -207,16 +188,6 @@ p {
 }
 
 @media (max-width: 480px) {
-    .testimonial-box h4 {
-        font-size: 1.3em;
-    }
-    .testimonial-box h5 {
-        font-size: 1em;
-    }
-    .testimonial-box p {
-        font-size: 0.9em;
-        padding: 0 0.5em;
-    }
     h1 {
         font-size: 1.5em;
     }
@@ -229,7 +200,7 @@ p {
     h5 {
         font-size: 1em;
     }
-    .centered-tile-full-width h2 {
+    .centered-tile-full-width-hero h2 {
         font-size: 1.5em;
     }
     .centered-tile-full-width-hero h1 {
@@ -248,58 +219,51 @@ p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    height: 80h; /* Full viewport height */
-    width: 100%; /* Adjust width */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .Free-Piano-Lesson h2,
 .Free-Book h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.3em; /* Adjust size as needed */
-    margin-top: 10px; /* Space above the heading */
+    font-size: 2.3em;
+    margin-top: 10px;
     text-align: center;
     width: 100%;
-    color: rgb(73, 71, 71); /* Changed to dark grey */
-   }
+    color: rgb(73, 71, 71);
+}
 
 .Free-Piano-Lesson p,
 .Free-Book p {
     text-align: center;
-    width: 120%;
-    margin: 0 auto 20px auto;
-    color: #e75ede; /* Adjusted color */
-    padding: 0;
-}
-
-.Free-Piano-Lesson img,
-.Free-Book img {
     width: 100%;
-    height: auto;
-    display: block;
-    margin: 1.2em auto 0;
+    margin: 0 auto 20px auto;
+    color: #e75ede;
+    padding: 0;
 }
 
 .Free-Piano-Lesson form,
 .Free-Book form {
     width: 100%;
-    max-width: 600px; /* Adjusted max-width */
-    margin: 2em auto 0;
+    max-width: 600px;
+    margin: 0.5em auto 0;
     padding: 2em;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 .Free-Piano-Lesson form label,
-.Free-Book label {
+.Free-Book form label {
     margin-top: 1em;
     font-size: 1.2em;
-    color: #353834; /* Adjusted color */
+    color: #353834;
 }
 
 .Free-Piano-Lesson form input,
@@ -317,51 +281,38 @@ p {
 
 .Free-Piano-Lesson form button,
 .Free-Book form button {
-    margin-top: 1.5em; /* Space above the button */
-    padding: 0.8em 1.2em; /* Adjust padding to fit the word "Submit" */
-    font-size: 1em; /* Adjust font size */
+    margin-top: 0.5em;
+    padding: 0.8em 1.2em;
+    font-size: 1em;
     color: white;
     background-color: rgb(0, 123, 139);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Center the text */
+    text-align: center;
 }
 
 .Free-Piano-Lesson form button:hover,
 .Free-Book form button:hover {
-    background-color: rgb(0, 143, 159); /* Adjusted hover color */
+    background-color: rgb(0, 143, 159);
 }
 
-/* Common Styles */
-.Free-Book p {
-    width: 120%; /* Ensures the paragraph uses the full width of the form */
-    margin: 0 auto 20px auto; /* Adds space below the paragraph */
-    text-align: center; /* Optionally center the text */
-    padding: 0;
-}
-
-.Free-Book h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5em; /* Adjust size as needed */
-    margin-top: 10px; /* Space above the heading */
-    text-align: center;
-    color: rgb(73, 71, 71); /* Changed to dark grey */
-}
-
-/* Add Flex Container */
+/* Flex Container */
 .flex-container1 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     gap: 2em;
     padding: 2em;
+    box-sizing: border-box;
 }
 
-/* Adjust Free-Piano-Lesson and Free-Book*/
+/* Adjust Free-Piano-Lesson and Free-Book */
 .Free-Piano-Lesson,
 .Free-Book {
     flex: 1;
-    min-width: 45%; /* Adjust minimum width as needed */
+    min-width: 45%;
+    box-sizing: border-box;
 }
