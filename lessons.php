@@ -79,8 +79,6 @@
                     <input type="tel" id="phone" name="phone" placeholder="Phone" required>
                     
                     <button type="submit" name="submit">Submit</button>
-
-                
                 </form>
             </div>
 
@@ -95,20 +93,20 @@
                         });
                     </script>
                 <?php endif; ?>  
-                <form action="freelesson.php" method="post" id="freebook" novalidate class="inquiry-form">
-                    <label for="first_name">First Name</label> <br>
-                    <input type="text" id="first_name" name="first_name" placeholder="Hurley"><br>
+                <form action="freebook.php" method="post" id="freebook" novalidate class="inquiry-form">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="Hurley" required>
                     
-                    <label for="last_name">Last Name</label> <br>
-                    <input type="text" id="last_name" name="last_name" placeholder="Piano"><br>
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Piano" required>
                  
-                    <label for="email">Email</label><br>
-                    <input type="text" id="email" name="email" placeholder="you@email.com"><br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@email.com" required>
                     
-                    <label for="phone">Phone</label> <br>
-                    <input type="text" id="phone" name="phone" placeholder="Phone Number"><br>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone" required>
                                                                     
-                    <button type="submit">SUBMIT</button>
+                    <button type="submit" name="submit">SUBMIT</button>
                 </form>
                 
             </div>
@@ -121,6 +119,5 @@
     <script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
     
     <script src="https://cdn.userway.org/widget.js" data-account="rmm88qREWe"></script>
-
 </body>
 </html>
