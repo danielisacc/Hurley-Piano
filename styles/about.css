@@ -7,27 +7,26 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url('img/homepage-background.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
+    background: url('../img/homepage-background.png') center/cover no-repeat;
     min-height: 100vh;
+}
+
+.testimonial1-box, .testimonial-box, .star-child {
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
 }
 
 .testimonial1-box {
     background-color: #f9f9f9;
-    padding: 20px;
-    margin: 0;
     width: 100%;
-    box-sizing: border-box;
-    text-align: center; /* Center align content */
 }
 
 .testimonial1-box img {
     width: 25%;
-    max-width: 70%; /* Ensure image does not exceed container width */
+    max-width: 70%;
     height: auto;
-    display: inline-block; /* Display as inline block to center with text-align */
+    display: inline-block;
     margin-bottom: 15px;
 }
 
@@ -35,21 +34,16 @@ body {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 10px;
-    text-align: left; /* Reset paragraph text alignment */
+    text-align: left;
 }
-
-
 
 /* Common styles for testimonial boxes */
 .testimonial-box {
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 40%; /* 50% width with margin accounted for */
+    width: 40%;
     max-width: 700px;
     min-width: 400px;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
     border-radius: 20px;
     display: inline-block;
     vertical-align: top;
@@ -64,7 +58,7 @@ body {
     border-radius: 5px;
 }
 
-.testimonial-box h2 {
+.testimonial-box h2, .star-child h2 {
     font-family: 'Playfair Display', serif;
     font-size: 3em;
     color: black;
@@ -82,29 +76,15 @@ body {
 
 /* Specific styling for .star-child */
 .star-child {
-    background-image: url('img/about/yellow-background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 20px;
+    background: url('../img/about/yellow-background.png') center/cover no-repeat;
     border-radius: 20px;
     max-width: 700px;
-    margin: 20px auto;
-    text-align: center;
 }
 
 .star-child h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3em;
-    color: black;
-    text-align: center;
     margin: 0;
-    background-image: url('img/about/star-background.png');
-    background-size: auto;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url('../img/about/star-background.png') center/auto no-repeat;
     max-width: 600px;
-    margin: 0 auto;
 }
 
 .container {
