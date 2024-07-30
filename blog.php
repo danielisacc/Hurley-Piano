@@ -46,20 +46,11 @@
                 <h3> Top 5 Reasons why Special Needs Music Lessons Are Helpful</h2>
                     <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
             </a>
-        </div>
-
-        <div class="container">
-            <a href="#"  class="testimonial-box">
-            <img src="img/blog/concert.png" alt="orchestra">
-            <h3> Visual Strategies to Help Special Children Learn the Piano</h2>
-                <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
-            </a>
 
             <a href="#"  class="testimonial-box">
                 <img src="img/blog/concert.png" alt="orchestra">
-                <h3> Chime Candy</h2>
-                    <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
-
+                <h3> Visual Strategies to Help Special Children Learn the Piano</h2>
+                <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
             </a>
         </div>
 
@@ -82,10 +73,14 @@
                 <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
             </a>
         </div>
-        
-    
-       
-        
+        <div class="container">
+            <a href="#"  class="testimonial-box">
+                <img src="img/blog/concert.png" alt="orchestra">
+                <h3> Chime Candy</h2>
+                <h4>by Richard Hurley | Feb 22,2024 | Music Blog</h4>
+
+            </a>
+        </div>        
     </main>
     
     <?php include("footer.html"); ?>
