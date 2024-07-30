@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
             $stmt->close();
 
             // Redirect back to the form with a success flag
-            header("Location: getintouch.php?success=1");
+            header("Location: contactus.php?success=1");
             exit;
 
         } catch (Exception $e) {
