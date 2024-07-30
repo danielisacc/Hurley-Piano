@@ -65,7 +65,7 @@
                         });
                     </script>
                 <?php endif; ?>
-                <form action="freelesson.php" method="post" id="freelesson" novalidate class="inquiry-form">
+                <form action="process-freelessons.php" method="post" id="freelesson" novalidate class="inquiry-form">
                     <label for="first_name">First Name</label>
                     <input type="text" id="first_name" name="first_name" placeholder="Hurley" required>
                     
@@ -93,7 +93,7 @@
                         });
                     </script>
                 <?php endif; ?>  
-                <form action="freebook.php" method="post" id="freebook" novalidate class="inquiry-form">
+                <form action="process-freebook.php" method="post" id="freebook" novalidate class="inquiry-form">
                     <label for="first_name">First Name</label>
                     <input type="text" id="first_name" name="first_name" placeholder="Hurley" required>
                     
