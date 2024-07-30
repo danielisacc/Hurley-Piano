@@ -78,13 +78,13 @@ body {
 .contact.form, .contact.map {
     flex: 2;
     width: calc(66% - 20px);
-    height: 400px;
+    height: 440px;
 }
 
 .contact.info {
     flex: 1;
     width: calc(33% - 20px);
-    height: 400px;
+    height: 440px;
 }
 
 /* Row Styling */
