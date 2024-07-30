@@ -15,6 +15,7 @@ $output_messages = array(
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hurley Piano Website - Contact Us</title>
     <link rel="icon" type="image/png" href="<?= $imgs ?>PianoLogo7.png">
+    <link rel="stylesheet" href="<?= $styles ?>styles.css">
     <link rel="stylesheet" href="<?= $styles ?>contact.css">
    
 </head>
