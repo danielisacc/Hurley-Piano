@@ -1,3 +1,7 @@
+<?php
+include "./scripts/config.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,10 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hurley Piano Website - Contact Us</title>
     <link rel="icon" type="image/png" href="img/PianoLogo7.png">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="<?= $styles ?>contact.css">
 </head>
 <body>
-<?php include("header.html"); ?>
+<?php include($html . "header.html"); ?>
     <main>
         <div class="ContactUs">
             <div class="title">

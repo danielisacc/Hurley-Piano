@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: url('img/homepage-background.png') center/cover no-repeat;
+    background: url('../img/homepage-background.png') center/cover no-repeat;
     min-height: 100vh;
 }
 
@@ -76,14 +76,14 @@ body {
 
 /* Specific styling for .star-child */
 .star-child {
-    background: url('img/about/yellow-background.png') center/cover no-repeat;
+    background: url('../img/about/yellow-background.png') center/cover no-repeat;
     border-radius: 20px;
     max-width: 700px;
 }
 
 .star-child h2 {
     margin: 0;
-    background: url('img/about/star-background.png') center/auto no-repeat;
+    background: url('../img/about/star-background.png') center/auto no-repeat;
     max-width: 600px;
 }
 

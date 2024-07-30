@@ -1,3 +1,7 @@
+<?php
+include "./scripts/config.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,15 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hurley Piano Website - Lessons</title>
     <link rel="icon" type="image/png" href="img/PianoLogo7.png">
-    <link rel="stylesheet" href="lessons.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="<?= $styles ?>lessons.css">
+    <link rel="stylesheet" href="<?= $styles ?>about.css">
 </head>
 <body>
-    <?php include("header.html"); ?>
+<?php include($html . "header.html"); ?>
     <main>
         <!-- Main content goes here -->
         <div class="centered-tile-full-width-hero">
-            <img src="img/music-lessons/hero-img.png" alt="Teaching musical instruments to Neurodiverse Kids" class="hero-photo">
+            <img src="<?= $imgs ?>music-lessons/hero-img.png" alt="Teaching musical instruments to Neurodiverse Kids" class="hero-photo">
             <h1>Teaching Musical<br> Instruments to <br> <i>Neurodiverse</i> Kids</h1>
             <div class="button-container">
                 <a href="https://cal.com/thienkim-le" class="button book-consultation">Book Free Consultation</a> 
@@ -22,7 +26,7 @@
 
         <div class="container">
             <div class="testimonial-box">
-                <img src="img/music-lessons/piano.png" alt="Teaching piano to a child">
+                <img src="<?= $imgs ?>music-lessons/piano.png" alt="Teaching piano to a child">
                 <h4>Teaching <i>Piano</i> to <i>Neurodiverse</i> kids</h4>
                 <p>The Piano serves as a powerful educational tool for neurodiverse children. Its structured yet creative nature aids in cognitive development, improving focus, memory, and problem-solving skills. For neurodiverse kids, it offers a multisensory experience, enhancing sensory processing and coordination. Moreover, music fosters emotional expression and regulation, crucial for those with neurodivergent conditions like autism or ADHD. Through music education, these children find avenues for self-expression, confidence- building, and social interaction, promoting holistic development and inclusivity.”</p>
                 <h5>Benefits</h5>
@@ -35,7 +39,7 @@
             </div>
 
             <div class="testimonial-box">
-                <img src="img/music-lessons/drums.png" alt="child playing drums happily">
+                <img src="<?= $imgs ?>music-lessons/drums.png" alt="child playing drums happily">
                 <h4>Teaching <i>Drums</i> to <i>Neurodiverse</i> kids</h4>
                 <p>Drum lessons provide numerous benefits for neurodiverse children. They enhance sensory integration, promote rhythmic cognition, foster emotional expression, and encourage social interaction. 
                     Additionally, drumming builds confidence and serves as a therapeutic outlet. The rhythmic nature of drumming effectively engages neurodiverse children, aiding in their holistic development and overall well-being. 
@@ -113,7 +117,7 @@
         </div>
     
     </main>
-    <?php include("footer.html"); ?>
+    <?php include $html . "footer.html" ?>
 
     <call-us-selector phonesystem-url="https://1873.3cx.cloud/" party="hurleypiano"></call-us-selector>
     <script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
