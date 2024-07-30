@@ -26,7 +26,7 @@
                         });
                     </script>
                     <?php endif; ?>
-                    <form action="contactus.php" method="post" id="contactus" novalidate class="inquiry-form">
+                    <form action="process-contactus.php" method="post" id="contactus" novalidate class="inquiry-form">
                         <div class="formBox">
                             <div class="row50">
                                 <div class="inputBox">
