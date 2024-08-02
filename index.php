@@ -130,7 +130,7 @@ include "./scripts/config.php";
        </div>
 
         <div class="centered-tile-double">
-            <img src="../img/special-needs-student.png" 
+            <img src="<?= $imgs ?>special-needs-student.png" 
             alt="Specail needs students include ADHD, Asperger Syndrome, Autism, Down Syndrome, Dyscalculia, Dyselexia, Sensory Processing Disorder">
         </div>
 

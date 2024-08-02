@@ -13,9 +13,9 @@ $db_name = "rigler_hurley";
 
 // Email Configs
 $mailHost = "smtp.gmail.com";
-$mailUsername = "daniel.delavega.dev@gmail.com";
-$mailPass = 'tgbx hrlq hxid vifp';
-$mailSendFrom = "daniel.delavega.dev@gmail.com";
+$mailUsername = "hurleypiano.devteam@gmail.com";
+$mailPass = 'ywmf mknd jruq hjjw';
+$mailSendFrom = "hurleypiano.devteam@gmail.com";
 $mailSendFromName = "Hurley-Piano";
-$mailReplyTo = "daniel.delavega.dev@gmail.com";
+$mailReplyTo = "hurleypiano.devteam@gmail.com";
 $mailReplyToName = "Richard Hurley";
