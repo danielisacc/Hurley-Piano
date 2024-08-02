@@ -1,4 +1,5 @@
 <?php
+// Includes the config file variables in the page
 include "./scripts/config.php";
 ?>
 
@@ -12,15 +13,19 @@ include "./scripts/config.php";
     <link rel="stylesheet" href="<?= $styles ?>styles.css">
 </head>
 <body>
+    <!-- includes the header html page to the document -->
     <?php include($html . "header.html"); ?>
     <main>
     <!-- Main content goes here -->
         <!-- Hero Section  -->
         <div class="hero-image">
             <div class="hero-text">
+                <!-- Text Within the Hero Image -->
+                 <!-- Tech In Service of Humanity -->
                 <h1>Teaching<br>Neurodiverse Kids<br>To Play Piano</h1>
             </div>
             <div class="hero-buttons">
+                <!-- the booking link -->
             <a href="https://calendly.com/richardhurley-hurleypiano/30min" class="button book-consultation">Book Free Consultation</a> 
                 <a class=" email-button button" href = "mailto: info@hurleypiano.com">Send Us Email</a>
             </div>
@@ -47,7 +52,7 @@ include "./scripts/config.php";
             </div>
         </div>
 
-        <!-- 2 -->
+        <!-- about us section -->
         <h2>What People Say<br>About Us</h2>
         <div class="banner" style="
                 --width: 400px;
@@ -135,6 +140,7 @@ include "./scripts/config.php";
         </div>
 
     </main>
+    <!-- Include the footer html page  -->
     <?php include $html . "footer.html" ?>
 
 
