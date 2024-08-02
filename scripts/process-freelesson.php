@@ -33,7 +33,7 @@ if (empty($errors)) {
     $subject = "A first free piano lesson appointment";
     $message = "Hello,<br> A first free piano lesson was made by:<br>$first_name $last_name<br>$email<br>$phone";
     // Send the email using the sendMail function
-    sendMail('thienkim.le@g.austincc.edu', $subject, $message, 0);
+    sendMail('richardhurley@hurleypiano.com', $subject, $message, 0);
 
     // Try to prepare and execute the SQL statement to insert data into the database
     try {

@@ -32,7 +32,7 @@ if (empty($errors)) {
     $subject = "Hurley Piano: Free Ebook!";
     $message = "Hello " . $first_name . ",<br>Here is your free <a href=''>Ebook</a>";
     // Send the email to the provided address
-    sendMail($email, $subject, $message, 0);
+    sendMail('richardhurley@hurleypiano.com', $subject, $message, 0);
 
     // Try to prepare and execute the SQL statement to insert the data into the database
     try {
