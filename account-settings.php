@@ -1,4 +1,4 @@
-
+<!-- page opened within the parent portal using javascript -->
 <div class="tile signin-form update-settings" id="account-settings" style="display: none;">
     <h1>Account Settings</h1>
     <p class="error" id="error"></p>
@@ -39,6 +39,7 @@
     </form>
 </div>
 <script>
+    // Js to make the account settings pane open or close
     function setting_update(field) {
         if (document.getElementById(field).style.display === "none") {
             document.getElementById(field).style.display = "block";

@@ -1,6 +1,8 @@
 <?php
+// Include variables from the config file
 include "./scripts/config.php";
 
+// Error messages that may be recieved from the URL and output messages
 $error_messages = array(
     "empty_email" => "⚠️ Please Enter an Email",
     "empty_password" => "⚠️ Please Enter a Password",
@@ -12,10 +14,12 @@ $error_messages = array(
     <link rel="stylesheet" href="<?= $styles ?>styles.css">
 </head>
 <body>
+    <!-- include the header file -->
     <?php include($html . "header.html"); ?>
     <main>
         <div class="tile signin-form">
             <h1>Sign In</h1>
+            <!-- If the user has an error output the corresponding message -->
             <p class="error" id="error"><?php if(isset($_GET["error"]))echo $error_messages[$_GET["error"]] ?></p>
             <form action="./scripts/user_validation.php" method="POST">
                 <label for="email">Email</label>

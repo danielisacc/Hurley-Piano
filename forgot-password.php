@@ -1,4 +1,5 @@
 <?php
+// Includes the config file that contains variables used in this page
 include "./scripts/config.php";
 ?>
 <!DOCTYPE html>
@@ -10,6 +11,7 @@ include "./scripts/config.php";
     <link rel="stylesheet" href="<?= $styles ?>styles.css">
 </head>
 <body>
+    <!-- includes the header page -->
     <?php include $html . "header.html" ?>
     <main>
     <h2 style="margin-top: 0px;">Forgot Password</h2>

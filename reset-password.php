@@ -1,9 +1,14 @@
 <?php
+// include the variables from the config file
 include "./scripts/config.php";
 
+// establish a database connection
 require $scripts . "database.php";
 
+// Retrieve the token variable from the header
 $token = $_GET["token"];
+
+// Generate a token hash from the token to compare to db hash
 $token_hash = hash("sha256", $token);
 
 $mysqli = $conn;
@@ -18,10 +23,12 @@ $stmt->execute();
 $result = $stmt->get_result();
 $user = $result->fetch_assoc();
 
+// If there is no user with the hash used in the URL, kill the page
 if ($user === null) {
     die("token not found");
 }
 
+// If the users hash has expired kill the page
 if (strtotime($user["reset_token_expires_at"]) <= time()) {
     die("token has expired");
 }
@@ -70,8 +77,6 @@ if (strtotime($user["reset_token_expires_at"]) <= time()) {
 </html>
 
 <?php 
-require "./scripts/database.php";
-$mysqli = $conn;
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_SPECIAL_CHARS);
     $password_conf = filter_input(INPUT_POST, "password-conf", FILTER_SANITIZE_SPECIAL_CHARS);

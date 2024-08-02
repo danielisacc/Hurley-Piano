@@ -1,6 +1,8 @@
 <?php
+// include config file variables
 include "./scripts/config.php";
 
+// Empty error messages to be displayed 
 $empty_messages = array('first-name' => '😨 First Name Not Entered',
                             'last-name' => '😨 Last Name Not Entered',
                             'email' => '😨 Email Not Entered',
@@ -8,7 +10,7 @@ $empty_messages = array('first-name' => '😨 First Name Not Entered',
                             'password-conf' => '😨 Confirm Password Not Entered',
                             'country' => '😨 Country Not Entered',
                             'birth' => '😨 Birthday Not Entered');
-
+// Parent error messages
 $error_messages = array('passwords_not_matching' => '😨 Password & Confimation Not Matching',
                             'min_reqs_unmet' => '😨 Minimum Password Requirements Unmet',
                             'empty_field' => "");
@@ -23,13 +25,14 @@ $error_messages = array('passwords_not_matching' => '😨 Password & Confimation
     <link rel="stylesheet" href="<?= $styles ?>styles.css">
 </head>
 <body>
+    <!-- include the header -->
     <?php include($html . "header.html"); ?>
     <main>
         <div class="tile signin-form signup">
             <h1>Parent Registration</h1>
             <p class="error" id="error">
                 <?php
-
+                // If there is an error message from the header echo the error message assocaited with it
                 if (isset($_GET["error"])) {
                     if ($_GET["error"] === "empty_field") {
                         echo $empty_messages[$_GET["empty"]];
@@ -89,7 +92,9 @@ $error_messages = array('passwords_not_matching' => '😨 Password & Confimation
         </div>
         <p class="centered-text nowrap-text">Already have an account?<br><a href="sign-in.php">Sign In</a></p>
     </main>
+    <!-- include the footer -->
     <?php include($html . "footer.html"); ?>
+    <!-- use the register_sctipt.js from the scripts folder -->
     <script src="<?= $scripts ?>register_script.js"></script> 
 </body>
 </html>
