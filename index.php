@@ -21,7 +21,7 @@ include "./scripts/config.php";
                 <h1>Teaching<br>Neurodiverse Kids<br>To Play Piano</h1>
             </div>
             <div class="hero-buttons">
-                <a href="https://cal.com/thienkim-le" class="button book-consultation">Book Free Consultation</a>
+            <a href="https://calendly.com/richardhurley-hurleypiano/30min" class="button book-consultation">Book Free Consultation</a> 
                 <a class=" email-button button" href = "mailto: info@hurleypiano.com">Send Us Email</a>
             </div>
         </div>

@@ -20,7 +20,7 @@ include "./scripts/config.php";
             <img src="<?= $imgs ?>music-lessons/hero-img.png" alt="Teaching musical instruments to Neurodiverse Kids" class="hero-photo">
             <h1>Teaching Musical<br> Instruments to <br> <i>Neurodiverse</i> Kids</h1>
             <div class="button-container">
-                <a href="https://cal.com/thienkim-le" class="button book-consultation">Book Free Consultation</a> 
+                <a href="https://calendly.com/richardhurley-hurleypiano/30min" class="button book-consultation">Book Free Consultation</a> 
             </div>
         </div>
 
