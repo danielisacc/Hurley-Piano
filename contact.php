@@ -56,7 +56,7 @@ $output_messages = array(
                     <!-- Contact form for users to send a message. The form data is submitted via POST method
                          to "process-contactus.php" for handling. The form includes fields for first name, last name,
                          email, phone number, and message. -->
-                    <form action="process-contactus.php" method="post" id="contactus" novalidate class="inquiry-form">
+                    <form action="./scripts/process-contactus.php" method="post" id="contactus" novalidate class="inquiry-form">
                         <div class="formBox">
                             <div class="row50">
                                 <div class="inputBox">

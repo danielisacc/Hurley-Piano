@@ -9,7 +9,7 @@ $imgs = "./img/";
 $db_server = "localhost";
 $db_user = "root";
 $db_pass = "";
-$db_name = "rigler_hurley";
+$db_name = "hurley-rigler";
 
 // Email Configs
 $mailHost = "smtp.gmail.com";

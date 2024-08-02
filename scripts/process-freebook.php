@@ -50,7 +50,7 @@ if (empty($errors)) {
         $stmt->close();
 
         // Redirect to another page with a success flag to indicate successful form submission
-        header("Location: lessons.php?success=1");
+        header("Location: ../lessons.php?success=1");
         exit;
 
     } catch (Exception $e) {

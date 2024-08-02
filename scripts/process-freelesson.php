@@ -51,7 +51,7 @@ if (empty($errors)) {
         $stmt->close();
 
         // Redirect to another page with a success flag
-        header("Location: lessons.php?success=1");
+        header("Location: ../lessons.php?success=1");
         exit;
 
     } catch (Exception $e) {
