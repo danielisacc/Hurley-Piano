@@ -1,18 +1,19 @@
 <?php
+// Include external scripts for email handling and database connection
 require "email_script.php";
 require "database.php";
 
+// Check if the form has been submitted via POST request
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])){
+   $errors = [];
 
- 
-$errors = [];
-
-// Retrieve and sanitize POST data
+// Retrieve and sanitize POST data to prevent security issues
 $first_name = filter_input(INPUT_POST, 'first_name', FILTER_SANITIZE_SPECIAL_CHARS);
 $last_name = filter_input(INPUT_POST, 'last_name', FILTER_SANITIZE_SPECIAL_CHARS);
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
 $phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_SPECIAL_CHARS);
 
-// Validate input
+// Validate the sanitized input
 if (empty($first_name)) {
     $errors[] = "First name is required.";
 }
@@ -26,13 +27,15 @@ if (empty($phone)) {
     $errors[] = "Phone number is required.";
 }
 
+// If no validation errors, proceed with email sending and database insertion
 if (empty($errors)) {
-    // Send email
-    $subject = "Hurley Piano: Free Ebook!";
-    $message = "Hello " . $first_name . ",<br>Here is your free <a href=''>Ebook</a>";
-    sendMail($email, $subject, $message, 0);
+    // Prepare email details
+    $subject = "A first free piano lesson appointment";
+    $message = "Hello,<br> A first free piano lesson was made by:<br>$first_name $last_name<br>$email<br>$phone";
+    // Send the email using the sendMail function
+    sendMail('thienkim.le@g.austincc.edu', $subject, $message, 0);
 
-    // Prepare and execute the SQL statement
+    // Try to prepare and execute the SQL statement to insert data into the database
     try {
         $mysqli = $conn;
 
@@ -47,18 +50,20 @@ if (empty($errors)) {
 
         $stmt->close();
 
-        // Redirect back to the form with a success flag
+        // Redirect to another page with a success flag
         header("Location: lessons.php?success=1");
         exit;
 
     } catch (Exception $e) {
+        // Display any errors that occur during database operations
         echo "Error: " . $e->getMessage();
     }
 } else {
+    // Display validation errors if there are any
     foreach ($errors as $error) {
         echo $error . "<br>";
     }
     echo "Invalid form submission.";
 }
-
+}
 ?>
